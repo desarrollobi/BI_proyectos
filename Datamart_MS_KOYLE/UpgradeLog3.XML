@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DM_INFORMAT_MS">
+</Property><Property Name="Archivo de la solución" Value="D:\Publicaciones\DM_INFORMAT\Datamart_MS\DM_INFORMAT_MS.sln">
+</Property><Property Name="Date" Value="martes, 19 de agosto de 2014">
+</Property><Property Name="Time" Value="14:49">
+</Property><Property Name="Número de registro" Value="3">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DM_INFORMAT_MS.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="DM_INFORMAT_MS.sln" Description="Converted">
+</Event></UpgradeLog>

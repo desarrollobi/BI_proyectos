@@ -1,0 +1,25 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7c66c7fd-29b7-444c-bd09-d362ba3589a2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CUBO LOGISTICA MOVIMIENTOS BODEGA</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT MOVIMIENTOS POR BODEGA</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="bad10dc1-c089-4cd4-82a0-1769cbcddf0b">
+          <ID>FACT MOVIMIENTOS POR BODEGA</ID>
+          <Name>FACT MOVIMIENTOS POR BODEGA</Name>
+          <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="127e8daf-c569-4056-8bec-b87a4f2a72a2">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_MOVIMIENTOS_POR_BODEGA</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

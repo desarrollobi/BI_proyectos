@@ -1,0 +1,25 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1d354bec-69f1-4d52-8804-7862da1a4b5a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DATAMART</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT ORDENES SOLICITUDES</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="63fbc3cb-3c66-4b64-833c-3c604ade6efd">
+          <ID>FACT ORDENES SOLICITUDES</ID>
+          <Name>FACT ORDENES SOLICITUDES</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fc350d44-281e-4199-8026-6c20a9091a72">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_ORDENES_SOLICITUDES</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

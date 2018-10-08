@@ -1,0 +1,195 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b68256f7-07eb-4235-8522-f9ed8f44cdc4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DIM DOCUMENTO</ID>
+  <Name>DOCUMENTO</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-5040" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7673" y="7911" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_DOCUMENTO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_DOCUMENTO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5040</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a2d5b6a9-5eb1-430f-903c-22be1ef9039e">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="403308f1-57a4-46c2-88a6-e82e06f91a08">
+      <ID>DIM DOCUMENTO</ID>
+      <Name>DIM DOCUMENTO</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a3e1626f-fd56-4362-8782-0aaed99e0490">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>101</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="97147b0b-0e9b-4562-9c3b-2abb41e024d8">
+            <TableID>DIM_DOCUMENTO</TableID>
+            <ColumnID>Documento</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6369f88f-d660-4ed0-a01b-aa415f41bd8d">
+          <AttributeID>Ate Ori</AttributeID>
+          <Name>Ate Ori</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80122ffb-b0de-4908-9aec-79cbf3fe9167">
+          <AttributeID>Tip Doc</AttributeID>
+          <Name>Tip Doc</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e31de8f9-9e80-429e-a228-5396ffa9d0a4">
+          <AttributeID>Doc Nom</AttributeID>
+          <Name>Doc Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="74b3af92-8b6c-4db5-b4df-d01b7d98a1c0">
+      <ID>Ate Ori</ID>
+      <Name>Ate Ori</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1d5bdec-9acd-489d-b66e-136e19996971">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a503bd2-c4e3-457d-8449-614bfd5d5f66">
+            <TableID>DIM_DOCUMENTO</TableID>
+            <ColumnID>AteOri</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <DefaultMember>[DOCUMENTO].[Ate Ori].&amp;[Venta]</DefaultMember>
+      <IsAggregatable>false</IsAggregatable>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a6979418-7b22-43d8-a392-a1249c7b5fd8">
+      <ID>Tip Doc</ID>
+      <Name>Tip Doc</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7319eada-1d36-4ed3-bd8c-76481ea8cc1d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a5e5c26-1571-4520-a474-f5a33f25fd4b">
+            <TableID>DIM_DOCUMENTO</TableID>
+            <ColumnID>TipDoc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b09d030e-1dc7-4a3b-a538-50175914bd21">
+      <ID>Doc Nom</ID>
+      <Name>Doc Nom</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d571082b-2dee-4e3a-819f-a9b70933ddef">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9150a3e3-bc06-4ea3-89cb-0032c7038533">
+            <TableID>DIM_DOCUMENTO</TableID>
+            <ColumnID>DocNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL DOCUMENTO</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="7dfaa248-d7be-45ee-9d84-1a10f5417c30">
+      <ID>Hierarchy</ID>
+      <Name>DOCUMENTO</Name>
+      <DisplayFolder>DOCUMENTO</DisplayFolder>
+      <AllMemberName>TOTAL DOCUMENTO</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="30efdbb5-08b7-4cc8-ac6f-9228d22b1b50">
+          <ID>Ate Ori</ID>
+          <Name>Origen de Atención</Name>
+          <SourceAttributeID>Ate Ori</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9c3eb420-10b9-4099-bb6d-df5851f95cfc">
+          <ID>Tip Doc</ID>
+          <Name>Tipo Documento</Name>
+          <SourceAttributeID>Tip Doc</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="24f12b41-3dff-4fcd-b51a-20f0b796b2f9">
+          <ID>Doc Nom</ID>
+          <Name>Nombre Documento</Name>
+          <SourceAttributeID>Doc Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1fe4ab3b-5845-462d-9f05-87265d8c13b3">
+          <ID>DIM DOCUMENTO</ID>
+          <Name>DIM DOCUMENTO</Name>
+          <SourceAttributeID>DIM DOCUMENTO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

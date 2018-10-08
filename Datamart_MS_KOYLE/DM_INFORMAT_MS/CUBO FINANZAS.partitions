@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="58511ee7-eb91-46d9-be42-36ae87258610" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CUBO FINANZAS</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT COMPROBANTES</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="964832bd-16a1-4fbe-8fa7-7f534f45a99c">
+          <ID>FACT COMPROBANTES</ID>
+          <Name>COMPROBANTES</Name>
+          <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1eef010c-91bd-466f-a4c0-49ccf1c9b1d2">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_COMPROBANTES</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT PRESUPUESTO FINANZAS</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="53a192d5-d75a-4450-8e00-5fe08b7f8a4a">
+          <ID>FACT PRESUPUESTO FINANZAS</ID>
+          <Name>PRESUPUESTO FINANZAS</Name>
+          <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6e00317f-f783-4420-83ca-50c9e47c8894">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_PRESUPUESTO_FINANZAS</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT PRESUPUESTO FINANZAS TRIBUTARIO</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="19c207fa-83d7-45cd-8721-1d7b2a382ad4">
+          <ID>FACT PRESUPUESTO FINANZAS TRIBUTARIO</ID>
+          <Name>FACT PRESUPUESTO FINANZAS TRIBUTARIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="52ecdfe9-f641-4be3-80c8-432ccfacae5a">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>dd</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

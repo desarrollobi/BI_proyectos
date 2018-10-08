@@ -1,0 +1,706 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9f9b1166-8e04-4ea3-b25e-c00e1fcd1057" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM PROVEEDORES</ID>
+  <Name>PROVEEDORES</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-2924" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="11113" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_PROVEEDORES" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_PROVEEDORES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2924</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="658319b2-80e4-456d-954d-851c500af47f">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b0ebf57a-a545-4dfe-a4ba-00bafdd1a502">
+      <ID>DIM PROVEEDORES</ID>
+      <Name>DIM PROVEEDORES</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e3fe70b-329c-4e3f-8c2b-a6f3f7daae99">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c42fcde5-2312-478e-a367-217d8c3b4ba0">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>EmpPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4ff6e824-ec7c-4f4f-8dbf-22064a48ffba">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="11f8e427-7e19-45c5-8f89-d19640648469">
+          <AttributeID>Prv ID</AttributeID>
+          <Name>Prv ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cfdfdd88-e4cd-4dd2-bd4c-3270112162eb">
+          <AttributeID>Prv Rut</AttributeID>
+          <Name>Prv Rut</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="549c65bd-719c-4166-a7bc-bee08311da41">
+          <AttributeID>Prv Nom</AttributeID>
+          <Name>Prv Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a225dc21-bb98-4829-b9ce-58689e4b6c68">
+          <AttributeID>Prv Dir</AttributeID>
+          <Name>Prv Dir</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="97261279-0eec-41fe-be88-b4ae4dc3cd82">
+          <AttributeID>Prv Com</AttributeID>
+          <Name>Prv Com</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="adbecefb-e89b-4d10-bf0a-1439089a1af3">
+          <AttributeID>Prv Ciu</AttributeID>
+          <Name>Prv Ciu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2a13332-2da4-49d6-b385-6c4d78807a2f">
+          <AttributeID>Prv Pos</AttributeID>
+          <Name>Prv Pos</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8662372a-64ea-463f-99f6-9a268ac75a12">
+          <AttributeID>Prv Ct1</AttributeID>
+          <Name>Prv Ct1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d4752ddc-61b4-4137-a773-52ee86491e93">
+          <AttributeID>Prv Tl1</AttributeID>
+          <Name>Prv Tl1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="39845ae0-ee90-4adc-b81a-127da3c68bf3">
+          <AttributeID>Prv Ct2</AttributeID>
+          <Name>Prv Ct2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="170adc4e-efd2-4219-882b-cafd62f62f70">
+          <AttributeID>Prv Tl2</AttributeID>
+          <Name>Prv Tl2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9b9db6e-bbec-4e6e-ba8c-73a9444c8ad4">
+          <AttributeID>Prv Ori</AttributeID>
+          <Name>Prv Ori</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d1dc9732-1a1c-4255-bb0e-1b9d9c79e40e">
+          <AttributeID>Prv Cpa</AttributeID>
+          <Name>Prv Cpa</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24cbba05-96ce-4cbe-a891-a7b73fdcd80c">
+          <AttributeID>Prv Cal</AttributeID>
+          <Name>Prv Cal</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b975809-c664-4555-ac7c-c44558231c65">
+          <AttributeID>Atri P1</AttributeID>
+          <Name>Atri P1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70e1737f-4696-4cbb-82b1-8472ac906484">
+          <AttributeID>Atri P2</AttributeID>
+          <Name>Atri P2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="296e7754-08c7-41b8-9e7e-9f3514ab0cea">
+          <AttributeID>Atri P3</AttributeID>
+          <Name>Atri P3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7678a2d6-7ee6-4a25-a7d7-651fc38b5a71">
+          <AttributeID>Atri P4</AttributeID>
+          <Name>Atri P4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f81cb9da-046c-4d2d-8527-22ef9ac0a2ad">
+          <AttributeID>Atri P5</AttributeID>
+          <Name>Atri P5</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ac82d2a-4712-4554-8177-b64f625ceb46">
+          <AttributeID>Prv BI1</AttributeID>
+          <Name>Prv BI1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ff75e0bf-5577-4121-bf82-a8b9c034ec5b">
+          <AttributeID>Prv BI2</AttributeID>
+          <Name>Prv BI2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e531d685-6a65-442d-be57-02922c4e0396">
+          <AttributeID>Prv BI3</AttributeID>
+          <Name>Prv BI3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bec1c189-8295-4371-aabe-42962b7956d3">
+          <AttributeID>Prv BI4</AttributeID>
+          <Name>Prv BI4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="550251cc-ab26-4837-bf32-21c3b0aeb647">
+          <AttributeID>Prv BI5</AttributeID>
+          <Name>Prv BI5</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="dd390ccc-e044-4ced-bd73-25d5e60d2361">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6670fb0-67a6-40a4-adc9-8e33b83e6366">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45b2c08d-3c5d-4cbb-b390-a4e287b9e00b">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="094ef105-f7f5-42cf-852f-53075897fcba">
+      <ID>Prv ID</ID>
+      <Name>Prv ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8163816f-ead0-480c-8f1d-aad9e2b16abb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef63e118-3fbd-4c0a-abe4-4b5cdc6cafea">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="703164dd-02b9-4dd7-b91e-b98a832162d3">
+      <ID>Prv Rut</ID>
+      <Name>Prv Rut</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c08c60f2-0259-4e72-aac5-260d07f8d024">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0712bce1-f2d5-440c-b27c-cba31e6dc321">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvRut</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="cfe9b8fd-bd74-424d-b607-36213c8c9823">
+      <ID>Prv Nom</ID>
+      <Name>Prv Nom</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="894ed940-0ec9-4109-a0df-392ebdd7ec22">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a7dc0ae-8379-41c3-9642-9fd72958f9c7">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="aaf7870c-6d3b-4bc9-9957-c4a191b67085">
+      <ID>Prv Dir</ID>
+      <Name>Prv Dir</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4bc3c710-0361-4249-840b-cb2319f0dfb4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7171265a-5c52-4127-8ac5-e33b62fdebd4">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvDir</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e7000e2-e559-45b7-928d-4a0977c77cd6">
+      <ID>Prv Com</ID>
+      <Name>Prv Com</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d4696000-0002-4156-b29e-c33460c4fde7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95348f1e-1db4-4943-bd81-1cc1fa0b4cf8">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvCom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9177020f-8db7-47f8-9b2b-a801b33cf35a">
+      <ID>Prv Ciu</ID>
+      <Name>Prv Ciu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eb1eb87f-dbc8-40d3-94c9-084ed5b94ee8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2cf43fba-f0d1-49fb-a16c-4d9765d9d6bb">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvCiu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="408dfc72-9238-443c-b6c8-1f17bb93d2c5">
+      <ID>Prv Pos</ID>
+      <Name>Prv Pos</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="22e3185c-4b01-4a3e-b50c-628470727da7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4dfc465c-ad85-42b1-ab92-3587ff3249db">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvPos</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="e6f84d8b-eef2-4c64-a27f-657babfdb130">
+      <ID>Prv Ct1</ID>
+      <Name>Prv Ct1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d4bf35e6-cd28-4e2b-95e1-57cb72605400">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e739202-a9d4-4376-9ac7-f3346d9f3047">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvCt1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="05c37a50-601e-4343-b82c-aab0b9723211">
+      <ID>Prv Tl1</ID>
+      <Name>Prv Tl1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eb867871-a7a3-40c0-aa04-22d3c7f0f447">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3884269-d547-4e1d-9d04-277b3711ae1e">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvTl1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f72f93e-7934-47cb-8238-264ccbcf4dc8">
+      <ID>Prv Ct2</ID>
+      <Name>Prv Ct2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bab9df35-ec9a-414e-87b6-f343677ebe07">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="543cf174-c885-4eea-a660-455bcf36b4c8">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvCt2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="105475ac-e2f3-4969-b8e0-083266d6faaf">
+      <ID>Prv Tl2</ID>
+      <Name>Prv Tl2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="129e5460-ad41-431a-9bf8-8bc35b21e58a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8281a27a-c74e-48bc-b49c-e9ec52fa554c">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvTl2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4d0421b9-2a91-45b6-ab4d-efce13fdeec5">
+      <ID>Prv Ori</ID>
+      <Name>Prv Ori</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f293bfb8-bebc-4d85-b815-9cbf77a9ca43">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cdbd146-25e1-4496-ad1c-fbf9c2d067c3">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvOri</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="56eec3a5-053e-415b-8988-0ce3589b9083">
+      <ID>Prv Cpa</ID>
+      <Name>Prv Cpa</Name>
+      <EstimatedCount>9</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a3d81e81-add6-4c72-a81b-627cef1c376d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81b56b12-1857-4205-8e22-16d31989c2cc">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvCpa</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b13f25a-fbd8-4fa6-85d9-c0fad7cac4ae">
+      <ID>Prv Cal</ID>
+      <Name>Prv Cal</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e84ca0f-8bfc-4e9f-bc73-01d7e6062288">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a8f8be2-2dd8-47f6-bb56-1601fe70985e">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvCal</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="ff839fd1-9926-439a-abad-f61495530731">
+      <ID>Atri P1</ID>
+      <Name>Atri P1</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dcebf7b8-bac4-4ad4-9b5a-76d133c91210">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3dfc6f39-be67-4a16-8d06-ffafe88dcf45">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>AtriP1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d5c79ad4-473f-454c-9c09-79ed26c84912">
+      <ID>Atri P2</ID>
+      <Name>Atri P2</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70d4ac11-cbe8-48c8-a0a5-6928f78023d3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d04a2fb7-cb93-4891-8ae6-9e5f79161996">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>AtriP2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4d8f5958-de5c-4642-9d36-0e954d02c12c">
+      <ID>Atri P3</ID>
+      <Name>Atri P3</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2ad6868a-afa0-4673-b9a2-6e68e3a9f459">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="83ea6d6f-67ee-4fc4-9595-22c5221a1243">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>AtriP3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="1254716b-a346-45e9-b065-fba6ff58ba81">
+      <ID>Atri P4</ID>
+      <Name>Atri P4</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2944c9bf-f8f7-4941-b997-5eb936d20a15">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="27ee3cd8-8f60-4a41-99d1-cdc82a2d8cfe">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>AtriP4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="90c760de-2e4e-463a-8d83-e3f21dc69d80">
+      <ID>Atri P5</ID>
+      <Name>Atri P5</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc45625c-3c50-48ef-8e1c-6803d650e853">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ef7778c-3ef0-4e5a-9f73-5f3f24b2c6ff">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>AtriP5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="59b15969-8488-40d2-a7c6-25f74dd752af">
+      <ID>Prv BI1</ID>
+      <Name>Prv BI1</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d724bfc-8977-4512-b84d-7812cddd681e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="263e5200-932c-4936-a88c-4cda9259d216">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvBI1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8547126-5f0b-4a7b-ab3b-74564c041f1a">
+      <ID>Prv BI2</ID>
+      <Name>Prv BI2</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c6fdd4c9-4202-42d8-ade0-78c9edc52b2d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8543e311-0065-4ca2-ad8b-7d9eb852a75f">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvBI2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a45cd2a1-c00c-4db8-9d44-b8a242f09085">
+      <ID>Prv BI3</ID>
+      <Name>Prv BI3</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54e2dc6c-ef70-4b8b-9e51-e09dd4b74cfc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce954eb1-6495-4a7e-a369-cc1b38ff35ba">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvBI3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="47a552ba-c0f3-404e-9a69-17808225a0fc">
+      <ID>Prv BI4</ID>
+      <Name>Prv BI4</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3d87d4c4-1d58-4ed1-bf11-6d8d5290155b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c9fa7fe7-264c-4702-9e72-6b9fb56cd505">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvBI4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ad0fdcd-8b52-4d82-96a2-f4e573393476">
+      <ID>Prv BI5</ID>
+      <Name>Prv BI5</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8bdb8ea0-4df4-4a9f-b26b-38d8f5e23705">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd2ca96d-cc5b-4625-b72e-283272339410">
+            <TableID>DIM_PROVEEDORES</TableID>
+            <ColumnID>PrvBI5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL PROVEEDORES</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="208e50d4-0ecc-43b8-ad13-4941a60f7e14">
+      <ID>Hierarchy</ID>
+      <Name>POR ATRIBUTO1 DEL PROVEEDOR</Name>
+      <DisplayFolder>POR ATRIBUTO1 DEL PROVEEDOR</DisplayFolder>
+      <AllMemberName>TOTAL PROVEEDORES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="2d65bdb7-5e79-4e4b-aec8-a908a27b2d45">
+          <ID>Atri P1</ID>
+          <Name>Atributo 1 Proveedor</Name>
+          <SourceAttributeID>Atri P1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="83779dfe-86e4-451d-85a1-30e60eac291a">
+          <ID>Prv Nom</ID>
+          <Name>Proveedor</Name>
+          <SourceAttributeID>Prv Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b0869028-28b3-436c-87a5-39f3e00591ec">
+          <ID>DIM PROVEEDORES</ID>
+          <Name>DIM PROVEEDORES</Name>
+          <SourceAttributeID>DIM PROVEEDORES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="5669d272-7921-466e-9d05-19eb2423d581">
+      <ID>Hierarchy 1</ID>
+      <Name>POR ATRIBUTO2 DEL PROVEEDOR</Name>
+      <DisplayFolder>POR ATRIBUTO2 DEL PROVEEDOR</DisplayFolder>
+      <AllMemberName>TOTAL PROVEEDORES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="b3f04eae-5230-423a-9a5d-6628885bcbe4">
+          <ID>Atri P2</ID>
+          <Name>Atributo 2 Proveedor</Name>
+          <SourceAttributeID>Atri P2</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6c6dcd58-5290-40ef-83fa-dffdbf5001bc">
+          <ID>Prv Nom</ID>
+          <Name>Proveedor</Name>
+          <SourceAttributeID>Prv Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="bc69c36b-9532-498d-8f72-ba53aa231e4c">
+          <ID>DIM PROVEEDORES</ID>
+          <Name>DIM PROVEEDORES</Name>
+          <SourceAttributeID>DIM PROVEEDORES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="8b0f0514-b413-46c8-8128-8a13d1c5862c">
+      <ID>Hierarchy 2</ID>
+      <Name>POR NOMBRE DEL PROVEEDOR</Name>
+      <DisplayFolder>POR NOMBRE DEL PROVEEDOR</DisplayFolder>
+      <AllMemberName>TOTAL PROVEEDORES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="8096d65b-eb92-4d78-8cfb-528dc5664c71">
+          <ID>Prv Nom</ID>
+          <Name>Proveedor</Name>
+          <SourceAttributeID>Prv Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="19e6f1cc-d2cb-407d-bad0-64ea687d8470">
+          <ID>DIM PROVEEDORES</ID>
+          <Name>DIM PROVEEDORES</Name>
+          <SourceAttributeID>DIM PROVEEDORES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

@@ -1,0 +1,216 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="96e6dfb7-77ce-4afc-90e6-9356737f13c7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM EMPRESA</ID>
+  <Name>EMPRESA</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4617" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6376" y="11192" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_EMPRESA" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_EMPRESA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4617</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dc833400-79f0-4a8d-bc6a-4bde7d4b37b0">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="38bf373d-f89d-4d79-9a68-9a6510927edd">
+      <ID>DIM EMPRESA</ID>
+      <Name>DIM EMPRESA</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3a0a4dee-4512-4fb5-b8ab-c0bbb26d4ad9">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d4eb140-ef89-4644-bb03-d60a5b69045d">
+            <TableID>DIM_EMPRESA</TableID>
+            <ColumnID>EmpSuc</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="452b35f8-be06-4f51-b049-aa2a670d3939">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0f78d643-e0ca-4b56-b5ac-9a8ac17fae81">
+          <AttributeID>Suc Cod</AttributeID>
+          <Name>Suc Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5974bae5-4742-4c10-8705-94113ac3dddf">
+          <AttributeID>Suc Nom</AttributeID>
+          <Name>Suc Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="adf2e705-4574-410d-9ac5-0f367004d253">
+          <AttributeID>Emp Nom</AttributeID>
+          <Name>Emp Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="f819d379-dfca-429c-a4ba-9d6407f6c749">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fee8eac3-f5d7-411a-90df-d2974dbd0815">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b2d716f-0316-480a-abd1-69f46f98ea84">
+            <TableID>DIM_EMPRESA</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="1ed94006-08d0-450d-aa2c-6b228bd5bdca">
+      <ID>Suc Cod</ID>
+      <Name>Suc Cod</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6d0d55ad-3899-46ae-b0f5-c0909adbc838">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b03ff21-f9e2-4b2f-a92e-14d2c7174ce8">
+            <TableID>DIM_EMPRESA</TableID>
+            <ColumnID>SucCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d0f7588e-b2e5-469f-9f93-c5056962966e">
+      <ID>Suc Nom</ID>
+      <Name>Suc Nom</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5b5cc536-9ed7-4d8b-91d6-eac557c57515">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d40be26-ccd7-4a47-bfed-ecf2aa5d2916">
+            <TableID>DIM_EMPRESA</TableID>
+            <ColumnID>SucNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="da5848d4-c283-4358-b933-51b37d954779">
+      <ID>Emp Nom</ID>
+      <Name>Emp Nom</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ca3b61d-d22f-48eb-919d-91e89747a49c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b65e96b-3133-4bf9-8fe0-f16240ce4b10">
+            <TableID>DIM_EMPRESA</TableID>
+            <ColumnID>EmpNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL EMPRESA</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="cfaf8eab-4db6-4c0d-ba50-4867936af393">
+      <ID>Hierarchy</ID>
+      <Name>EMPRESA</Name>
+      <DisplayFolder>EMPRESA</DisplayFolder>
+      <AllMemberName>TOTAL EMPRESA</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="47f7aacc-2fe8-48d9-abe6-e744733309eb">
+          <ID>Emp Nom</ID>
+          <Name>Empresa</Name>
+          <SourceAttributeID>Emp Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5c25f7e0-d058-44c0-8abe-bf2d0cd8cfb1">
+          <ID>Suc Nom</ID>
+          <Name>Sucursal</Name>
+          <SourceAttributeID>Suc Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a9ebced0-8208-48d4-8d73-3ab762fcc936">
+          <ID>DIM EMPRESA</ID>
+          <Name>DIM EMPRESA</Name>
+          <SourceAttributeID>DIM EMPRESA</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

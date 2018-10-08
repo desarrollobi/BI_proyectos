@@ -1,0 +1,300 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b72bbf6c-0f21-4e35-bdfc-cba4536e7dfe" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>D TIEMPO</ID>
+  <Name>DIM_TIEMPO</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="43" scrolltop="-6283" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="7673" y="11404" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="D_TIEMPO (dbo.D_TIEMPO)" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="8731" height="5085" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800001b220000dd130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_D_TIEMPO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>43</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6283</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>85</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1b9d9ac6-603c-4f31-9c0d-1db10134be18">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b2d10a83-0a7a-497d-8cf2-370366d4a3f7">
+      <ID>YEAR</ID>
+      <Name>YEAR</Name>
+      <Type>Years</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="757068ac-690c-4fa6-afa2-391c6f498af0">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b140a17-52a0-46cd-9b75-405195747b24">
+            <TableID>dbo_D_TIEMPO</TableID>
+            <ColumnID>YEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0de0cc0f-0533-4f47-8666-f8803d21fbf5">
+        <DataType>WChar</DataType>
+        <DataSize>-1</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2ac2e2de-009e-4a57-9410-b4d93a14b7c9">
+          <TableID>dbo_D_TIEMPO</TableID>
+          <ColumnID>YEAR</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <IsAggregatable>false</IsAggregatable>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b96842b-6ed5-49cf-8e42-156c48d33542">
+      <ID>TRIM</ID>
+      <Name>TRIM</Name>
+      <Type>Quarters</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d9fe98e7-0a15-4f05-a3fa-2e4083eefed7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="781fa338-14e8-47e4-89fc-e47422edcb6f">
+            <TableID>dbo_D_TIEMPO</TableID>
+            <ColumnID>TRIM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c04890ac-2bcc-4abc-8819-08b1a244c65c">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="88516bbb-b1b6-4544-b6f9-dd78429c6f38">
+          <TableID>dbo_D_TIEMPO</TableID>
+          <ColumnID>TRIM</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="5fe279d7-f3b0-429e-bcb4-bde0ea4f1479">
+      <ID>MONTH</ID>
+      <Name>MONTH</Name>
+      <Type>Months</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e55563d-dfa4-445d-bcdd-059b107d591a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f0c54cc-f279-4931-910b-5c1a9c729781">
+            <TableID>dbo_D_TIEMPO</TableID>
+            <ColumnID>MONTH</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="beceedf4-454b-481a-a7cd-bb9414eba9b4">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c7f75a82-fffb-4d67-b899-08fbe05a0bc5">
+          <TableID>dbo_D_TIEMPO</TableID>
+          <ColumnID>MONTH</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="48cffea1-fbed-4014-a503-1e7a9e6678dc">
+      <ID>DAY</ID>
+      <Name>DAY</Name>
+      <Type>Days</Type>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="322ad140-9f55-4617-893e-13cac9a9d593">
+          <DataType>Date</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56e621cd-f904-41ca-a9fa-c0f799af3ce7">
+            <TableID>dbo_D_TIEMPO</TableID>
+            <ColumnID>DAY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="df9e634e-e2b0-4ba5-8daa-693d599b4e41">
+        <DataType>WChar</DataType>
+        <DataSize>-1</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="74c07801-6fb2-4aac-82c6-11ab78065a13">
+          <TableID>dbo_D_TIEMPO</TableID>
+          <ColumnID>DAY</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="db4c62f7-a779-4066-8d64-eeef3983e6d4">
+          <AttributeID>YEAR</AttributeID>
+          <Name>YEAR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ac9751a-082f-4a09-ace8-980c694a5e31">
+          <AttributeID>TRIM</AttributeID>
+          <Name>TRIM</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f753cc48-2386-4e5b-a83e-3280684937c0">
+          <AttributeID>MONTH</AttributeID>
+          <Name>MONTH</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b734192-085a-40a3-8c7d-c9cf9b3e2088">
+          <AttributeID>WEEK</AttributeID>
+          <Name>WEEK</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b2fa97b7-7625-498a-b0c6-d20192b3168a">
+          <AttributeID>DAY OF YEAR</AttributeID>
+          <Name>DAY OF YEAR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1d836a1a-2111-4f19-9cf4-5cb01365d2c7">
+          <AttributeID>Calendario FECHA Calculations</AttributeID>
+          <Name>Tiempos Relativos</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <DefaultMember></DefaultMember>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="8a6dac18-ab57-4c1f-851a-7ea0ac8d990d">
+      <ID>WEEK</ID>
+      <Name>WEEK</Name>
+      <Type>Weeks</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f46a6f1f-dd8e-41c0-9a34-cc367ff4cffa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4464341-66b6-4525-91ea-74093ecd01a9">
+            <TableID>dbo_D_TIEMPO</TableID>
+            <ColumnID>WEEK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="22d8a18e-11c2-493d-bb51-4dcf901d5f79">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="19b84c21-0332-43f4-99b7-ae92a537268e">
+          <TableID>dbo_D_TIEMPO</TableID>
+          <ColumnID>WEEK</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="c7bfc760-034e-4572-ae44-945eada10bc2">
+      <ID>DAY OF YEAR</ID>
+      <Name>DAY OF YEAR</Name>
+      <Type>DayOfYear</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="591a4592-9c7c-456f-9b90-536ad3c3282b">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="675c79be-51bb-4183-a129-628e96fe93b4">
+            <TableID>dbo_D_TIEMPO</TableID>
+            <ColumnID>DAY_OF_YEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c05f7369-f071-431f-8d36-9e5703ae30d0">
+        <DataType>WChar</DataType>
+        <DataSize>-1</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="10eea534-385e-43bd-8665-7e0f8151abc3">
+          <TableID>dbo_D_TIEMPO</TableID>
+          <ColumnID>DAY_OF_YEAR</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="82c2b087-6ba4-4bd1-b9c0-bab6ed09c08e">
+      <ID>Calendario FECHA Calculations</ID>
+      <Name>Tiempos Relativos</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3a5b597-b8dd-4882-9800-7b9c9df0554d">
+          <DataType>WChar</DataType>
+          <DataSize>16</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d9974ecb-bf17-4a9f-a734-e4b01e119f29">
+            <TableID>dbo_D_TIEMPO</TableID>
+            <ColumnID>Calendario_x0020_FECHA_x0020_Calculations</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <DefaultMember>[Tiempos Relativos].[Current FECHA]</DefaultMember>
+      <IsAggregatable>false</IsAggregatable>
+      <AttributeHierarchyDisplayFolder>Calendario</AttributeHierarchyDisplayFolder>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL TIEMPO</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="30f42049-daf3-4528-b2c2-fe9aad7fffc0">
+      <ID>YEAR -  TRIM -  MONTH -  DAY</ID>
+      <Name>Calendario</Name>
+      <DisplayFolder>Calendario</DisplayFolder>
+      <AllMemberName>TOTAL TIEMPO</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="61a0fdd3-c3cb-4f57-9b8c-f18f89fe13c3">
+          <ID>YEAR</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>YEAR</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1a508daa-488e-456d-b8a9-e1d24fe0789e">
+          <ID>TRIM</ID>
+          <Name>Trimestre</Name>
+          <SourceAttributeID>TRIM</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2a8ad6cb-ad48-4370-ad5c-1eae3d46ac98">
+          <ID>MONTH</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>MONTH</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

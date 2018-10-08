@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DATAMART_MS">
+</Property><Property Name="Solution File" Value="C:\Instalador_Warehouse_SQL2008\DATAMART_MS\DATAMART_MS.sln">
+</Property><Property Name="Date" Value="Jueves, 08 de Noviembre de 2012">
+</Property><Property Name="Time" Value="12:18">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DATAMART_MS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DATAMART_MS.sln" Description="Converted">
+</Event></UpgradeLog>

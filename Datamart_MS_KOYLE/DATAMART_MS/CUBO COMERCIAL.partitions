@@ -1,0 +1,45 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="97dcdbd8-09bf-4dbb-bf9c-0b4995c672a4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CUBO COMERCIAL</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT VENTAS</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6bb5804b-90e2-4175-9e09-4853ded126e4">
+          <ID>FACT VENTAS</ID>
+          <Name>VENTAS</Name>
+          <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="397d800b-6646-4429-b8ae-1c793f0e879e">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_VENTAS</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT PREVEN</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4717d2a2-a8a4-4c1f-9ac2-0ac9417372dc">
+          <ID>FACT PREVEN</ID>
+          <Name>PRESUPUESTO</Name>
+          <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cea5a08d-eb24-468c-9777-bd536f0aec90">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_PREVEN</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -1,0 +1,296 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>DM_INFORMAT</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=10.0.1.4;Password=;User ID=;Initial Catalog=DM_KOYLE</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>DIM EMPRESA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CLIENTES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VENDEDOR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PRODUCTOS DE VENTAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM MESES COMERCIAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONDICION VENTA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM DOCUMENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ESTADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONTABLE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>D TIEMPO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM AREA NEGOCIOS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CUENTAS CONTABLES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIN CENTRO COSTOS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONCEPTOS DE GASTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM FLUJO EFECTIVO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM MONEDAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM MESES FINANZAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VERSION PRESUPUESTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CARGOS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONCEPTOS RRHH</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PERSONAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PERSONAL INE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ORIGEN RENTA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM INSTITUCIONES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM LUGAR PAGO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ROTACION PERSONAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>D TIEMPO 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM BODEGAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PRODUCTOS DE INVENTARIO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EMPRESA SALGEN</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CUENTA CONTABLE SALGEN</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONTABLE MOVBOD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONSIGNATARIOS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PERSONAL MOVBOD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PROVEEDORES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TIPO MOVIMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM DOCUMENTOS ORD SOL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ESTADO DOCUMENTO ORD SOL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONTABLE ORD SOL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM INDICE HORAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM MARGENES</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>DATAMART</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT VENTAS</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT VENTAS</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT PREVEN</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT PREVEN</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+        <Actions>
+          <Action>
+            <ID>Acción de informe</ID>
+            <ReportServer>infobisql01</ReportServer>
+            <Path>Reports/Pages/Report.aspx?ItemPath=%2fDM_INFORMAT_RS%2fReporte_Detalle_de_Ventas</Path>
+          </Action>
+          <Action>
+            <ID>Acción de informe 1</ID>
+            <ReportServer>infobisql01</ReportServer>
+            <Path>Reports/Pages/Report.aspx?ItemPath=%2fDM_INFORMAT_RS%2fReporte_Detalle_de_Ventas</Path>
+          </Action>
+        </Actions>
+      </Cube>
+      <Cube>
+        <ID>DATAMART 1</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT COMPROBANTES</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT COMPROBANTES</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT PRESUPUESTO FINANZAS</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT PRESUPUESTO FINANZAS</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT PRESUPUESTO FINANZAS TRIBUTARIO</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT PRESUPUESTO FINANZAS TRIBUTARIO</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>DATAMART 2</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT LIQREM</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT LIQREM</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT HORTRA</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT HORTRA</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT ROTPER</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT ROTPER</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>FACT PREPER</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT PREPER</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>DATAMART 3</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT SALBOD</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT SALBOD</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>DATAMART 4</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT SALGEN</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT SALGEN</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>DATAMART 5</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT MOVIMIENTOS POR BODEGA</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT MOVIMIENTOS POR BODEGA</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>DATAMART 6</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT ORDENES SOLICITUDES</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT ORDENES SOLICITUDES</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

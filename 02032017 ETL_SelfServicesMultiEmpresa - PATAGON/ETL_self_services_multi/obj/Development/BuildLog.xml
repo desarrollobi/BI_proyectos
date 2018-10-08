@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>ETL_self_services_multi</Name>
+    <LastWriteTime>2018-03-05T14:48:59.5083684Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
+    <Salt>zfxvJWkS</Salt>
+    <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAc6Q2IUGPpEi0+UW8q3MWogAAAAACAAAAAAAQZgAAAAEAACAAAAB7mc4k2lpE7xGePAaW3cguHCIOn1JDcDW+wGQg1kd2cwAAAAAOgAAAAAIAACAAAABs8kJy41Gm6giNcOxBk9qbFezVKxbpWnFwJSXTKj3lyjAAAAB/mzHagVmSv/x77Q5HCb5FF15JPo4I6tJYaX5MqHoo/FvzWliH12z79zXwwM9pejFAAAAA9jac51cO/Jjw0AokJGC+jogvhttdTTIyOUMF5nQseDPzxOYLpx+NWdxyVC/uP1xcOFN1OG+Us3SS3r1YVEFrpQ==</LastKnownProtectedHashedPassword>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>ETL_self_services_multi.dtsx</Name>
+      <LastWriteTime>2018-03-05T13:02:58.99969Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithPassword</LastKnownProtectionLevel>
+      <Salt>JhzQgr7/</Salt>
+      <LastKnownProtectedHashedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAc6Q2IUGPpEi0+UW8q3MWogAAAAACAAAAAAAQZgAAAAEAACAAAAA9wKJ/b1IdEbynWUZk7F8uxlnmHQ0vMYTfA+FJFg0YKgAAAAAOgAAAAAIAACAAAADnPClZPwRWWbhKjiZ3IYA9BTNIp77kA02K+C5Ucg7GXTAAAADgqFleOjgdqvbVvX2b7M63xzGtstiwUa040rrcuF9EXoHSGMNzEliREirgfd7Q90lAAAAARna3piXQlfmca7r7qs3ilhiOOTjx8JiRDlGt/zMoMPvTlFJJgs92o6jWg6AOyLPSY5fkWvqbTPyOfp2bkguIMg==</LastKnownProtectedHashedPassword>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>

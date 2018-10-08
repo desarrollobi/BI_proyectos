@@ -1,0 +1,216 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b3f038cd-e5cd-4592-ab9e-4f9996c9d399" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIN CENTRO COSTOS</ID>
+  <Name>CENTRO COSTOS</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4617" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIN_CENTRO_COSTOS" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIN_CENTRO_COSTOS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4617</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a12dba58-1676-4617-ab65-2b996e3af903">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7b988a81-c617-48b4-9dc0-6a3d0d63c186">
+      <ID>DIN CENTRO COSTOS</ID>
+      <Name>DIN CENTRO COSTOS</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>228</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3c21b67d-d7f2-4755-a38f-bc97ff9bad41">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="871821ca-2954-4255-93eb-fbe5d3b508d1">
+            <TableID>DIN_CENTRO_COSTOS</TableID>
+            <ColumnID>EmpCen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="08e7b0d5-8080-406f-a5e9-1666581dd0d4">
+          <AttributeID>Cen Cod</AttributeID>
+          <Name>Cen Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eb0de1fb-08b0-42ba-9738-3f4d90294588">
+          <AttributeID>Cen Nom</AttributeID>
+          <Name>Cen Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="345c9a8c-5180-488c-a228-81df0aaa5f09">
+          <AttributeID>Grc Cod</AttributeID>
+          <Name>Grc Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="30ff0550-6e16-42af-9242-ee031ee01412">
+          <AttributeID>Grc Nom</AttributeID>
+          <Name>Grc Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b4c9574-028d-439b-a248-7789ea194aa4">
+      <ID>Cen Cod</ID>
+      <Name>Cen Cod</Name>
+      <EstimatedCount>133</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="25c7d7a8-1613-4279-aedd-c08635df1e4f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="336085d5-568a-4fa5-8179-4bfa913b329b">
+            <TableID>DIN_CENTRO_COSTOS</TableID>
+            <ColumnID>CenCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9929d07f-121f-40c4-9a7c-5fb21869c332">
+      <ID>Cen Nom</ID>
+      <Name>Cen Nom</Name>
+      <EstimatedCount>151</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f0fecd1-e4bb-470f-a397-6ac478a10870">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa34482b-3479-43ff-b175-dc22acf8de31">
+            <TableID>DIN_CENTRO_COSTOS</TableID>
+            <ColumnID>CenNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="91740dd5-ce13-44a1-9f0d-2d8371783214">
+      <ID>Grc Cod</ID>
+      <Name>Grc Cod</Name>
+      <EstimatedCount>14</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="984abfd9-72da-4077-b812-cfd3d70417df">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b83f71e-2e60-431d-a71f-0e5d61a86193">
+            <TableID>DIN_CENTRO_COSTOS</TableID>
+            <ColumnID>GrcCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="5679ac75-2a2f-468a-96bc-78ba78c3bc3e">
+      <ID>Grc Nom</ID>
+      <Name>Grc Nom</Name>
+      <EstimatedCount>24</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14678c46-9243-4e74-8be0-d6a674484289">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ea6bec0-9a43-47e2-9cdc-a77c1f05637d">
+            <TableID>DIN_CENTRO_COSTOS</TableID>
+            <ColumnID>GrcNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL CENTRO COSTOS</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a7d993e5-24d5-446d-a62e-24c17010d236">
+      <ID>Hierarchy</ID>
+      <Name>CENTRO COSTOS</Name>
+      <DisplayFolder>CENTRO COSTOS</DisplayFolder>
+      <AllMemberName>TOTAL CENTRO COSTOS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="d9160b53-eb63-4ba7-89ab-00b8f07e36cf">
+          <ID>Grc Nom</ID>
+          <Name>Grupo Centro Costos</Name>
+          <SourceAttributeID>Grc Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="21d7375e-ef2c-4305-b239-33d258bab75f">
+          <ID>Cen Nom</ID>
+          <Name>Centro Costos</Name>
+          <SourceAttributeID>Cen Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1e8cedf8-f219-4ab9-96f1-65920b619ab9">
+          <ID>DIN CENTRO COSTOS</ID>
+          <Name>DIN CENTRO COSTOS</Name>
+          <SourceAttributeID>DIN CENTRO COSTOS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

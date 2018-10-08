@@ -1,0 +1,371 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4546745a-5a00-45a1-bdcb-9ff6c40b4a4f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM CONCEPTOS RRHH</ID>
+  <Name>LIQUIDACIONES</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4538" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_CONCEPTOS_RRHH" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CONCEPTOS_RRHH" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4538</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f4f7edf9-4b57-479b-b783-e2d6c3ed64c9">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3c5fe780-34a3-46ee-8889-78bdfbaed188">
+      <ID>DIM CONCEPTOS RRHH</ID>
+      <Name>DIM CONCEPTOS RRHH</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>328</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6972bcad-72a7-40fe-958d-3d5f1a887d5b">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5016873f-7915-4ed7-b971-142f74bd62e1">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>EmMoCp</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2178df33-a644-4820-adec-757110573a1a">
+          <AttributeID>Cpt Cod</AttributeID>
+          <Name>Cpt Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3c368ccd-1514-4132-aa45-d9acb0a388ca">
+          <AttributeID>Cpt Tip</AttributeID>
+          <Name>Cpt Tip</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cde833d5-bce8-48d3-9b6b-50166c468ae5">
+          <AttributeID>Cpt Gru</AttributeID>
+          <Name>Cpt Gru</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bb21e63f-12d5-4a73-9cef-116280618373">
+          <AttributeID>Cpt Nom</AttributeID>
+          <Name>Cpt Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c737292b-f344-4510-aaa9-3b2b0e68f1bd">
+          <AttributeID>Emp Pla</AttributeID>
+          <Name>Emp Pla</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="290a221f-97c2-4fe6-b35d-cc7c9faa275b">
+          <AttributeID>Emp Ite</AttributeID>
+          <Name>Emp Ite</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="247c25e9-7851-4fb9-b98f-be0f896cde4d">
+          <AttributeID>Cla Ine</AttributeID>
+          <Name>Cla Ine</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b5ec411f-696e-4842-b94f-d106fd0f83be">
+          <AttributeID>Cpt Imp</AttributeID>
+          <Name>Cpt Imp</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="94df4548-7d9a-4d8d-ae3b-d625921df9f6">
+          <AttributeID>Cpt Tri</AttributeID>
+          <Name>Cpt Tri</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9effdc4a-a342-4657-a010-be697fd10d3d">
+          <AttributeID>Cpt Cos</AttributeID>
+          <Name>Cpt Cos</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="ae62a061-50e9-47c4-a56a-b90275213c90">
+      <ID>Cpt Cod</ID>
+      <Name>Cpt Cod</Name>
+      <EstimatedCount>87</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24bdad29-5494-460e-9530-ad0730c600f6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e1f533ed-b60a-4b67-89eb-e025cf419081">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>CptCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4583b730-fac4-435f-9998-e8417282219b">
+      <ID>Cpt Tip</ID>
+      <Name>Cpt Tip</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="68c895d7-cb47-448f-a81b-1a95baaf4f3c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ae9784d-1e17-463c-b10a-6703c21d20ff">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>CptTip</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="5191263a-8392-4cd1-afe7-c725f6e19bd0">
+      <ID>Cpt Gru</ID>
+      <Name>Cpt Gru</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62c31dd9-0a4c-4d3a-9dd5-f9d3bfd6e0b8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d03b541f-84c6-4104-ad0d-8d9088c5c790">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>CptGru</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ec4a4c8-18da-4f53-b3d7-414688159f8b">
+      <ID>Cpt Nom</ID>
+      <Name>Cpt Nom</Name>
+      <EstimatedCount>119</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="08ea5c1f-20dc-44d2-951b-7d8a95aec8a8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e82c5066-3194-4ec6-93f1-c3f9d1ae0d2f">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>CptNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c67803e-f543-4bcf-9089-aa0a5d8bace5">
+      <ID>Emp Pla</ID>
+      <Name>Emp Pla</Name>
+      <EstimatedCount>45</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="53d06971-ff48-402c-8172-dc48c8af1e75">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="250d602f-eed7-4ae2-95a4-3e5f8e58ffa8">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>EmpPla</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d6400ed3-ab03-4bcd-951f-061f18382e74">
+      <ID>Emp Ite</ID>
+      <Name>Emp Ite</Name>
+      <EstimatedCount>14</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c083e350-8b9a-4f5d-9052-108833de8cd5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4780da97-82a7-44d5-8be2-46fe58c3a4de">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>EmpIte</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="dac59b35-c07d-4f93-a0fb-4c6b7675a53f">
+      <ID>Cla Ine</ID>
+      <Name>Cla Ine</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="caf3b73b-d115-4953-9864-078554ee706f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce697c4c-a12c-4c25-849c-1b4eb91cfc43">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>ClaIne</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="8a160fa6-f4f4-4001-be2e-c58a38135f73">
+      <ID>Cpt Imp</ID>
+      <Name>Cpt Imp</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89bd7084-dd99-4802-899c-a932948c76f7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82639b66-e991-4cd8-8100-29a31d67f28a">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>CptImp</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="dd2d3bae-4899-432d-9fd5-5ced2aa80664">
+      <ID>Cpt Tri</ID>
+      <Name>Cpt Tri</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2e7f2c1-2d04-4a57-99a9-a749cb4bd117">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12810261-5dd6-494a-94e7-b185f53effa6">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>CptTri</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="39316d06-0ebc-4c2b-b073-cf7016b25f7e">
+      <ID>Cpt Cos</ID>
+      <Name>Cpt Cos</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30b43e69-b3be-4c5e-baf0-48211f2ae9cc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6c5edc0-0945-458e-b2e8-1766607a54ab">
+            <TableID>DIM_CONCEPTOS_RRHH</TableID>
+            <ColumnID>CptCos</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL LIQUIDACIONES</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="829e5716-091d-4b99-8bac-7a1ce9a56222">
+      <ID>Hierarchy</ID>
+      <Name>POR GRUPO</Name>
+      <DisplayFolder>POR GRUPO</DisplayFolder>
+      <AllMemberName>TOTAL LIQUIDACIONES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="788a3233-ce48-4585-9f7e-4f021583e345">
+          <ID>Cpt Gru</ID>
+          <Name>Grupo Concepto RR HH</Name>
+          <SourceAttributeID>Cpt Gru</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ef726c41-ea83-475b-a5ad-75d27b2c605a">
+          <ID>Cpt Tip</ID>
+          <Name>Tipo Concepto RRHH</Name>
+          <SourceAttributeID>Cpt Tip</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ab8be7f4-2616-4016-8531-f76e7e7de5e7">
+          <ID>Cpt Nom</ID>
+          <Name>Concepto RRHH</Name>
+          <SourceAttributeID>Cpt Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c0585291-2543-404a-b185-953566a37b76">
+          <ID>DIM CONCEPTOS RRHH</ID>
+          <Name>DIM CONCEPTOS RRHH</Name>
+          <SourceAttributeID>DIM CONCEPTOS RRHH</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="3c0efcd0-ccce-4391-ae66-91b7c6c15568">
+      <ID>Hierarchy 1</ID>
+      <Name>POR CLASIFICACION INE</Name>
+      <DisplayFolder>POR CLASIFICACION INE</DisplayFolder>
+      <AllMemberName>TOTAL LIQUIDACIONES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="211f713f-e829-49d3-8ebd-a608d24abc5d">
+          <ID>Cla Ine</ID>
+          <Name>Cla Ine</Name>
+          <SourceAttributeID>Cla Ine</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b21a12e9-34c2-4634-a6f4-2c5170d9ca53">
+          <ID>DIM CONCEPTOS RRHH</ID>
+          <Name>DIM CONCEPTOS RRHH</Name>
+          <SourceAttributeID>DIM CONCEPTOS RRHH</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="INFODESARROLLO\parce" GeneratedFromPackageName="ETL_self_services_multi" GeneratedFromPackageID="{795DCCE8-F06D-4CEF-BE8F-29A5DAADF6D8}" GeneratedDate="07-01-2016 16:28:58"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Configuracion ETL].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=10.0.1.4;User ID=AdminSql;Password=servidor2012;Initial Catalog=LASER_DM_CONFIG;Provider=SQLOLEDB.1;Persist Security Info=True;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Destino DM].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=10.0.3.5;User ID=BIsqlUS;Password=30AD25DA10ad;Initial Catalog=LASER_DM;Provider=SQLOLEDB.1;Persist Security Info=True;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[indices_dm].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=10.0.3.5;User ID=BIsqlUS;Password=30AD25DA10ad;Initial Catalog=LASER_DM;Provider=SQLOLEDB.1;Persist Security Info=True;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Origen ERP].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=10.0.1.4;User ID=informat;Password=centauro;Initial Catalog=LASER;Provider=SQLOLEDB.1;Persist Security Info=True;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::var_prodatamart].Properties[Value]" ValueType="String">
+		<ConfiguredValue>LASER_DM</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::var_profechafin].Properties[Value]" ValueType="DateTime">
+		<ConfiguredValue>12/31/2018</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::var_profechainicio].Properties[Value]" ValueType="DateTime">
+		<ConfiguredValue>1/1/2014</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

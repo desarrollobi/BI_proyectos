@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ETL_self_services_multi">
+</Property><Property Name="Archivo de la solución" Value="D:\ETL_SelfServicesMultiEmpresa\ETL_self_services_multi.sln">
+</Property><Property Name="Archivo de opciones de usuario" Value="D:\ETL_SelfServicesMultiEmpresa\ETL_self_services_multi.suo">
+</Property><Property Name="Date" Value="domingo, 17 de enero de 2016">
+</Property><Property Name="Time" Value="16:36">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ETL_self_services_multi.sln" Description="La copia D:\ETL_SelfServicesMultiEmpresa\Backup\ETL_self_services_multi.sln del archivo se ha realizado correctamente">
+</Event><Event ErrorLevel="0" Project="" Source="ETL_self_services_multi.suo" Description="La copia D:\ETL_SelfServicesMultiEmpresa\Backup\ETL_self_services_multi.suo del archivo se ha realizado correctamente">
+</Event><Event ErrorLevel="0" Project="ETL_self_services_multi" Source="ETL_self_services_multi.database" Description="Se realizó correctamente la copia de seguridad del archivo D:\ETL_SelfServicesMultiEmpresa\Backup\ETL_self_services_multi\ETL_self_services_multi.database">
+</Event><Event ErrorLevel="0" Project="ETL_self_services_multi" Source="ConfiguracionSelfServicesMultiEmpresa.dtsConfig" Description="Se realizó correctamente la copia de seguridad del archivo D:\ETL_SelfServicesMultiEmpresa\Backup\ETL_self_services_multi\ConfiguracionSelfServicesMultiEmpresa.dtsConfig">
+</Event><Event ErrorLevel="0" Project="ETL_self_services_multi" Source="ETL_self_services_multi.dtsx" Description="Se realizó correctamente la copia de seguridad del archivo D:\ETL_SelfServicesMultiEmpresa\Backup\ETL_self_services_multi\ETL_self_services_multi.dtsx">
+</Event><Event ErrorLevel="0" Project="ETL_self_services_multi" Source="ETL_self_services_multi.dtproj" Description="Se realizó correctamente la copia de seguridad del archivo D:\ETL_SelfServicesMultiEmpresa\Backup\ETL_self_services_multi\ETL_self_services_multi.dtproj">
+</Event><Event ErrorLevel="3" Project="ETL_self_services_multi" Source="ETL_self_services_multi.dtproj" Description="Convertido">
+</Event><Event ErrorLevel="0" Project="ETL_self_services_multi" Source="ETL_self_services_multi.dtproj" Description="Proyecto correctamente convertido.">
+</Event><Event ErrorLevel="0" Project="" Source="ETL_self_services_multi.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="ETL_self_services_multi.sln" Description="Converted">
+</Event></UpgradeLog>

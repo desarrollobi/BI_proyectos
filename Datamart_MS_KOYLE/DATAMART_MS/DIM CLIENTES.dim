@@ -1,0 +1,570 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="02ffae43-fa61-4146-9e20-9b70b03b6ed8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM CLIENTES</ID>
+  <Name>CLIENTES</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-3691" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_CLIENTES" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="6852" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000c41a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CLIENTES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3691</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f0b4f91a-b71d-4c3b-ae4e-5ac618f547d0">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="f23468c9-bcc2-4b01-872a-3bda171a33d8">
+      <ID>DIM CLIENTES</ID>
+      <Name>DIM CLIENTES</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>9238</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95500bbf-4023-46c7-8fa6-9a631ed78978">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="128b4cea-4467-4fc9-91c6-ff6b187c8cc6">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>EmpCli</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b7d492cf-def8-4e03-b28b-e29643a36ffc">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b87bb338-feb7-414c-88ee-dd22fb5f88eb">
+          <AttributeID>Cli ID</AttributeID>
+          <Name>Cli ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4b6f9952-da5f-4cb4-8f8e-43a1b6b42cde">
+          <AttributeID>Cli Rut</AttributeID>
+          <Name>Cli Rut</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4a4edad0-d080-49d0-b57c-42357277eaf2">
+          <AttributeID>Cli Nom</AttributeID>
+          <Name>Cli Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4e64071e-ac55-4185-82b3-82ff79eebb11">
+          <AttributeID>Sec Cod</AttributeID>
+          <Name>Sec Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ed228b6-0ef8-41a9-8669-8cfee5b7de5a">
+          <AttributeID>Sec Nom</AttributeID>
+          <Name>Sec Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1382c5c0-a2dc-43d7-87c9-67947bd6bf9f">
+          <AttributeID>Rub Cod</AttributeID>
+          <Name>Rub Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8b66e81-4558-4a66-a3ca-a8d1f5df3561">
+          <AttributeID>Rub Nom</AttributeID>
+          <Name>Rub Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d169b8c1-2053-4910-9d17-28c1735c0ed0">
+          <AttributeID>Atri C1</AttributeID>
+          <Name>Atri C1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b118bf3d-eb77-4052-84c6-1be54c28b80e">
+          <AttributeID>Atri C2</AttributeID>
+          <Name>Atri C2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="33e298cf-9730-4182-bbab-a9cc42aa2637">
+          <AttributeID>Atri C3</AttributeID>
+          <Name>Atri C3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d367807e-9f59-4f4a-8a37-8ff7e9a4d016">
+          <AttributeID>Atri C4</AttributeID>
+          <Name>Atri C4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e6e33d76-6c17-45db-8d3f-8f6ccfd07ac7">
+          <AttributeID>Atri C5</AttributeID>
+          <Name>Atri C5</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d60ded4f-a56a-4d40-aaad-17bdbefc7dcd">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ab84e4bf-6359-4a16-a36c-eface2aae728">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0fa500da-a546-4dd2-b58a-92fa248cc100">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a2ebdf17-c521-4226-9b05-7e7f2800e8b2">
+      <ID>Cli ID</ID>
+      <Name>Cli ID</Name>
+      <EstimatedCount>6753</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c50ca747-c01b-44db-9b5b-43bd7ccaccc7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3148d65e-946b-4dcc-9a01-664cc7baea05">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>CliID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="7ed99ca8-c259-4446-b838-960d973e71d1">
+      <ID>Cli Rut</ID>
+      <Name>Cli Rut</Name>
+      <EstimatedCount>6324</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75d168e9-adf1-45e1-a00d-423d2b28d27e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd700552-92d8-42fb-901c-da7ac2b3a091">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>CliRut</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="053611f5-035a-4ee3-af1f-f45e80843938">
+      <ID>Cli Nom</ID>
+      <Name>Cli Nom</Name>
+      <EstimatedCount>6598</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b56d4d7d-18cb-407b-a09c-87f7e860bc7d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="01c1cb68-8b20-4ea6-acb9-b9318486a559">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>CliNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4be26f7f-9e3b-427b-9b43-b38581f0d0ed">
+      <ID>Sec Cod</ID>
+      <Name>Sec Cod</Name>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46b1dae7-fd29-4268-91f7-2403dafd253e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa32e1fa-9f07-4c48-9c19-c73224f2dab8">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>SecCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b371c0c-1816-4378-b796-42325a15941c">
+      <ID>Sec Nom</ID>
+      <Name>Sec Nom</Name>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="327bf2a8-0d93-4c92-b255-836ba0385bec">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="407d5c60-14e2-41d1-84ac-ffa8fda36a56">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>SecNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="da7e0205-451c-469b-a555-a03cb23fabff">
+      <ID>Rub Cod</ID>
+      <Name>Rub Cod</Name>
+      <EstimatedCount>8</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="029d4078-9529-46a7-b818-5886d3405071">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c454a3f-8218-44c2-a74c-e4053f091174">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>RubCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d7d6452a-2f8a-4e64-bc9c-f246734aa2a5">
+      <ID>Rub Nom</ID>
+      <Name>Rub Nom</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6555aed-b1be-4aac-b8eb-656ab8541605">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07749be5-ddbe-4bd9-8cb2-68cc018888b0">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>RubNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="dbac27a2-22c7-4532-987e-757a5d042dc5">
+      <ID>Atri C1</ID>
+      <Name>Atri C1</Name>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="624a3e73-9a5f-4cc9-a406-d571b6c7c664">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eec09164-a557-4a68-ba36-8704cfca30bf">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>AtriC1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="2a6a97da-71dd-4ae5-a4b1-90fc5906564d">
+      <ID>Atri C2</ID>
+      <Name>Atri C2</Name>
+      <EstimatedCount>19</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f753da9f-69b4-4444-a9e0-fc4f6af628c0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b831435-a68c-445b-923d-a26993772c40">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>AtriC2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="54bc4360-5716-4227-a0a7-5f6c987eca88">
+      <ID>Atri C3</ID>
+      <Name>Atri C3</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="150d6591-7bee-4a7d-9130-6f3d0f92c264">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7fe1a063-3e20-43dd-9cd2-1c11860800fc">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>AtriC3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4009c889-9590-497f-a3c3-bce4243a2bc3">
+      <ID>Atri C4</ID>
+      <Name>Atri C4</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8dc12da7-1e6b-42b0-bdab-4ee664d52a4c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d36ffce8-4ff6-4e3e-ab78-34a0455cf3a3">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>AtriC4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ae127bd-bab1-47fa-88a2-33c0a93b4ed8">
+      <ID>Atri C5</ID>
+      <Name>Atri C5</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c5372de-3427-41e2-89af-5be198d98cb7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a183f4d-9afc-4de1-9e70-e7952f193b0c">
+            <TableID>DIM_CLIENTES</TableID>
+            <ColumnID>AtriC5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL CLIENTES</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="b1f30ac8-96d0-42de-b7c4-7fdc2aef849e">
+      <ID>Hierarchy</ID>
+      <Name>CLIENTES POR SECTOR</Name>
+      <DisplayFolder>CLIENTES POR SECTOR</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="911494fd-7785-41cb-904a-b2c16f405d78">
+          <ID>Sec Nom</ID>
+          <Name>Sector</Name>
+          <SourceAttributeID>Sec Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="72e10bad-de97-478c-b67d-eb48eb86c43f">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b249f207-2676-448c-8c33-8332f98f1e69">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="3ed5d935-9848-476e-b4e2-8f3f54c45703">
+      <ID>Hierarchy 1</ID>
+      <Name>CLIENTES POR RUBRO</Name>
+      <DisplayFolder>CLIENTES POR RUBRO</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="492a24b7-f430-4995-8c36-58ac48d8b4db">
+          <ID>Rub Nom</ID>
+          <Name>Rubro</Name>
+          <SourceAttributeID>Rub Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="81732515-c484-4f83-b17e-8780ecaef9d0">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cec17a67-c203-492f-b428-7ea11888d2ae">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="94a8d188-00b1-4c65-bc56-5cadfed13b51">
+      <ID>Hierarchy 2</ID>
+      <Name>CLIENTES POR ATRIB1</Name>
+      <DisplayFolder>CLIENTES POR ATRIB1</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="287c7dce-55d8-4807-aae7-c2467d9e18f9">
+          <ID>Atri C1</ID>
+          <Name>Atributo1  Cliente</Name>
+          <SourceAttributeID>Atri C1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="bbdc20a4-cfcf-4008-b87c-2b659f8eff96">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b8ea6e6a-ee52-4180-b6f7-b1ed8111858a">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="4e179a64-178b-4746-9c41-b34aae0f6f2b">
+      <ID>Hierarchy 3</ID>
+      <Name>CLIENTES POR ATRIB2</Name>
+      <DisplayFolder>CLIENTES POR ATRIB2</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="ed33601d-af39-451d-ad82-87cf872e02be">
+          <ID>Atri C2</ID>
+          <Name>Atributo2  Cliente</Name>
+          <SourceAttributeID>Atri C2</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2f31e8f8-1f17-4844-9191-ddb0a228a11e">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b483cca0-61a7-48b1-8b6b-2d5b550b5b77">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="f81e1718-e8f3-4019-847b-3d29e94ac445">
+      <ID>Hierarchy 4</ID>
+      <Name>CLIENTES POR ATRIB3</Name>
+      <DisplayFolder>CLIENTES POR ATRIB3</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="7894aea0-3e79-4e32-b1d5-003a4139ab95">
+          <ID>Atri C3</ID>
+          <Name>Atributo 3  Cliente</Name>
+          <SourceAttributeID>Atri C3</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0dd663d6-d35a-4d1e-90fd-a33726cd629d">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="64fcc70f-0ead-43d3-8a18-768b527a3b0b">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="27170dfa-d01d-4d93-9f1a-e019ab05ace0">
+      <ID>Hierarchy 5</ID>
+      <Name>CLIENTES POR ATRIB4</Name>
+      <DisplayFolder>CLIENTES POR ATRIB4</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="1d961969-af79-42c4-8236-57efbdf8f1e1">
+          <ID>Atri C4</ID>
+          <Name>Atributo 4 Cliente</Name>
+          <SourceAttributeID>Atri C4</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="219517d0-faf8-4ac5-96ac-0aa27aca7bfd">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="df664413-bf21-4dd5-ba20-fa357894dfdb">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="fc319150-de3f-4466-86fb-049cdd542976">
+      <ID>Hierarchy 6</ID>
+      <Name>CLIENTES POR ATRIB5</Name>
+      <DisplayFolder>CLIENTES POR ATRIB5</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="3d70d813-1d9c-4c2a-a874-dc0197bb0f91">
+          <ID>Atri C5</ID>
+          <Name>Atributo 5  Cliente</Name>
+          <SourceAttributeID>Atri C5</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="26b27b3d-f836-41e6-9436-d009ea9c65c9">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3eae3a61-0afa-4122-9d25-ced664fa5b76">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="67772a94-691a-4c8e-8ef3-5e02e4ab7d2c">
+      <ID>Hierarchy 7</ID>
+      <Name>CLIENTES POR RAZON SOCIAL</Name>
+      <DisplayFolder>CLIENTES POR RAZON SOCIAL</DisplayFolder>
+      <AllMemberName>TOTAL CLIENTES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="0751c473-1e97-442a-8ec1-f4aca2245106">
+          <ID>Cli Nom</ID>
+          <Name>Cliente</Name>
+          <SourceAttributeID>Cli Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fea7805b-2913-42e0-8074-a1a1113a0554">
+          <ID>DIM CLIENTES</ID>
+          <Name>DIM CLIENTES</Name>
+          <SourceAttributeID>DIM CLIENTES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

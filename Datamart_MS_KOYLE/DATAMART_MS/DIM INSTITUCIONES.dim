@@ -1,0 +1,259 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6444aff3-20c6-4e71-9783-d616b240b00a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM INSTITUCIONES</ID>
+  <Name>INSTITUCIONES</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-5041" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_INSTITUCIONES" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_INSTITUCIONES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5041</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="87b4a73d-527c-4ddf-900c-434d72fd4e67">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="fab438ee-1b1f-4bb5-9de5-88bfef726697">
+      <ID>DIM INSTITUCIONES</ID>
+      <Name>DIM INSTITUCIONES</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>439</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9458cd80-12fb-4bd6-be67-7e6acd1f83ee">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="afb5c9e2-dce3-4182-ae40-3fc2cd333c77">
+            <TableID>DIM_INSTITUCIONES</TableID>
+            <ColumnID>EmpTIn</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="62171292-7c36-4650-a2ea-6bc8a976985b">
+          <AttributeID>Tin Cod</AttributeID>
+          <Name>Tin Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="38851b09-3394-45fc-9042-3bb500d35209">
+          <AttributeID>Tin Nom</AttributeID>
+          <Name>Tin Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e814351-4186-4121-bd6f-d7e53fb6135c">
+          <AttributeID>Ins Cod</AttributeID>
+          <Name>Ins Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="01a7c728-082d-48c1-aad6-b75f4c82be45">
+          <AttributeID>Ins Nom</AttributeID>
+          <Name>Ins Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b3f5b0e9-31a0-4192-9bad-f2fbe5f9e828">
+          <AttributeID>Ins Rut</AttributeID>
+          <Name>Ins Rut</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f660def-06bb-4644-bd9d-a9c59f6a482d">
+          <AttributeID>Emp Pla</AttributeID>
+          <Name>Emp Pla</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="0558840d-daa7-4d71-aa28-1639041a4545">
+      <ID>Tin Cod</ID>
+      <Name>Tin Cod</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eafbd9ef-4c8a-48fe-a811-8b8a7efebbbd">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a03dbbd2-adee-43cc-b536-f86a91b654e6">
+            <TableID>DIM_INSTITUCIONES</TableID>
+            <ColumnID>TinCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="53d68211-5699-4a1b-849a-79ba22e01c84">
+      <ID>Tin Nom</ID>
+      <Name>Tin Nom</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f78380ea-1391-4879-b332-b57f158942c6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a57d374b-06ce-4793-a982-c60bb5b808cb">
+            <TableID>DIM_INSTITUCIONES</TableID>
+            <ColumnID>TinNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e7d2fc7-9fc8-46fd-855f-dd598d5a6364">
+      <ID>Ins Cod</ID>
+      <Name>Ins Cod</Name>
+      <EstimatedCount>67</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44002a3b-c867-49e6-a8d0-ea8086ee3d41">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e00d268e-3096-4ce1-bac8-97ea8ad7a179">
+            <TableID>DIM_INSTITUCIONES</TableID>
+            <ColumnID>InsCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d953350e-d8b4-4c8c-9aba-d511f530c375">
+      <ID>Ins Nom</ID>
+      <Name>Ins Nom</Name>
+      <EstimatedCount>99</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13e7b367-5635-4c4a-95ba-9fed71f6db4b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a01935b-f09b-484b-8994-55780ee0ead1">
+            <TableID>DIM_INSTITUCIONES</TableID>
+            <ColumnID>InsNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b7a04958-a3cc-42e3-ba93-8401e2c11cf5">
+      <ID>Ins Rut</ID>
+      <Name>Ins Rut</Name>
+      <EstimatedCount>28</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb1c93a0-0e9c-4de9-b3b1-c04e8da534e4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e0a5b2a-e555-4eb4-9ebe-c356aaf40ced">
+            <TableID>DIM_INSTITUCIONES</TableID>
+            <ColumnID>InsRut</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="f578b0aa-98a7-4dfc-a0a5-51fc3678a421">
+      <ID>Emp Pla</ID>
+      <Name>Emp Pla</Name>
+      <EstimatedCount>8</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52fe015c-8655-44b3-ae6f-524a36465bff">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d762eae-a5d8-42e3-b6ef-d8ed5a0014db">
+            <TableID>DIM_INSTITUCIONES</TableID>
+            <ColumnID>EmpPla</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="cfc1a25c-3838-479f-9c96-ef040ca8d0cc">
+      <ID>Tin Nom - Ins Nom</ID>
+      <Name>INSTITUCIONES</Name>
+      <DisplayFolder>POR INSTITUCIONES</DisplayFolder>
+      <AllMemberName>TOTAL INSTITUCIONES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="3c44db72-8149-49b8-8ce1-c6104c201391">
+          <ID>Tin Nom</ID>
+          <Name>Titulo Institución</Name>
+          <SourceAttributeID>Tin Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9d281e5d-2e1f-4b5f-ace0-9ff0c063be60">
+          <ID>Ins Nom</ID>
+          <Name>Institución</Name>
+          <SourceAttributeID>Ins Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e91f7abf-bca6-49cc-9714-7e190006be74">
+          <ID>DIM INSTITUCIONES</ID>
+          <Name>DIM INSTITUCIONES</Name>
+          <SourceAttributeID>DIM INSTITUCIONES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

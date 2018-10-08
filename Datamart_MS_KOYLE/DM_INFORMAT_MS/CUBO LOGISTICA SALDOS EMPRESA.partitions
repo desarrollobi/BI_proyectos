@@ -1,0 +1,25 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ae90a771-4f34-45f8-82b2-b042645b86b6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CUBO LOGISTICA SALDOS EMPRESA</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT SALGEN</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0a5d994d-d7fe-4427-af3f-f56159020719">
+          <ID>FACT SALGEN</ID>
+          <Name>FACT SALGEN</Name>
+          <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fc2d98c3-24ed-47fe-ae20-aa7d76f9e0f8">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_SALGEN</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -1,0 +1,341 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="db26510e-1699-4bae-9140-3ee04fb3e0c8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM CUENTAS CONTABLES</ID>
+  <Name>CUENTAS CONTABLES</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-3691" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_CUENTAS_CONTABLES" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CUENTAS_CONTABLES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3691</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b90202d1-6f3c-49fc-ba94-e187eae04bcc">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d952412f-8491-4927-84cf-086d017250a2">
+      <ID>DIM CUENTAS CONTABLES</ID>
+      <Name>DIM CUENTAS CONTABLES</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>1208</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42da71a7-f5c0-4bbf-9b6d-d6abffc7ce54">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d6c4bb9-8893-4ca4-82cd-49ef4a814e83">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>EmpPla</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="caabfbe3-6047-4ea5-9b35-c55381146bda">
+          <AttributeID>Pla Cod</AttributeID>
+          <Name>Pla Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fc930ea4-d8ca-4ede-92b2-e1ae07daf29f">
+          <AttributeID>Pla Nom</AttributeID>
+          <Name>Pla Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e3ce4c4-14c8-4428-8c7c-866a04cace4c">
+          <AttributeID>Tit Cod</AttributeID>
+          <Name>Tit Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2fab6611-1f29-461a-afac-e15a6611b3d6">
+          <AttributeID>Tit Nom</AttributeID>
+          <Name>Tit Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ca7a9abc-41d9-4a78-9e47-6538b44ea1a4">
+          <AttributeID>Sub Cod</AttributeID>
+          <Name>Sub Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b0bfe88-4f98-429c-8b12-bde02bfe4335">
+          <AttributeID>Sub Nom</AttributeID>
+          <Name>Sub Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2aa47f7d-1ca8-4027-a9f0-91cbdc695075">
+          <AttributeID>Gru Cod</AttributeID>
+          <Name>Gru Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f9d7e282-3197-4f01-bf3d-89b11b7b81da">
+          <AttributeID>Gru Nom</AttributeID>
+          <Name>Gru Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="79d3a846-e929-4a76-8b43-d84cc4c95faf">
+          <AttributeID>Tip Cue</AttributeID>
+          <Name>Tip Cue</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c25afc13-f477-4b0b-bd0a-82cbd33f1ed0">
+      <ID>Pla Cod</ID>
+      <Name>Pla Cod</Name>
+      <EstimatedCount>946</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e94b542-70ed-4bf3-8e09-8622f3e1f53b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="748c08e9-d2e4-456e-aac9-11d7035cce9b">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>PlaCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="f27e2da8-5dcd-40e9-9e01-1d360a1d57d3">
+      <ID>Pla Nom</ID>
+      <Name>Pla Nom</Name>
+      <EstimatedCount>934</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7fa4fe7-2279-4223-b3b6-cd81969b1ff2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f366ae3-7f3f-482e-a273-6a9709264369">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>PlaNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="16612d8e-cda2-4a47-b535-29491905639a">
+      <ID>Tit Cod</ID>
+      <Name>Tit Cod</Name>
+      <EstimatedCount>124</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dcb6a4d0-acb4-40ff-83d9-c0a78bdbe70b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c370adc-2896-43aa-8f2f-1b45e1d333d3">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>TitCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="56c67485-9fe6-4a3f-a7ca-6eed0182af86">
+      <ID>Tit Nom</ID>
+      <Name>Tit Nom</Name>
+      <EstimatedCount>184</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="87f15aab-8e04-4d4e-a51f-9f81161e344e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c30efb4-8a1d-41cd-ac8b-0c349286004c">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>TitNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c767cf9a-a1d6-4b89-baeb-ad118abe7468">
+      <ID>Sub Cod</ID>
+      <Name>Sub Cod</Name>
+      <EstimatedCount>23</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="99d7f72a-db37-46a0-a397-d9ebeed121dc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5883510e-2ad8-4f1c-a4cd-38abe70f936e">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>SubCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="e7602499-aa70-44ea-8691-d26c925c117c">
+      <ID>Sub Nom</ID>
+      <Name>Sub Nom</Name>
+      <EstimatedCount>46</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d9992ffc-1aca-440d-b016-df163d224e22">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b10e37b-de2b-4883-907a-da982a7d3b58">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>SubNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce502f78-3d02-488b-8410-14cef132acb5">
+      <ID>Gru Cod</ID>
+      <Name>Gru Cod</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40a5d539-af69-43f8-a702-1379adbf9c71">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d13fd13c-d829-45f5-8548-485c80929b88">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>GruCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="51328197-11d2-45e8-ade1-494cb10f0e93">
+      <ID>Gru Nom</ID>
+      <Name>Gru Nom</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64d7814d-ff71-445c-8745-60aac694edbe">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6db5e654-defd-43fc-a9f8-0095b2c590ce">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>GruNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="367bdf56-a90e-4cb9-99f7-3655feeab47e">
+      <ID>Tip Cue</ID>
+      <Name>Tip Cue</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c434c22c-0077-490f-bc7d-5998cdf756ae">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ef25179-6470-495e-afc7-ee3d2799681f">
+            <TableID>DIM_CUENTAS_CONTABLES</TableID>
+            <ColumnID>TipCue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL CUENTAS CONTABLES</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a16152e7-712b-4cba-8211-9da6bad2db09">
+      <ID>Sub Cod - Tit Cod</ID>
+      <Name>CUENTAS CONTABLES</Name>
+      <DisplayFolder>CUENTAS CONTABLES</DisplayFolder>
+      <AllMemberName>TOTAL CUENTAS CONTABLES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="3c0f01a3-15fe-4bb6-be92-942c1a4e8efc">
+          <ID>Tip Cue</ID>
+          <Name>Tipo Cuenta Contable</Name>
+          <SourceAttributeID>Tip Cue</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="da4252ca-8de5-436e-b068-93a212690ce9">
+          <ID>Gru Nom</ID>
+          <Name>Grupo Cuenta Contable</Name>
+          <SourceAttributeID>Gru Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4b835f6b-320f-4afc-9a67-106626511489">
+          <ID>Sub Nom</ID>
+          <Name>Sub Grupo Cuenta Contable</Name>
+          <SourceAttributeID>Sub Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="73845b85-cbef-4d0e-8503-72c3fd596384">
+          <ID>Tit Nom</ID>
+          <Name>Titulo Cuenta Contable</Name>
+          <SourceAttributeID>Tit Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7e4928ff-8e35-4245-a64c-4b838e20ead7">
+          <ID>Pla Nom</ID>
+          <Name>Cuenta Contable</Name>
+          <SourceAttributeID>Pla Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ff5885f8-4dfa-4281-9cd6-05fac79da4db">
+          <ID>DIM CUENTAS CONTABLES</ID>
+          <Name>DIM CUENTAS CONTABLES</Name>
+          <SourceAttributeID>DIM CUENTAS CONTABLES</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

@@ -1,0 +1,414 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="867e42bb-d039-4e27-afc6-80dab4c7faa6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM PRODUCTOS DE VENTAS</ID>
+  <Name>PRODUCTOS DE VENTAS</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4617" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="3942" y="11113" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_PRODUCTOS_DE_VENTAS" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_PRODUCTOS_DE_VENTAS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4617</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cea768dd-e3f2-4cf9-bc27-06fb5ead061b">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3edd5ba2-cd44-4849-a509-6962aac5a805">
+      <ID>DIM PRODUCTOS DE VENTAS</ID>
+      <Name>DIM PRODUCTOS DE VENTAS</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>8441</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54fd2046-0993-483a-95d4-e85d0fe1cca9">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ff466b4-b90c-49b4-b840-139638a78aec">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>EmpBar</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2865ebe1-c4b4-4d47-a9f9-89ca5ddc3a06">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="475106f8-1f46-4f9d-a2ce-d49d77cf781a">
+          <AttributeID>Bar Cod</AttributeID>
+          <Name>Bar Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b3f3bf22-49c4-4270-9c9a-b402d6b52d34">
+          <AttributeID>Bar Des</AttributeID>
+          <Name>Bar Des</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6affc477-3ed7-48e4-92c7-8de78810b876">
+          <AttributeID>Bar At1</AttributeID>
+          <Name>Bar At1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e137be7-4cc2-4fd3-a337-cfbc6a149b46">
+          <AttributeID>Bar At2</AttributeID>
+          <Name>Bar At2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cbf0a775-b43b-4f8c-9ca4-5ab916dc51d5">
+          <AttributeID>Bar At3</AttributeID>
+          <Name>Bar At3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e07c223-619d-4757-bc9d-d7c2d2004c05">
+          <AttributeID>Bar At4</AttributeID>
+          <Name>Bar At4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2ee459c8-f1d4-412c-9bf7-062a59c72a7e">
+          <AttributeID>Bar At5</AttributeID>
+          <Name>Bar At5</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8510f74-f839-4e12-919c-5658d4f41ca1">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dfe9b0ed-8289-408e-b00b-2337adba231e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c6162d5-09f8-45db-86de-be733fc7cad7">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="0aef77b9-b45d-4331-800c-bd0306b5caf7">
+      <ID>Bar Cod</ID>
+      <Name>Bar Cod</Name>
+      <EstimatedCount>6234</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6421201-28c3-404a-9130-365a5a9b2bc7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb1e8386-5359-4c87-8fef-c193d0ed9991">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>BarCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="6660e735-06f1-41aa-9e4c-7b17710cee23">
+      <ID>Bar Des</ID>
+      <Name>Bar Des</Name>
+      <EstimatedCount>5444</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc57d80d-e9e1-4e11-bd4d-0e5b1123c7cc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e1560ae-5967-4d8e-8c8e-e8794070f520">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>BarDes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f796d5b-2274-4f79-a2ac-f92b61480942">
+      <ID>Bar At1</ID>
+      <Name>Bar At1</Name>
+      <EstimatedCount>37</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94af069f-3e1a-405c-abd2-6bc4d4dbfb6f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6338ac4-b18b-45ed-aba7-13a400713aa4">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>BarAt1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="64b5fb3d-2de7-4a1b-895b-19c458495ee5">
+      <ID>Bar At2</ID>
+      <Name>Bar At2</Name>
+      <EstimatedCount>102</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="00c405d9-7b30-46c0-9fe0-147796681230">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cca058f2-e295-4994-9dea-c1ff02c629d0">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>BarAt2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c254ee24-cc78-4ce2-8bdc-49ce047eae80">
+      <ID>Bar At3</ID>
+      <Name>Bar At3</Name>
+      <EstimatedCount>59</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b89a2365-aacc-4472-94ab-d7dda4e77513">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="563630f8-eb1a-4579-8264-2a7ee4d3fb43">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>BarAt3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="39d08377-b254-4a3b-95ae-b88797314b8f">
+      <ID>Bar At4</ID>
+      <Name>Bar At4</Name>
+      <EstimatedCount>75</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a00e2d13-3375-4331-95be-2ce62731c8c1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8e826de-252e-4113-8c5e-d22199235f67">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>BarAt4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="990b25d4-72df-44ed-9705-8e721ac8c60d">
+      <ID>Bar At5</ID>
+      <Name>Bar At5</Name>
+      <EstimatedCount>24</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d659069-6bbf-47ae-9025-f057f1c5d9e1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc5d5d8b-fb72-44cd-95ca-9886db7ce823">
+            <TableID>DIM_PRODUCTOS_DE_VENTAS</TableID>
+            <ColumnID>BarAt5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL PRODUCTOS DE VENTAS</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="ec6a8431-134b-43ec-8e35-a338d16df699">
+      <ID>Hierarchy</ID>
+      <Name>PRODUCTOS POR ATRIBUTO1</Name>
+      <DisplayFolder>PRODUCTOS POR ATRIBUTO1</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE VENTAS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="71281e4a-d061-481a-b1ff-c31da4e34c35">
+          <ID>Bar At1</ID>
+          <Name>Atributo 1 Producto Venta</Name>
+          <SourceAttributeID>Bar At1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="626a5199-f86b-4af6-b143-3a7bd39f95db">
+          <ID>Bar Des</ID>
+          <Name>Producto Venta</Name>
+          <SourceAttributeID>Bar Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="494d28e0-82a5-4d44-9c82-60947c05443a">
+          <ID>DIM PRODUCTOS DE VENTAS</ID>
+          <Name>DIM PRODUCTOS DE VENTAS</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE VENTAS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="3312ba24-ba98-4833-aed5-b7f340b273d0">
+      <ID>Hierarchy 1</ID>
+      <Name>PRODUCTOS POR ATRIBUTO2</Name>
+      <DisplayFolder>PRODUCTOS POR ATRIBUTO2</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE VENTAS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="98e999ba-c421-4081-ba97-4cb7fae2dd8d">
+          <ID>Bar At2</ID>
+          <Name>Atributo 2 Producto Venta</Name>
+          <SourceAttributeID>Bar At2</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c804450c-923b-4114-918a-fe3ad3835361">
+          <ID>Bar Des</ID>
+          <Name>Producto Venta</Name>
+          <SourceAttributeID>Bar Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6550929a-315b-44c6-adaf-0b2cc6c2a623">
+          <ID>DIM PRODUCTOS DE VENTAS</ID>
+          <Name>DIM PRODUCTOS DE VENTAS</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE VENTAS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="ecc65be1-cafd-4ade-8b8f-21cede22fadb">
+      <ID>Hierarchy 2</ID>
+      <Name>PRODUCTOS POR ATRIBUTO3</Name>
+      <DisplayFolder>PRODUCTOS POR ATRIBUTO3</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE VENTAS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="6fe3422a-071d-4d24-aab8-a42bfbff3594">
+          <ID>Bar At3</ID>
+          <Name>Atributo 3 Producto Venta</Name>
+          <SourceAttributeID>Bar At3</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d847838b-401c-496e-9850-03e1449cd91f">
+          <ID>Bar Des</ID>
+          <Name>Producto Venta</Name>
+          <SourceAttributeID>Bar Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e904d2b8-ff95-4495-88e1-1c44d8eecbce">
+          <ID>DIM PRODUCTOS DE VENTAS</ID>
+          <Name>DIM PRODUCTOS DE VENTAS</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE VENTAS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="1fb8a047-6eba-494a-9df7-6078ebe025fc">
+      <ID>Hierarchy 3</ID>
+      <Name>PRODUCTOS POR ATRIBUTO4</Name>
+      <DisplayFolder>PRODUCTOS POR ATRIBUTO4</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE VENTAS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="9354f646-424e-4068-9653-fd936b389fe9">
+          <ID>Bar At4</ID>
+          <Name>Atributo 4 Producto Venta</Name>
+          <SourceAttributeID>Bar At4</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f713712f-addc-4332-880a-db65ecddfd6d">
+          <ID>Bar Des</ID>
+          <Name>Producto Venta</Name>
+          <SourceAttributeID>Bar Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c5aa0039-5598-4961-97cd-3a6cebd8faeb">
+          <ID>DIM PRODUCTOS DE VENTAS</ID>
+          <Name>DIM PRODUCTOS DE VENTAS</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE VENTAS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="8a845524-448d-4ceb-8045-4d33a8e16f51">
+      <ID>Hierarchy 4</ID>
+      <Name>PRODUCTOS POR ATRIBUTO5</Name>
+      <DisplayFolder>PRODUCTOS POR ATRIBUTO5</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE VENTAS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="6cdb8d5f-a10c-4fcd-8ed8-1df631ad79a7">
+          <ID>Bar At5</ID>
+          <Name>Atributo 5 Producto Venta</Name>
+          <SourceAttributeID>Bar At5</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="edc687d7-12f7-404d-81b9-41abbf9312b3">
+          <ID>Bar Des</ID>
+          <Name>Producto Venta</Name>
+          <SourceAttributeID>Bar Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="77a0ad3b-4479-4f92-8a2d-329ddcc3de32">
+          <ID>DIM PRODUCTOS DE VENTAS</ID>
+          <Name>DIM PRODUCTOS DE VENTAS</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE VENTAS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="59f94620-b42c-4247-a6ec-493c0d65e33e">
+      <ID>Hierarchy 5</ID>
+      <Name>POR DESCRIPCION DE PRODUCTO</Name>
+      <DisplayFolder>POR DESCRIPCION DE PRODUCTO</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE VENTAS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="3ffabb49-b868-4674-b493-14a67617db62">
+          <ID>Bar Des</ID>
+          <Name>Producto Venta</Name>
+          <SourceAttributeID>Bar Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="235fa85c-f6b6-4541-bd2c-42701c5a93d8">
+          <ID>DIM PRODUCTOS DE VENTAS</ID>
+          <Name>DIM PRODUCTOS DE VENTAS</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE VENTAS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

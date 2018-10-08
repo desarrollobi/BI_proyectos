@@ -1,0 +1,605 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5b163e35-a77f-49f7-b091-e2d8b1caeb49" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM PRODUCTOS DE INVENTARIO</ID>
+  <Name>PRODUCTOS DE INVENTARIO</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4538" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_PRODUCTOS_DE_INVENTARIO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_PRODUCTOS_DE_INVENTARIO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4538</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e6234d3a-4ab0-45b3-bc45-b49a665d4162">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9c54f430-be28-45eb-85eb-8d8851ad0c5e">
+      <ID>DIM PRODUCTOS DE INVENTARIO</ID>
+      <Name>DIM PRODUCTOS DE INVENTARIO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>9711</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5cccc7f5-455c-4250-a96d-1ce057eb170c">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29ed40a2-c277-4c27-940a-c1c17aa18fec">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>EmpPrd</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="dfcbf70b-c41a-4709-8355-1bec1b9062f8">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e9af61cf-6a38-4d72-a2c1-37a3a4443fce">
+          <AttributeID>Prd Cod</AttributeID>
+          <Name>Prd Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f1c2e5c-9652-43d1-9fe4-29538e7c1c19">
+          <AttributeID>Prd Des</AttributeID>
+          <Name>Prd Des</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="119879eb-17ad-46c1-aa77-531bccc94c67">
+          <AttributeID>Prd Uni</AttributeID>
+          <Name>Prd Uni</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="238aee73-3e51-4893-a12b-da38f6ae328a">
+          <AttributeID>Prd Cla</AttributeID>
+          <Name>Prd Cla</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f5224182-eb74-4731-a15a-1d2c360f273b">
+          <AttributeID>Prd Ori</AttributeID>
+          <Name>Prd Ori</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a08138f5-6de5-4097-8d0c-6cf8823e0ad2">
+          <AttributeID>Prd Com</AttributeID>
+          <Name>Prd Com</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b4c18328-52e9-40ed-ba17-fb1027e794dc">
+          <AttributeID>Emp Mon</AttributeID>
+          <Name>Emp Mon</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5d91e2eb-1190-41bf-ba00-8e53c35b5cd4">
+          <AttributeID>Fac Com</AttributeID>
+          <Name>Fac Com</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee70db49-cc91-495b-bd5b-992ba0883f1f">
+          <AttributeID>Prd At1</AttributeID>
+          <Name>Prd At1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6f21163c-5822-40e5-b261-a431b19ffcc2">
+          <AttributeID>Prd At2</AttributeID>
+          <Name>Prd At2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="20de594e-df40-4da1-afa6-bcaacf07ee24">
+          <AttributeID>Prd At3</AttributeID>
+          <Name>Prd At3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ec3c5650-e45d-471d-ad0c-ae6116e85247">
+          <AttributeID>Prd At4</AttributeID>
+          <Name>Prd At4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="475c91fb-6c2e-47dd-8fb2-5d1a13f7f6d7">
+          <AttributeID>Prd At5</AttributeID>
+          <Name>Prd At5</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b8911af-b112-4b11-94ac-9d6c109de892">
+          <AttributeID>Prd BI1</AttributeID>
+          <Name>Prd BI1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="94fa102f-232d-4cff-92a8-98e677d0d406">
+          <AttributeID>Prd BI2</AttributeID>
+          <Name>Prd BI2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="34abc58b-0cdb-47b4-a5f4-c8fe7099f6cf">
+          <AttributeID>Prd BI3</AttributeID>
+          <Name>Prd BI3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="32d56c45-1df3-4606-ab64-bf79a1b4b947">
+          <AttributeID>Prd BI4</AttributeID>
+          <Name>Prd BI4</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d49e37ea-dcb1-4f10-9189-2d2e64a87728">
+          <AttributeID>Prd BI5</AttributeID>
+          <Name>Prd BI5</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="67cf82b4-3869-48c9-b9c2-bbe7f70de232">
+          <AttributeID>Prd Pes</AttributeID>
+          <Name>Prd Pes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="160e8b0b-a504-4577-9981-62a3fdc5c4e6">
+          <AttributeID>Prd Vol</AttributeID>
+          <Name>Prd Vol</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9565f43b-ae42-4807-a25f-8149cf34c34c">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42a5919c-5614-453c-a7eb-30ad00bc84de">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3f1a0fa-92be-4a38-b2a4-8c8005b6fb9c">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="cb9d8703-acd4-45fb-9616-80952c6e6c2f">
+      <ID>Prd Cod</ID>
+      <Name>Prd Cod</Name>
+      <EstimatedCount>7089</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b2ea77b-2db5-4ba1-9c93-2b95fe4e768d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="917bed33-102e-4496-a359-698d9c02e638">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="592422e3-2513-4080-8c2c-6993f40fbed9">
+      <ID>Prd Des</ID>
+      <Name>Prd Des</Name>
+      <EstimatedCount>6275</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="651dd28b-2439-4d78-bb81-a06b17013279">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4f3246f-2fc4-4a40-b207-59a7747dfe27">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdDes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="5d335085-178f-408a-9ce7-181e63f64955">
+      <ID>Prd Uni</ID>
+      <Name>Prd Uni</Name>
+      <EstimatedCount>13</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="458eddd2-4813-4e04-9145-fb01725e41ef">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0ebd2ab-1108-4d72-a28b-9744c5e2fe5d">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdUni</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4ade6b19-0cf8-49fa-993a-36a866412a67">
+      <ID>Prd Cla</ID>
+      <Name>Prd Cla</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d859afb4-b580-4f33-b9c3-745d7de39d28">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c53173c4-9138-47e5-aa20-b6e710282df9">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdCla</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a9cd529f-5fa5-4745-a612-a05b41b643d7">
+      <ID>Prd Ori</ID>
+      <Name>Prd Ori</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da142416-355a-438d-9040-80039057cbcb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c89a0814-d66c-4001-a118-714737c15a3e">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdOri</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="5add82ee-710e-47d2-ab36-f99b2fe76a90">
+      <ID>Prd Com</ID>
+      <Name>Prd Com</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed27c231-6d68-44f8-8866-bda2543fc33b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dab61487-ccf2-464d-8fc8-88dd566541cc">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdCom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9214c533-c89f-46c7-8c05-953ba83d8eae">
+      <ID>Emp Mon</ID>
+      <Name>Emp Mon</Name>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c57d67de-f082-4584-b527-4240ef35e963">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76c99653-1a43-48de-927a-655b696e07ab">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>EmpMon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="def158a8-d380-4dd2-bad2-4ac23d5f2c1b">
+      <ID>Fac Com</ID>
+      <Name>Fac Com</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="951c1e69-c31e-4ba7-8a7a-b657eb984dd8">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f51c58b-5ad7-41f3-9f2d-12f6a053677d">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>FacCom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d4e045c6-39f5-46e7-9fa8-8be7890f7876">
+      <ID>Prd At1</ID>
+      <Name>Prd At1</Name>
+      <EstimatedCount>43</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="604e66f4-d918-4bc1-949b-59d68601ab1f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ede9131a-1191-4f04-a6e0-f6ff8bbd2771">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdAt1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="6dc4f714-07fc-42dd-ac32-dfe281ad6217">
+      <ID>Prd At2</ID>
+      <Name>Prd At2</Name>
+      <EstimatedCount>132</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9fcce69-9059-42a2-b6b7-2a6142f865a4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5bd44977-7e8a-4c83-b677-a2f03a83e7a5">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdAt2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fb35a88-25cc-4382-b7d2-1ba6821869c7">
+      <ID>Prd At3</ID>
+      <Name>Prd At3</Name>
+      <EstimatedCount>107</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bf9da07e-0380-4772-9a31-b7d4e7c59fc1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="910c3910-9327-4df2-a62b-e0d9b19c8f0e">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdAt3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c44aa75-805a-42e3-adf5-6040c2ccfa5f">
+      <ID>Prd At4</ID>
+      <Name>Prd At4</Name>
+      <EstimatedCount>62</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52a9c52e-c36d-47b8-b197-54d9397c55f9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05003151-47a3-4f95-9901-b0cfb4f3f161">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdAt4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd42548e-5921-4d7e-9374-b603f2528458">
+      <ID>Prd At5</ID>
+      <Name>Prd At5</Name>
+      <EstimatedCount>27</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f8ca09ee-90d0-4ab5-8fb4-4fa48f483de6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ca8e950-dd87-4e32-a4ce-f62d4b8babea">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdAt5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="e776bb18-bb6a-4d27-a936-f8b625245b14">
+      <ID>Prd BI1</ID>
+      <Name>Prd BI1</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2de8de9f-7e75-4028-9a1e-99e2e87f4454">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb3e9090-96f6-49fa-87e5-ad74557e8c2a">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdBI1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="57cf5f14-1533-44e7-8934-831e35d750ac">
+      <ID>Prd BI2</ID>
+      <Name>Prd BI2</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ea4ba62-62a2-4f08-a9ff-f488e3760c5f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c991fbc5-22c6-4a8a-a3d1-55eddbb4fadd">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdBI2</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="add82897-30d5-471f-9ff5-c455894f5268">
+      <ID>Prd BI3</ID>
+      <Name>Prd BI3</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="680378b2-5328-4087-ab7e-3876b434f69e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9688d305-f48c-48ec-aee0-6552dcf11cd1">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdBI3</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="043ce9ab-8d24-412d-a116-62bc6dfabb54">
+      <ID>Prd BI4</ID>
+      <Name>Prd BI4</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc376bbd-db7c-4f24-bb87-8b399c4974fc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f24afa1-0576-4834-aa26-69f419926b54">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdBI4</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="2f929fcc-5e55-40bf-90e5-be4c25dfef66">
+      <ID>Prd BI5</ID>
+      <Name>Prd BI5</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3dd27ab8-e48e-427b-9e84-216df4099363">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="045519e4-220e-4e5e-a08b-e481cb18d030">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdBI5</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="1396b546-d27c-4454-a559-d38bc48976dc">
+      <ID>Prd Pes</ID>
+      <Name>Prd Pes</Name>
+      <EstimatedCount>55</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6fbd2e2-b2f1-47b8-8a3f-cce084eccaf0">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9237f840-4830-4511-b27e-c882e9678da8">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdPes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="f8bf3dfd-be68-40e3-92e6-02b393345be3">
+      <ID>Prd Vol</ID>
+      <Name>Prd Vol</Name>
+      <EstimatedCount>55</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9e6dc34-42e3-45e8-a9d4-7d40a48c17e9">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de223514-5801-4f64-89af-ebb0c19488fd">
+            <TableID>DIM_PRODUCTOS_DE_INVENTARIO</TableID>
+            <ColumnID>PrdVol</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL PRODUCTOS DE INVENTARIO</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="383353a9-c73e-4c61-b3d0-eed522e074bd">
+      <ID>Hierarchy</ID>
+      <Name>POR CLASIFICACION PRODUCTOS DE INVENTARIO</Name>
+      <DisplayFolder>POR CLASIFICACION PRODUCTOS DE INVENTARIO</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE INVENTARIO</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="62d365ec-27ba-4bbb-949f-7c9912eddc89">
+          <ID>Prd Cla</ID>
+          <Name>Clasificación Producto Inventario</Name>
+          <SourceAttributeID>Prd Cla</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4177c6d6-9bd5-41c1-ad0b-7751f6eee975">
+          <ID>Prd Des</ID>
+          <Name>Producto Inventario</Name>
+          <SourceAttributeID>Prd Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="91ab14e4-ca96-4826-b120-9ecc0217c82e">
+          <ID>DIM PRODUCTOS DE INVENTARIO</ID>
+          <Name>DIM PRODUCTOS DE INVENTARIO</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE INVENTARIO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="d1be3851-cdf2-40f5-9278-7b51ba844219">
+      <ID>Hierarchy 1</ID>
+      <Name>POR DESCRIPCION DE  PRODUCTOS DE INVENTARIO</Name>
+      <DisplayFolder>POR DESCRIPCION DE  PRODUCTOS DE INVENTARIO</DisplayFolder>
+      <AllMemberName>TOTAL PRODUCTOS DE INVENTARIO</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="902845b4-274d-4451-bc64-0fbf117238a6">
+          <ID>Prd Des</ID>
+          <Name>Prd Des</Name>
+          <SourceAttributeID>Prd Des</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f51997b3-c5d6-4299-8138-a765759a84a8">
+          <ID>DIM PRODUCTOS DE INVENTARIO</ID>
+          <Name>DIM PRODUCTOS DE INVENTARIO</Name>
+          <SourceAttributeID>DIM PRODUCTOS DE INVENTARIO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

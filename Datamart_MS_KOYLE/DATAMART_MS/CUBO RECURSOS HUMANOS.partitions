@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="919da321-ddaa-4fbb-8df8-890767d77281" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CUBO RECURSOS HUMANOS</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT LIQREM</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1797a157-2b2d-43fa-8c12-e5a2bafd8838">
+          <ID>FACT LIQREM</ID>
+          <Name>FACT LIQREM</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0439b51d-1b40-42ed-badc-865503c4a55c">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_LIQREM</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT HORTRA</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8ad3e307-2d02-4438-ba04-627328985e2f">
+          <ID>FACT HORTRA</ID>
+          <Name>FACT HORTRA</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cb8c92c0-b23a-452d-bdfd-57f673aaa5c5">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_HORTRA</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT ROTPER</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ca08d696-58a5-4c4d-a601-cb194eb1f0a8">
+          <ID>FACT ROTPER</ID>
+          <Name>FACT ROTPER</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a61d35f5-89dd-4329-ab0f-bb5db6e3ac07">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_ROTPER</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>FACT PREPER</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1b85fb07-3531-4a27-90fa-f17472c78849">
+          <ID>FACT PREPER</ID>
+          <Name>FACT PREPER</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="435a22e9-cc68-4cf9-979a-c44127c3cf22">
+            <DataSourceViewID>DATAMART</DataSourceViewID>
+            <TableID>FACT_PREPER</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

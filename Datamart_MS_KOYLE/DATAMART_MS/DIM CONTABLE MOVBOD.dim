@@ -1,0 +1,604 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cb3aa2ca-3199-482b-aa79-73289d1def8f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM CONTABLE MOVBOD</ID>
+  <Name>CONTABLE MOVBOD</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2004" scrolltop="-2924" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7170" y="11113" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_CONTABLE_MOVBOD" left="20" top="-2064" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3334" height="9392" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000060d0000b0240000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CONTABLE_MOVBOD" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2004</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2924</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2064</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d1d575a8-6f90-48cd-8702-af26ad06c224">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ab2f58a5-809a-4a6c-9737-381126e21fd2">
+      <ID>DIM CONTABLE MOVBOD</ID>
+      <Name>DIM CONTABLE MOVBOD</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42f8d5e0-3e48-423a-b369-f4963421805a">
+          <DataType>WChar</DataType>
+          <DataSize>200</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="688b3090-43d1-4bf2-bbf4-21342c050887">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>Are_Cen_Ite_Pla</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="60624f7c-66db-4750-8b5a-333302c513e4">
+          <AttributeID>Are Cod</AttributeID>
+          <Name>Are Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5f3cdca5-9528-4628-8f46-b17e906d799d">
+          <AttributeID>Are Nom</AttributeID>
+          <Name>Are Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70718aa2-5ca9-4505-ace7-6d11ad13e70d">
+          <AttributeID>Cen Cod</AttributeID>
+          <Name>Cen Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3ba697eb-d3a4-4687-bdee-93d449c28335">
+          <AttributeID>Cen Nom</AttributeID>
+          <Name>Cen Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="036b5f4a-9537-4206-ae24-545848e2a81e">
+          <AttributeID>Grc Cod</AttributeID>
+          <Name>Grc Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b906e863-3095-4307-8845-cc284efb3b30">
+          <AttributeID>Grc Nom</AttributeID>
+          <Name>Grc Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="25d350f0-e72e-40cb-a78e-7aa3ac66fd77">
+          <AttributeID>Ite Cod</AttributeID>
+          <Name>Ite Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ea78e4a-7fbc-4aab-b0c5-c97d300a4d90">
+          <AttributeID>Ite Nom</AttributeID>
+          <Name>Ite Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="27e333ea-72be-4524-a046-d6034642db93">
+          <AttributeID>Gri Cod</AttributeID>
+          <Name>Gri Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c12ec15e-2df5-41e2-9e4b-83cd741aad88">
+          <AttributeID>Gri Nom</AttributeID>
+          <Name>Gri Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b6a0d6e-293a-4f06-a13e-233d87228b57">
+          <AttributeID>Pla Cod</AttributeID>
+          <Name>Pla Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36cb46c0-a751-427b-8fae-d935dcddc5cd">
+          <AttributeID>Pla Nom</AttributeID>
+          <Name>Pla Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5bf1dd57-cc26-4018-8eee-8db0ceef8258">
+          <AttributeID>Tit Cod</AttributeID>
+          <Name>Tit Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92372dc2-efb0-4f41-8974-769907d39666">
+          <AttributeID>Tit Nom</AttributeID>
+          <Name>Tit Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b1271f3f-196f-40bf-9b87-0dc8b64a68a8">
+          <AttributeID>Sub Cod</AttributeID>
+          <Name>Sub Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ec58386e-04a5-4bb5-aea0-1db9476fb4a7">
+          <AttributeID>Sub Nom</AttributeID>
+          <Name>Sub Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a1de4461-580f-43ff-93a4-287a1abfd3cf">
+          <AttributeID>Gru Cod</AttributeID>
+          <Name>Gru Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="15f9b8f8-5764-4a87-bf39-9a61dd99caa1">
+          <AttributeID>Gru Nom</AttributeID>
+          <Name>Gru Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="02702814-7ec4-4a6a-8213-9452d0262a77">
+          <AttributeID>Tip Cue</AttributeID>
+          <Name>Tip Cue</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4df2c1d5-ec1f-4c29-8e83-befb497c1ac0">
+      <ID>Are Cod</ID>
+      <Name>Are Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c7cac22e-8e55-45b7-a002-36c5e23d0cb1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b18f832-7a8d-4393-9e10-37bc3c8b38c8">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>AreCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d3a21344-28b7-4261-ac36-516189c65acb">
+      <ID>Are Nom</ID>
+      <Name>Are Nom</Name>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="06ec1e2b-6487-4421-9c11-39dd8691857e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6810f023-40d0-4798-a159-179ff8a5a0a6">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>AreNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d458d5f4-e4bf-49d4-88a0-1358311dd40e">
+      <ID>Cen Cod</ID>
+      <Name>Cen Cod</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ac3f6a81-bb1c-4590-8e1d-59c49f5a3fe8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="09ebd60f-66ac-4aa6-809a-06adebb8cea5">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>CenCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="6089d201-167b-456c-b387-2e11ce0c2665">
+      <ID>Cen Nom</ID>
+      <Name>Cen Nom</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f4e9e70a-4254-4008-9ec6-b1d247ce3ce9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b872b009-7cba-41c2-a684-ac74c90775f6">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>CenNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="def92f6a-0eab-469d-926c-0f5e7067b984">
+      <ID>Grc Cod</ID>
+      <Name>Grc Cod</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1077fe1b-beb5-49b0-b825-14655abc28b9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef0461b1-eeb7-4b96-bcea-4d1e39eddf8d">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>GrcCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="796501fc-2e69-45b1-acb3-15d24673f241">
+      <ID>Grc Nom</ID>
+      <Name>Grc Nom</Name>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18c895af-cc36-4f5d-95e9-4489dbcb745e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8bc83b90-773e-4338-a025-869f7d1767b5">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>GrcNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9229e66e-cc12-4099-8be7-2a1fd6717713">
+      <ID>Ite Cod</ID>
+      <Name>Ite Cod</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0afb1eb-b930-4e62-bce9-48e05b95cdf4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24fb2e07-9b25-4f81-aca4-c61a3f977ab9">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>IteCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>FilteredList</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="49b21129-38ad-4926-9fa9-3830392c53a9">
+      <ID>Ite Nom</ID>
+      <Name>Ite Nom</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cc945597-bde6-4f8f-90bf-4237efc5f481">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="28d17b22-ebb3-4880-82b0-8965186101fb">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>IteNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e267e2f-d32f-488b-99bd-a11a1062100a">
+      <ID>Gri Cod</ID>
+      <Name>Gri Cod</Name>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eea45c99-b4eb-434f-b68f-842c00609004">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65a2d9c0-d486-4eec-95a2-339598822dcf">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>GriCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="5df7cea9-e1de-4dbe-bda4-b4635582e534">
+      <ID>Gri Nom</ID>
+      <Name>Gri Nom</Name>
+      <EstimatedCount>17</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee45df94-c553-4eb3-ba1b-c6f96d321d48">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf91e958-bfc3-41e0-9bae-107d37dd4177">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>GriNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b80163ae-4672-4276-bf22-e6fdaad8cc27">
+      <ID>Pla Cod</ID>
+      <Name>Pla Cod</Name>
+      <EstimatedCount>32</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e4b4c5d-f84c-4482-8229-6f9dc855e993">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ed242d0-d9c5-4acd-8b0d-1bcd6ddb1757">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>PlaCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="acf43a31-b2ab-474d-92f1-d9a9f4c7c807">
+      <ID>Pla Nom</ID>
+      <Name>Pla Nom</Name>
+      <EstimatedCount>29</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bce2dadc-d9e8-4ef5-b180-cdfe6e94a70c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1fa714b-ee36-4e94-9bc1-5a52824b7c99">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>PlaNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="7108f6e7-7e64-4923-a12a-dc1b7fb616e2">
+      <ID>Tit Cod</ID>
+      <Name>Tit Cod</Name>
+      <EstimatedCount>13</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3e019ce7-a52d-4c47-82fe-6f6f318e269d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="682e4e97-d475-435c-b9ad-ac36e89baa24">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>TitCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="de11c466-ec0b-4aa8-af1a-42e3b63295db">
+      <ID>Tit Nom</ID>
+      <Name>Tit Nom</Name>
+      <EstimatedCount>13</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9dccaff4-5261-4720-86f8-5a6bb3f41b2d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03410549-2fd0-40be-9b61-866c5b8e9217">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>TitNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d73db44-4f66-4866-964e-b75eaf99fccb">
+      <ID>Sub Cod</ID>
+      <Name>Sub Cod</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c942c9cf-5652-4d43-b3f3-5e0deda192ad">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a0beeeea-5cdf-4200-bd76-2dc30b6a0350">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>SubCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d14dfa47-343f-4075-a010-8c9c70ad13e7">
+      <ID>Sub Nom</ID>
+      <Name>Sub Nom</Name>
+      <EstimatedCount>9</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="90d881ea-f469-4a12-8605-12b3441743ff">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e042e05b-3838-46cb-9341-63875e61785e">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>SubNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="08273f23-0756-406f-9303-dd88c0d5d708">
+      <ID>Gru Cod</ID>
+      <Name>Gru Cod</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d96615c8-b49d-4e0c-a12a-0957b9faa188">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="877060a4-9706-4418-8d2e-eabaa6f5d5fa">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>GruCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a461c0d7-592a-45f8-bbd8-db61f2d2c58e">
+      <ID>Gru Nom</ID>
+      <Name>Gru Nom</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60af364b-7b69-4284-8705-5aef13a5031e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00b91020-0ac5-432f-a851-9d8956eeddad">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>GruNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="3418948f-6388-43f5-9a72-c40da15f4d40">
+      <ID>Tip Cue</ID>
+      <Name>Tip Cue</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0bac47ac-581a-4651-82f6-d93c80489def">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="547e80aa-ebe3-4f18-bf02-23a5ceb851fa">
+            <TableID>DIM_CONTABLE_MOVBOD</TableID>
+            <ColumnID>TipCue</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL CONTABLE</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e5fc5a27-e569-4c70-83e3-6018faf6be49">
+      <ID>Hierarchy</ID>
+      <Name>POR CUENTA CONTABLE</Name>
+      <DisplayFolder>POR CUENTA CONTABLE</DisplayFolder>
+      <AllMemberName>TOTAL CONTABLE</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="0ca42153-f4e4-4a41-9f5a-f8ec75e6e7ed">
+          <ID>Tit Nom</ID>
+          <Name>Titulo Cuenta Contable</Name>
+          <SourceAttributeID>Tit Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="df7f7005-c336-4a7a-8c8d-59b20821b963">
+          <ID>Pla Nom</ID>
+          <Name>Cuenta Contable</Name>
+          <SourceAttributeID>Pla Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="664aacbe-300d-4ba3-bc78-0bf34aad23f6">
+          <ID>DIM CONTABLE MOVBOD</ID>
+          <Name>DIM CONTABLE MOVBOD</Name>
+          <SourceAttributeID>DIM CONTABLE MOVBOD</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="1661ecda-29d8-4972-8c27-624b09dadca5">
+      <ID>Hierarchy 1</ID>
+      <Name>POR AREA DE NEGOCIOS</Name>
+      <DisplayFolder>POR AREA DE NEGOCIOS</DisplayFolder>
+      <AllMemberName>TOTAL CONTABLE</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="cd35835a-7cf7-416b-af71-853da990a01b">
+          <ID>Are Nom</ID>
+          <Name>Area Negocios</Name>
+          <SourceAttributeID>Are Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ef13ebaf-4278-41e5-9ba7-38eb8886b1f1">
+          <ID>DIM CONTABLE MOVBOD</ID>
+          <Name>DIM CONTABLE MOVBOD</Name>
+          <SourceAttributeID>DIM CONTABLE MOVBOD</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="26b921ac-45b1-4797-9cd8-b024cbc3b7fc">
+      <ID>Hierarchy 2</ID>
+      <Name>POR CENTRO DE COSTOS</Name>
+      <DisplayFolder>POR CENTRO DE COSTOS</DisplayFolder>
+      <AllMemberName>TOTAL CONTABLE</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="50c3b52e-d54e-4dc0-ad9d-2dbb6f563706">
+          <ID>Grc Nom</ID>
+          <Name>Grupo Centro Costos</Name>
+          <SourceAttributeID>Grc Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="7053b264-23f7-4de5-a11f-cdd6eb2d0ccc">
+          <ID>Cen Nom</ID>
+          <Name>Centro Costos</Name>
+          <SourceAttributeID>Cen Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5c5a4c99-862d-4b7a-9611-8224953ea908">
+          <ID>DIM CONTABLE MOVBOD</ID>
+          <Name>DIM CONTABLE MOVBOD</Name>
+          <SourceAttributeID>DIM CONTABLE MOVBOD</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="66d1d335-b37b-4761-b528-258bdc7b95b8">
+      <ID>Hierarchy 3</ID>
+      <Name>POR CONCEPTO INGRESO GASTO</Name>
+      <DisplayFolder>POR CONCEPTO INGRESO GASTO</DisplayFolder>
+      <AllMemberName>TOTAL CONTABLE</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="1172ccc8-02f4-4dee-b67b-b753c713c6b8">
+          <ID>Gri Nom</ID>
+          <Name>Grupo Ingreso Gasto</Name>
+          <SourceAttributeID>Gri Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2f3f97af-d4e2-4df1-8cb5-3f8a74c8ce53">
+          <ID>Ite Nom</ID>
+          <Name>Item Ingreso Gasto</Name>
+          <SourceAttributeID>Ite Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d431d9b3-2042-4070-871a-3e09abd0d80c">
+          <ID>DIM CONTABLE MOVBOD</ID>
+          <Name>DIM CONTABLE MOVBOD</Name>
+          <SourceAttributeID>DIM CONTABLE MOVBOD</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

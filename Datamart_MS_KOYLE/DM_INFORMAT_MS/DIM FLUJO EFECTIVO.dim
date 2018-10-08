@@ -1,0 +1,216 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="78a6aa36-4185-4543-bbac-9b72cbae8efc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM FLUJO EFECTIVO</ID>
+  <Name>FLUJO EFECTIVO</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4617" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_FLUJO_EFECTIVO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_FLUJO_EFECTIVO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4617</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e8257c2d-e4e4-47eb-887b-cdd2a88b5505">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="73972844-3926-45b9-8d1d-bfbb65687236">
+      <ID>DIM FLUJO EFECTIVO</ID>
+      <Name>DIM FLUJO EFECTIVO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>192</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9709e133-7965-47e8-ab81-b83e05108c30">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f52551f3-c034-4463-a490-bfd3e5200d55">
+            <TableID>DIM_FLUJO_EFECTIVO</TableID>
+            <ColumnID>EmpFlu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="fc9db0a2-9948-4673-ad85-77934d82eca9">
+          <AttributeID>Flu Cod</AttributeID>
+          <Name>Flu Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e800be8e-77a6-4aab-93d1-280e26a31e55">
+          <AttributeID>Flu Nom</AttributeID>
+          <Name>Flu Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a95d3c61-8f16-4dff-9d4e-ae8028b98ddf">
+          <AttributeID>Tfe Cod</AttributeID>
+          <Name>Tfe Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="885db829-1d79-4cb6-8ba7-564085ea9755">
+          <AttributeID>Tfe Nom</AttributeID>
+          <Name>Tfe Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b06da7ec-fd5e-4c8a-b816-be50963e7749">
+      <ID>Flu Cod</ID>
+      <Name>Flu Cod</Name>
+      <EstimatedCount>45</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7a25d245-f4d0-4bb1-b65e-491670df0328">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e77fa3f-a9f7-4d9d-8241-6ee3903b5db0">
+            <TableID>DIM_FLUJO_EFECTIVO</TableID>
+            <ColumnID>FluCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="00ac1c2f-b1ea-4ae1-86ee-ba13a68c10be">
+      <ID>Flu Nom</ID>
+      <Name>Flu Nom</Name>
+      <EstimatedCount>76</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="35115bca-1949-4bdf-a4f9-2832701d958f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4804af0f-13ec-4683-a53f-f9f6b19f11dc">
+            <TableID>DIM_FLUJO_EFECTIVO</TableID>
+            <ColumnID>FluNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="cf0245fd-d2fb-49f4-9bfd-c8d6e877e8b3">
+      <ID>Tfe Cod</ID>
+      <Name>Tfe Cod</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc7700b3-514a-45b6-bf69-479726108f84">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b493746-14b0-4997-9dab-2fe5341b1b30">
+            <TableID>DIM_FLUJO_EFECTIVO</TableID>
+            <ColumnID>TfeCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="39c1efb4-1b9d-4cd8-aa89-6e6a983f2859">
+      <ID>Tfe Nom</ID>
+      <Name>Tfe Nom</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e4eece49-9ed2-4d38-9cc0-ac7b9430bb2f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe9e4ef8-6fae-4546-badc-afdf7f46e1a8">
+            <TableID>DIM_FLUJO_EFECTIVO</TableID>
+            <ColumnID>TfeNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL FLUJO EFECTIVO</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="348f6173-e823-437e-9fe6-46877dc9ae68">
+      <ID>Tfe Nom - Flu Cod - Flu Nom</ID>
+      <Name>FLUJO EFECTIVO</Name>
+      <DisplayFolder>FLUJO EFECTIVO</DisplayFolder>
+      <AllMemberName>TOTAL FLUJO EFECTIVO</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="189d63fa-fda2-4224-a8e7-4d680028405f">
+          <ID>Tfe Nom</ID>
+          <Name>Titulo Flujo Efectivo</Name>
+          <SourceAttributeID>Tfe Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="60ced410-eeec-4461-8eee-f96112e3446e">
+          <ID>Flu Nom</ID>
+          <Name>Flujo Efectivo</Name>
+          <SourceAttributeID>Flu Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="57866d72-2c1c-4b37-a4ef-9a7ad0b1ea69">
+          <ID>DIM FLUJO EFECTIVO</ID>
+          <Name>DIM FLUJO EFECTIVO</Name>
+          <SourceAttributeID>DIM FLUJO EFECTIVO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

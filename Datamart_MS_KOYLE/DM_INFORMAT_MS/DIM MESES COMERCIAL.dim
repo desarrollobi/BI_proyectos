@@ -1,0 +1,259 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bcb048ea-a3c0-4efe-9c1f-752fc0324332" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM MESES COMERCIAL</ID>
+  <Name>MESES</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4194" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6376" y="10239" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_MESES_COMERCIAL" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_MESES_COMERCIAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4194</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="449a32ca-88b0-449e-ac3b-8a57012c8aa6">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="deec3e4e-1cbd-4b4a-938b-bf1e6c221c01">
+      <ID>DIM MESES COMERCIAL</ID>
+      <Name>DIM MESES COMERCIAL</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>180</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="197733c7-2c85-48e4-b039-9f314a183794">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f70b7637-1df1-4773-a35c-fb31bf20dd79">
+            <TableID>DIM_MESES_COMERCIAL</TableID>
+            <ColumnID>Emejap</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4f9d3078-0881-46e7-acea-0c30aa824ec3">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0652c88a-15f1-49c8-baab-d4014a2ac06e">
+          <AttributeID>Eje Cod</AttributeID>
+          <Name>Eje Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e6886d0-6b13-401c-8bee-d576470b3976">
+          <AttributeID>Eje Nom</AttributeID>
+          <Name>Eje Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4cc87035-e503-4a9e-b68b-6d399919ffaa">
+          <AttributeID>Eje Per Nom</AttributeID>
+          <Name>Eje Per Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65548315-712e-4ec5-983c-dd666cf65533">
+          <AttributeID>Ano Per</AttributeID>
+          <Name>Ano Per</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7997032e-4033-4fdd-bd24-53256326c530">
+          <AttributeID>Num Per</AttributeID>
+          <Name>Num Per</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="f93fba08-abf3-440c-b008-79b975f3da48">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f7be067-bd31-495f-9c60-ef264f776c6d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="47b64dc0-ed26-4d5b-be8c-944f04c44a2e">
+            <TableID>DIM_MESES_COMERCIAL</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="91825a1f-313b-41a3-8f2c-5f2f0a0a52c8">
+      <ID>Eje Cod</ID>
+      <Name>Eje Cod</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3122635a-1922-43d9-973d-ba6ad096189a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="27037af5-3f11-4674-be6f-bbded2f0f851">
+            <TableID>DIM_MESES_COMERCIAL</TableID>
+            <ColumnID>EjeCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="28a26dd6-bf4d-4be1-ba80-a9b68a5a25d7">
+      <ID>Eje Nom</ID>
+      <Name>Eje Nom</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="65c347b0-3d4e-4b94-805a-9507e49a42de">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42e03878-8c96-4b4d-aa32-696fd9de4aad">
+            <TableID>DIM_MESES_COMERCIAL</TableID>
+            <ColumnID>EjeNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="294054ee-d64a-47e1-b906-eb4806ec63a0">
+      <ID>Eje Per Nom</ID>
+      <Name>Eje Per Nom</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6c00c653-80fe-400a-be1d-6f83f8fe2802">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c8118a0-6bb2-4b26-b700-e6d57b8558b6">
+            <TableID>DIM_MESES_COMERCIAL</TableID>
+            <ColumnID>EjePerNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a4cb6124-9439-4350-86bf-ca2a36465f5c">
+          <AttributeID>Num Per</AttributeID>
+          <Name>Num Per</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>Num Per</OrderByAttributeID>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9819538e-9c9c-413c-95ca-9b3cf5c8ebb7">
+      <ID>Ano Per</ID>
+      <Name>Ano Per</Name>
+      <EstimatedCount>96</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bbff3696-e8b4-47a2-8d65-c129ade33eb2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b6619ae-e7a6-4547-a5e3-92f07b629cd0">
+            <TableID>DIM_MESES_COMERCIAL</TableID>
+            <ColumnID>AnoPer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b196db12-0271-4332-995b-7ad001f3a840">
+      <ID>Num Per</ID>
+      <Name>Num Per</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9a7e82c-bd94-4adc-923c-c08465207e68">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f973622-1772-45a9-8bdd-a792117df8c0">
+            <TableID>DIM_MESES_COMERCIAL</TableID>
+            <ColumnID>NumPer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL MESES</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="86376592-a189-41bf-94a7-713034f1deef">
+      <ID>Hierarchy</ID>
+      <Name>MESES</Name>
+      <DisplayFolder>MESES</DisplayFolder>
+      <AllMemberName>TOTAL MESES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="12909578-85c8-4359-8263-468c44d6e2c8">
+          <ID>Eje Per Nom</ID>
+          <Name>Periodo</Name>
+          <SourceAttributeID>Eje Per Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a59fb280-f030-4e9d-abce-ddcc7b23864f">
+          <ID>Ano Per</ID>
+          <Name>Año Periodo</Name>
+          <SourceAttributeID>Ano Per</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

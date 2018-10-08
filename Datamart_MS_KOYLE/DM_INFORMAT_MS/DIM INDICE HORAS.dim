@@ -1,0 +1,239 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ae42367d-457a-4105-b0e7-e24c4da8aa48" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM INDICE HORAS</ID>
+  <Name>INDICE HORAS</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1403" scrolltop="-3929" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5847" y="11430" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_INDICE_HORAS" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_INDICE_HORAS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1403</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3929</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2b1fd490-2de2-4ab2-be78-fdb213315b83">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="626b020a-4927-45c2-81d3-cd20c55db612">
+      <ID>DIM INDICE HORAS</ID>
+      <Name>DIM INDICE HORAS</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2926a493-65f0-4d17-befa-451c29e69ded">
+          <DataType>WChar</DataType>
+          <DataSize>101</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a67628b2-0620-4fff-a113-cdb7f91c3038">
+            <TableID>DIM_INDICE_HORAS</TableID>
+            <ColumnID>IndHoras</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="62f2551a-9cac-4b9d-a330-3991f60145ab">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5d30da77-8e54-49d5-bb15-58f1a3dc1692">
+          <TableID>DIM_INDICE_HORAS</TableID>
+          <ColumnID>HinNom</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0f4525a0-7ead-4dae-9753-84ad62839dca">
+          <AttributeID>Hgr Cod</AttributeID>
+          <Name>Hgr Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ae756442-e9d0-4d66-9d3a-734df624c2a0">
+          <AttributeID>Hgr Nom</AttributeID>
+          <Name>Hgr Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="08515d32-cde2-458c-823a-d58b5120585e">
+          <AttributeID>Hin Cod</AttributeID>
+          <Name>Hin Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2fa9c8d5-9530-40f0-b533-93c13e170fc3">
+          <AttributeID>Ind Nombre</AttributeID>
+          <Name>Ind Nombre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cb807d35-8895-46b1-bd4e-5e8e7204e526">
+          <AttributeID>Hin Nom</AttributeID>
+          <Name>Hin Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a3f87167-b2ce-4184-a97b-106afa0c1bc3">
+      <ID>Hgr Cod</ID>
+      <Name>Hgr Cod</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="feac5cdb-6bb3-4a5f-a34f-81532ba8b56e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37964d04-1215-4a1e-8880-db63cac9c1ba">
+            <TableID>DIM_INDICE_HORAS</TableID>
+            <ColumnID>HgrCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="74f5ec3b-ddc0-4852-8075-890ee1588fa5">
+      <ID>Hgr Nom</ID>
+      <Name>Hgr Nom</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6ff39ec-2326-415f-b0bd-1a048f4966f7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f513314b-aa0b-43cd-b861-c8572eb8143f">
+            <TableID>DIM_INDICE_HORAS</TableID>
+            <ColumnID>HgrNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="56fd8f2b-cee0-4aa6-8a54-af26869bdd33">
+      <ID>Hin Cod</ID>
+      <Name>Hin Cod</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="923ee925-dba5-436d-a744-1e841040015f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1dd9173-6c71-4052-bf12-adec12213be8">
+            <TableID>DIM_INDICE_HORAS</TableID>
+            <ColumnID>HinCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="f46bde52-bfbe-4105-b5cc-b47043fd29b5">
+      <ID>Ind Nombre</ID>
+      <Name>Ind Nombre</Name>
+      <EstimatedCount>10</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb670a27-8965-4a0b-b2d0-64d24d1dbd4b">
+          <DataType>WChar</DataType>
+          <DataSize>103</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7f8957a-c725-427b-b41f-4f2e83eea80a">
+            <TableID>DIM_INDICE_HORAS</TableID>
+            <ColumnID>IndNombre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="48943d04-69f3-41b2-8f70-890e3e3718af">
+      <ID>Hin Nom</ID>
+      <Name>Hin Nom</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8449d498-1663-4bfd-a233-91ec556ac7b1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5375a2d-dff8-458c-8716-7a08b4b02905">
+            <TableID>DIM_INDICE_HORAS</TableID>
+            <ColumnID>HinNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL INDICE DE HORAS</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="4cf41714-dacc-4817-a981-b7fd068e26b8">
+      <ID>Hierarchy</ID>
+      <Name>POR INDICE DE HORAS</Name>
+      <AllMemberName>TOTAL INDICE DE HORAS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="32fa1afb-3af5-4f02-b384-6ec8cb827933">
+          <ID>Hgr Nom</ID>
+          <Name>Grupo de Horas</Name>
+          <SourceAttributeID>Hgr Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9ae076cc-ae7c-459f-8fde-2555399264cd">
+          <ID>Hin Nom</ID>
+          <Name>Nombre Horas</Name>
+          <SourceAttributeID>Hin Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a2953733-bbd0-4a60-b239-825743f273fd">
+          <ID>DIM INDICE HORAS</ID>
+          <Name>DIM INDICE HORAS</Name>
+          <SourceAttributeID>DIM INDICE HORAS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

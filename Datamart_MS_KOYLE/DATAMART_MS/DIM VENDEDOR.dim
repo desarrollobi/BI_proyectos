@@ -1,0 +1,323 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6814f8cb-e365-48d5-8876-63e6681ee4d0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM VENDEDOR</ID>
+  <Name>VENDEDOR</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4617" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_VENDEDOR" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_VENDEDOR" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4617</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ed6324d6-7769-4d4d-a944-1ba426d61629">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <UnknownMemberName>TOTAL VENDEDORES</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="ac7a302b-ac27-4907-9bff-81881719f4b6">
+      <ID>DIM VENDEDOR</ID>
+      <Name>DIM VENDEDOR</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>58</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b2210925-f18b-4e84-afc7-315c98167841">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef38d125-edb5-4229-9916-7dae615b96c5">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>EmpVen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="513a5090-7d8c-4f20-9136-31666561fc5c">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d635437d-0b27-4ccd-a9ed-c45812745b1b">
+          <AttributeID>Ven ID</AttributeID>
+          <Name>Ven ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4c6589fc-cf42-4415-b0eb-3f13cd0d30b1">
+          <AttributeID>Ven Rut</AttributeID>
+          <Name>Ven Rut</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="caeae2f4-4d1a-4fa5-9a26-fe94b92ee8b2">
+          <AttributeID>Ven Cod</AttributeID>
+          <Name>Ven Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4a3f0510-304e-4524-9736-3e7e31676ce2">
+          <AttributeID>Ven Nom</AttributeID>
+          <Name>Ven Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eea4bf6f-c1ab-4588-a162-07e2c9d27750">
+          <AttributeID>Ven Cat</AttributeID>
+          <Name>Ven Cat</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bcb09e07-1f35-4daf-b96e-57c8d02e82e7">
+          <AttributeID>Sup Cod</AttributeID>
+          <Name>Sup Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="947d508b-691b-424c-b79c-d5408f00f5ea">
+          <AttributeID>Sup Nom</AttributeID>
+          <Name>Sup Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="97f9b877-e51d-46cc-bed0-e95555b9ea2d">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b090b68b-1dd1-49be-a648-fe9f62d0eeab">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="12e088fe-f050-4425-b8d5-c99cc3ba29af">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="034048e2-66f8-4966-8086-8b408433e75d">
+      <ID>Ven ID</ID>
+      <Name>Ven ID</Name>
+      <EstimatedCount>48</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e5e216b8-f0d0-434b-8b49-8b19b2e881ed">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ba1b034-08c5-47f0-8376-863ef12d50ac">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>VenID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="2aa5263a-15d6-4ccb-a6a7-a587b489e64a">
+      <ID>Ven Rut</ID>
+      <Name>Ven Rut</Name>
+      <EstimatedCount>48</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ac9bc690-8c57-4d23-bfcf-d7a749c17ee5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc70ff66-1284-4502-9ce4-174c27ef0bd3">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>VenRut</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="407b4ea9-1088-4cc7-85a6-d58268faffa0">
+      <ID>Ven Cod</ID>
+      <Name>Ven Cod</Name>
+      <EstimatedCount>46</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d853af2-7bef-4a56-8545-f57cd5749956">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2359919-ff1b-4e60-9145-a157d191df01">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>VenCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="538ccff7-6066-452f-8e4f-6a06f159ddce">
+      <ID>Ven Nom</ID>
+      <Name>Ven Nom</Name>
+      <EstimatedCount>49</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="391fcf02-0ae7-436d-9ab3-e89dadc6aa48">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a0b1447-535f-479b-b39b-7c37b289024b">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>VenNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="3c1d6e6d-f907-4d70-8a9f-18275cd76a4a">
+      <ID>Ven Cat</ID>
+      <Name>Ven Cat</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6ad3b96-991a-4b3f-9e4c-8c855750a229">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2319242-5a23-48cb-a627-85d7481b48d6">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>VenCat</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="e1d7ea5c-63d5-40e5-aed5-f5974d3dd7cc">
+      <ID>Sup Cod</ID>
+      <Name>Sup Cod</Name>
+      <EstimatedCount>8</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="31fadd96-d14a-4a32-842d-0f20569d816d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0f6601f-3749-4ad3-9e23-2c8d1563b678">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>SupCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="324f4281-b268-4685-89b7-46af23e4148a">
+      <ID>Sup Nom</ID>
+      <Name>Sup Nom</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6824fa89-acf1-4bf1-9679-8dbc963923df">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="287c4950-1e05-42d3-82e1-ca4ac28554a4">
+            <TableID>DIM_VENDEDOR</TableID>
+            <ColumnID>SupNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL VENDEDORES</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="680a26b8-8bf0-4240-a267-7729809366a9">
+      <ID>Hierarchy</ID>
+      <Name>POR SUPERVISOR</Name>
+      <DisplayFolder>POR SUPERVISOR</DisplayFolder>
+      <AllMemberName>TOTAL VENDEDORES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="99ef7d6a-d72f-4450-9ffe-66ace2eb4572">
+          <ID>Sup Nom</ID>
+          <Name>Supervisor</Name>
+          <SourceAttributeID>Sup Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="656007a9-b5f6-40f8-9a7f-44b585a2bf8a">
+          <ID>Ven Nom</ID>
+          <Name>Vendedor</Name>
+          <SourceAttributeID>Ven Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b20a535e-b613-4a39-b739-c070fb9c311a">
+          <ID>DIM VENDEDOR</ID>
+          <Name>DIM VENDEDOR</Name>
+          <SourceAttributeID>DIM VENDEDOR</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="0ba2ff8e-7d78-4c39-8ed3-8c3c14d143fe">
+      <ID>Hierarchy 1</ID>
+      <Name>POR NOMBRE DE VENDEDOR</Name>
+      <DisplayFolder>POR NOMBRE DE VENDEDOR</DisplayFolder>
+      <AllMemberName>TOTAL VENDEDORES</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="f62b21db-3a57-4afa-b676-9820c68b4a29">
+          <ID>Ven Nom</ID>
+          <Name>Vendedor</Name>
+          <SourceAttributeID>Ven Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fce78af1-671e-4f2b-8d04-5a9f75b3b72d">
+          <ID>DIM VENDEDOR</ID>
+          <Name>DIM VENDEDOR</Name>
+          <SourceAttributeID>DIM VENDEDOR</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

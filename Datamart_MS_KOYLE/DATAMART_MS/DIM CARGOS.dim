@@ -1,0 +1,210 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="027a256f-3230-40da-908e-b35f9d4351f7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM CARGOS</ID>
+  <Name>CARGOS</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-4617" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_CARGOS" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CARGOS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4617</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7b857724-802f-417a-b8a4-30ba44c0ce32">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b728b828-a42e-461f-a2aa-ff6eddef7ede">
+      <ID>DIM CARGOS</ID>
+      <Name>DIM CARGOS</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>68</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aced09de-69ae-4fd5-92cb-e100f99c3f6e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5e2d3a1-3bda-42a6-b27a-7b6ef155aaac">
+            <TableID>DIM_CARGOS</TableID>
+            <ColumnID>EmpCar</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c7533e9b-2eb1-4fd5-b380-3c86aa4a4729">
+          <AttributeID>Car Cod</AttributeID>
+          <Name>Car Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bacfe8bf-6b7c-43e8-908a-e773b4205fe2">
+          <AttributeID>Car Nom</AttributeID>
+          <Name>Car Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0596912c-5ba0-4438-be2d-2f0bfc793c03">
+          <AttributeID>Emp Hom</AttributeID>
+          <Name>Emp Hom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2df0cd6d-44db-4d70-ac2e-5f0fd2568596">
+          <AttributeID>Hom Nom</AttributeID>
+          <Name>Hom Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d26ebc77-a8b2-4164-9d78-d254d0c29993">
+      <ID>Car Cod</ID>
+      <Name>Car Cod</Name>
+      <EstimatedCount>39</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1cbb3bc-3814-4637-89a5-9345dfd0be77">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4deeb5b5-0d22-4bd2-834b-bb989dd4de3e">
+            <TableID>DIM_CARGOS</TableID>
+            <ColumnID>CarCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="4709760a-f744-480f-9a80-3b0a6b32afbc">
+      <ID>Car Nom</ID>
+      <Name>Car Nom</Name>
+      <EstimatedCount>59</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9f9d3a48-2255-431e-9cab-59971c8322b5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae68e227-b32b-42fb-9bb7-5b52763c2a4d">
+            <TableID>DIM_CARGOS</TableID>
+            <ColumnID>CarNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="8d893b3e-8e96-42cb-9d6d-0f6f135eb972">
+      <ID>Emp Hom</ID>
+      <Name>Emp Hom</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="388d4cc6-d216-4bb7-8e9d-629911fd4c7c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65448ba2-dc5b-4e40-8bce-e3ef31fa73e0">
+            <TableID>DIM_CARGOS</TableID>
+            <ColumnID>EmpHom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c151696b-adea-47c2-8a45-4b9a175b81c3">
+      <ID>Hom Nom</ID>
+      <Name>Hom Nom</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e06a8a4-7153-4a06-a3ed-20bb16b85950">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e0d3a5b-4302-4b8c-9e77-f058b6f07a07">
+            <TableID>DIM_CARGOS</TableID>
+            <ColumnID>HomNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL CARGOS</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e11e10cf-35af-4258-be9a-c03e9dfb74d5">
+      <ID>Hierarchy</ID>
+      <Name>CARGOS</Name>
+      <DisplayFolder>POR CARGOS</DisplayFolder>
+      <AllMemberName>TOTAL CARGOS</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="fcdbdf53-19d9-4def-92c5-b7291a96d503">
+          <ID>Car Nom</ID>
+          <Name>Cargos</Name>
+          <SourceAttributeID>Car Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1a6a1374-24f0-4eac-ba9c-1f35ed0120cd">
+          <ID>DIM CARGOS</ID>
+          <Name>DIM CARGOS</Name>
+          <SourceAttributeID>DIM CARGOS</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

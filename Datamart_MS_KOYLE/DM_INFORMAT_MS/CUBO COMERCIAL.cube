@@ -1,0 +1,2784 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7b206d56-98f1-4f7a-bb06-cd40adfa79eb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DATAMART</ID>
+  <Name>CUBO COMERCIAL</Name>
+  <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="64" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="5568" scrolltop="16804" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="27093" y="12885" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FACT_VENTAS" left="16376" top="3855" logicalid="32" controlid="1" masterid="0" hint1="0" hint2="0" width="3784" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000c80e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="FACT_VENTAS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_PRODUCTOS_DE_VENTAS" left="27942" top="31022" logicalid="33" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_PRODUCTOS_DE_VENTAS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_CONTABLE" left="22208" top="23622" logicalid="34" controlid="3" masterid="0" hint1="0" hint2="0" width="3334" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000060d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CONTABLE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_EMPRESA" left="8287" top="12101" logicalid="35" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_EMPRESA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_MESES_COMERCIAL" left="13687" top="11255" logicalid="36" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_MESES_COMERCIAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_DOCUMENTO" left="10976" top="5204" logicalid="37" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_DOCUMENTO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_CLIENTES" left="5420" top="20636" logicalid="38" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CLIENTES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_ESTADO" left="22560" top="5627" logicalid="39" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="1455" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000af050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_ESTADO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_CONDICION_VENTA" left="16768" top="0" logicalid="40" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="1455" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000af050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_CONDICION_VENTA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_VENDEDOR" left="20" top="28036" logicalid="41" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_VENDEDOR" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FACT_PREVEN" left="10820" top="24257" logicalid="42" controlid="11" masterid="0" hint1="0" hint2="0" width="3334" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000060d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="FACT_PREVEN" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9388" top="8555" logicalid="43" controlid="12" masterid="0" hint1="0" hint2="0" width="8080" height="4046" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_EMPRESA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9787" y="12101" />
+              <point x="9787" y="10478" />
+              <point x="17168" y="10478" />
+              <point x="17168" y="8855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="8555" logicalid="44" controlid="13" masterid="0" hint1="0" hint2="0" width="11497" height="12581" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_CLIENTES]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6920" y="20636" />
+              <point x="6920" y="14746" />
+              <point x="17718" y="14746" />
+              <point x="17718" y="8855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="8555" logicalid="45" controlid="14" masterid="0" hint1="0" hint2="0" width="17447" height="19981" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_VENDEDOR]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="1" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="28036" />
+              <point x="1520" y="18446" />
+              <point x="18268" y="18446" />
+              <point x="18268" y="8855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="18518" top="8555" logicalid="46" controlid="15" masterid="0" hint1="0" hint2="0" width="11324" height="22967" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_PRODUCTOS_DE_VENTAS]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="29442" y="31022" />
+              <point x="29442" y="19939" />
+              <point x="18818" y="19939" />
+              <point x="18818" y="8855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="14788" top="8555" logicalid="47" controlid="16" masterid="0" hint1="0" hint2="0" width="2130" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_MESES_COMERCIAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="1" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15187" y="11255" />
+              <point x="15187" y="10055" />
+              <point x="16618" y="10055" />
+              <point x="16618" y="8855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17869" top="956" logicalid="48" controlid="17" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_CONDICION_VENTA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="1" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18268" y="1455" />
+              <point x="18268" y="3855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13676" top="5956" logicalid="49" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_DOCUMENTO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="1" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13976" y="6355" />
+              <point x="16376" y="6355" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="19860" top="5955" logicalid="50" controlid="19" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_ESTADO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="1" sourceattachpoint="12" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="22560" y="6354" />
+              <point x="21360" y="6354" />
+              <point x="21360" y="6355" />
+              <point x="20160" y="6355" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="19068" top="8555" logicalid="51" controlid="20" masterid="0" hint1="0" hint2="0" width="5207" height="15567" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_CONTABLE]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="4" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="23875" y="23622" />
+              <point x="23875" y="16239" />
+              <point x="19368" y="16239" />
+              <point x="19368" y="8855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13854" top="28107" logicalid="52" controlid="21" masterid="0" hint1="0" hint2="0" width="14388" height="5736" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_PREVEN-DIM_PRODUCTOS_DE_VENTAS]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="11" sourceattachpoint="18" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="27942" y="33443" />
+              <point x="21048" y="33443" />
+              <point x="21048" y="28407" />
+              <point x="14154" y="28407" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13854" top="25723" logicalid="53" controlid="22" masterid="0" hint1="0" hint2="0" width="8654" height="1334" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_PREVEN-DIM_CONTABLE]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="11" sourceattachpoint="18" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="22208" y="26122" />
+              <point x="18181" y="26122" />
+              <point x="18181" y="26757" />
+              <point x="14154" y="26757" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9388" top="14751" logicalid="54" controlid="23" masterid="0" hint1="0" hint2="0" width="2299" height="9806" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_PREVEN-DIM_EMPRESA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="11" sourceattachpoint="5" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9787" y="15250" />
+              <point x="9787" y="19753" />
+              <point x="11387" y="19753" />
+              <point x="11387" y="24257" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12737" top="14751" logicalid="55" controlid="24" masterid="0" hint1="0" hint2="0" width="2850" height="9806" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_PREVEN-DIM_MESES_COMERCIAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="11" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15187" y="15250" />
+              <point x="15187" y="19753" />
+              <point x="13037" y="19753" />
+              <point x="13037" y="24257" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8120" top="22737" logicalid="56" controlid="25" masterid="0" hint1="0" hint2="0" width="3000" height="3220" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_PREVEN-DIM_CLIENTES]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="11" sourceattachpoint="19" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8420" y="23136" />
+              <point x="9620" y="23136" />
+              <point x="9620" y="25657" />
+              <point x="10820" y="25657" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="27007" logicalid="57" controlid="26" masterid="0" hint1="0" hint2="0" width="8400" height="3850" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_PREVEN-DIM_VENDEDOR]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="11" sourceattachpoint="19" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="30457" />
+              <point x="6920" y="30457" />
+              <point x="6920" y="27307" />
+              <point x="10820" y="27307" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="D_TIEMPO" left="16680" top="17928" logicalid="58" controlid="27" masterid="0" hint1="0" hint2="0" width="3704" height="3633" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000780e0000310e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_D_TIEMPO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13287" top="21062" logicalid="59" controlid="28" masterid="0" hint1="0" hint2="0" width="3995" height="3495" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_PREVEN-D_TIEMPO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="27" destid="11" sourceattachpoint="1" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16882" y="21561" />
+              <point x="16882" y="22909" />
+              <point x="13587" y="22909" />
+              <point x="13587" y="24257" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16483" top="8555" logicalid="60" controlid="29" masterid="0" hint1="0" hint2="0" width="3735" height="9873" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-D_TIEMPO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="27" destid="1" sourceattachpoint="0" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16882" y="17928" />
+              <point x="16882" y="13392" />
+              <point x="19918" y="13392" />
+              <point x="19918" y="8855" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DIM_MARGENES" left="17568" top="25142" logicalid="61" controlid="30" masterid="0" hint1="0" hint2="0" width="3000" height="1517" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000ed050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_RANGO_MARGEN" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17418" top="8555" logicalid="62" controlid="31" masterid="0" hint1="0" hint2="0" width="950" height="17087" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FACT_VENTAS-DIM_MARGENES]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="30" destid="1" sourceattachpoint="0" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="17968" y="25142" />
+              <point x="17968" y="16999" />
+              <point x="17718" y="16999" />
+              <point x="17718" y="8855" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>5568</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>16804</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="6d33bc34-fbbb-46df-9b4c-83e52784d5e0">
+      <ID>DIM_TIEMPO</ID>
+      <Name>FECHA</Name>
+      <DimensionID>D TIEMPO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="19f59ae4-5f54-45ea-8288-ed233e82b257">
+          <AttributeID>YEAR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d12f9d73-ed00-4d43-b736-db0425c1c9e8">
+          <AttributeID>TRIM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4337a95c-e927-405a-8012-fa04aa7c9ff5">
+          <AttributeID>MONTH</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f36a0915-89ba-4944-8547-00fe432fe00f">
+          <AttributeID>DAY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2238ccdc-eff0-4966-a161-32f6a6f41e59">
+          <AttributeID>WEEK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2cdf45a8-f29d-461a-a1d4-04363b1060d4">
+          <AttributeID>DAY OF YEAR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7b27d7ff-87f1-40e1-a700-91f6d38d1ed8">
+          <AttributeID>Calendario FECHA Calculations</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="8fa93e5f-7fd7-45b8-82ad-afc957be6126">
+          <HierarchyID>YEAR -  TRIM -  MONTH -  DAY</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="2bbb7b3d-27b8-42ff-ad01-d3e6d84612ce">
+      <ID>DIM EMPRESA</ID>
+      <Name>EMPRESA</Name>
+      <DimensionID>DIM EMPRESA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="61344fe8-86c7-463f-bae6-75ab98cf9efb">
+          <AttributeID>DIM EMPRESA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bf827065-f03a-49b4-bc6b-896797dc9913">
+          <AttributeID>Emp Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa22b569-82b4-4f09-8c93-b54eeff74bab">
+          <AttributeID>Suc Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="485f5e5e-5e24-48b5-aae9-0747d031ac52">
+          <AttributeID>Suc Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa54ae9c-97c2-45c2-9dc1-e584cc3d78b0">
+          <AttributeID>Emp Nom</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="18135de3-dbb5-47a2-bdc7-34d4ada6bf20">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="628465fc-49e8-49ae-a373-19abbc3217d8">
+      <ID>DIM CLIENTES</ID>
+      <Name>CLIENTES</Name>
+      <DimensionID>DIM CLIENTES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ed0700b2-2741-446d-96f4-2317a8d82a73">
+          <AttributeID>DIM CLIENTES</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d763917-d36a-4301-8e7d-31132c2be902">
+          <AttributeID>Emp Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f7d2755-3766-4aa4-a4f7-c252dc3769fe">
+          <AttributeID>Cli ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0bd55480-f015-4456-8e43-26209da38b0c">
+          <AttributeID>Cli Rut</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dd4b0114-2938-45da-85a1-9acec89c0443">
+          <AttributeID>Cli Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bf073653-2ccd-49da-8f98-358d89d69a7f">
+          <AttributeID>Sec Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eec4c93d-d0a0-49c2-a006-bdaadd5875e3">
+          <AttributeID>Sec Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f4c5c3a5-9ed8-42b0-a16e-23e0e426dc16">
+          <AttributeID>Rub Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="896475ee-62d4-4cdd-bb26-b10c4f88f6d4">
+          <AttributeID>Rub Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b227d848-24e0-480f-a597-75c48bb8f7bf">
+          <AttributeID>Atri C1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="73175546-5b6e-4e50-9170-716b8a3b8f2f">
+          <AttributeID>Atri C2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c98e8400-cb12-4612-ba6d-508bf351350b">
+          <AttributeID>Atri C3</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e58759fc-f84f-4902-b528-5a91ccf05a8d">
+          <AttributeID>Atri C4</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14827ca8-48bc-4429-9139-11b65ae8ed78">
+          <AttributeID>Atri C5</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="65291011-c88d-454c-9388-e8c5515a2ebf">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="9e0b40c2-cf65-4541-a19a-22baf0c0f3d3">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="93cd1ce9-e3d9-4ea2-9aa8-39132bce5f97">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="315e8f84-59e6-46b0-a636-dce6ae4c814e">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="49c062e9-e352-4389-a5d0-4b110e277bcd">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e4b4011b-b996-4b98-bc41-b6c0e918e235">
+          <HierarchyID>Hierarchy 5</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="cebc0f57-bc16-431e-8f8c-8ab75a916f45">
+          <HierarchyID>Hierarchy 6</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="cdf2feb4-5c46-402d-ad5a-85d7605691e1">
+          <HierarchyID>Hierarchy 7</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="35c94eea-7525-4d36-8961-1b8700186987">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="0dfda8e7-32cd-45a8-bba5-c5969d236b41">
+      <ID>DIM VENDEDOR</ID>
+      <Name>VENDEDOR</Name>
+      <DimensionID>DIM VENDEDOR</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5c65c58a-6ced-4564-9f46-9bdd6b849eae">
+          <AttributeID>DIM VENDEDOR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="304ed343-9c12-4893-bc42-cfa4f9da9c0e">
+          <AttributeID>Emp Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d811513-1324-4995-a247-0fdca91170ff">
+          <AttributeID>Ven ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="08260f3d-12dd-4aac-8ce1-0eddfe74c096">
+          <AttributeID>Ven Rut</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cfcc8f87-10c9-46ef-b012-0dd030f73bff">
+          <AttributeID>Ven Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d9242eec-d1e5-4ae5-8f4e-b2a1fbd74161">
+          <AttributeID>Ven Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e186189-f4dd-4133-ad6a-a4b3b0fe74e8">
+          <AttributeID>Ven Cat</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac1e6889-c654-4518-99e6-3daf81bc853c">
+          <AttributeID>Sup Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cdb5aad3-4101-4d75-b63d-d9c0d92603ea">
+          <AttributeID>Sup Nom</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5e78ab25-568f-43ff-810c-0090f5313ac4">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="cb47f275-747c-415c-a5c2-cd4b884e0ac5">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="d253d1de-09f1-43ee-a51a-2336c68f74cc">
+      <ID>DIM PRODUCTOS DE VENTAS</ID>
+      <Name>PRODUCTOS DE VENTAS</Name>
+      <DimensionID>DIM PRODUCTOS DE VENTAS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="903bc26c-0a15-40b5-8350-b5abfd77e1f3">
+          <AttributeID>DIM PRODUCTOS DE VENTAS</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b050b6d-4588-40d2-80e1-bac3389a554a">
+          <AttributeID>Emp Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b8647968-e486-42d2-a499-98a141791d91">
+          <AttributeID>Bar Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93fc0d97-cdc4-49db-bc20-5b69a1ddc54c">
+          <AttributeID>Bar Des</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="50132ae4-7a55-432c-a065-acc1375615c2">
+          <AttributeID>Bar At1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87b66933-4c28-48cd-90c0-5322a6686d81">
+          <AttributeID>Bar At2</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b8a98bd-66c8-4141-bf09-e9009b7f84a3">
+          <AttributeID>Bar At3</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5eea6771-ebb1-4663-81aa-5197eeb1f3b6">
+          <AttributeID>Bar At4</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="74f8d094-619e-45c7-b185-26c6ea7c9ca0">
+          <AttributeID>Bar At5</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a4b713ec-6d5d-45ca-962c-056d686fa65a">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="43c33345-91c2-4321-bf9a-778c30a54971">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="6ddd2364-a67e-4a6a-8f8f-89d8a4ce1862">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e04cad51-2052-4762-811f-bf9f17b18643">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e31d6234-9736-4303-a8e4-88c51130f10b">
+          <HierarchyID>Hierarchy 4</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="17599b02-b5e4-4fd7-bd1b-f28871984fb5">
+          <HierarchyID>Hierarchy 5</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="6153f7da-1075-4b76-80bc-c3ff7ede63f2">
+      <ID>DIM MESES COMERCIAL</ID>
+      <Name>MESES</Name>
+      <DimensionID>DIM MESES COMERCIAL</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8671fb4d-add9-49cb-91b9-0ff3ca64624a">
+          <AttributeID>DIM MESES COMERCIAL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e96f0533-099c-4f2b-ade0-c5a5e2cca6ea">
+          <AttributeID>Emp Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55016b05-3dee-4b52-bb26-291f0f92972a">
+          <AttributeID>Eje Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d9f8f3a4-0965-41e9-8c20-4135e7d444ff">
+          <AttributeID>Eje Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6680abc7-cd3d-47f3-9573-5e3f5780d2b4">
+          <AttributeID>Eje Per Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d7c4b5eb-fe6e-4d6c-8569-b331bfbd97d3">
+          <AttributeID>Ano Per</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a259240c-f92a-42f9-8155-434614d003dd">
+          <AttributeID>Num Per</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="961f2747-75d3-4b08-8a6a-d920c96f5e3f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c80f798d-8864-4263-a93f-91f0169c9600">
+      <ID>DIM CONDICION VENTA</ID>
+      <Name>CONDICION VENTA</Name>
+      <DimensionID>DIM CONDICION VENTA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="990a61b4-4f80-4f06-bb35-2add3e5b5f13">
+          <AttributeID>DIM CONDICION VENTA</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5a85f6e0-fec9-4236-848f-2726c21247ba">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="590d3469-9102-4dcc-8a5c-24daebd272a3">
+      <ID>DIM DOCUMENTO</ID>
+      <Name>DOCUMENTO</Name>
+      <DimensionID>DIM DOCUMENTO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2023cf7a-04ac-4ec5-b465-8c39035e2207">
+          <AttributeID>DIM DOCUMENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6d682653-17d4-413c-b440-d23b8aa1b07c">
+          <AttributeID>Ate Ori</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3effab79-755f-4f37-aa23-126a1abbd3f9">
+          <AttributeID>Tip Doc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6b256a82-12b2-4104-a49b-5fd05644c830">
+          <AttributeID>Doc Nom</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="bd5b5557-1b45-4245-8d4a-3a33a1bc7d05">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="1203bea8-2f57-4003-9222-0efe5284d5be">
+      <ID>DIM ESTADO</ID>
+      <Name>ESTADO</Name>
+      <DimensionID>DIM ESTADO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b102f284-82ef-4ec2-ada7-36538d9ef4d4">
+          <AttributeID>DIM ESTADO</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5f369239-f003-4826-9034-3f58fd9e2e49">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="06bc2e12-d441-4e57-9def-75d3f536f08a">
+      <ID>DIM CONTABLE</ID>
+      <Name>CONTABLE</Name>
+      <DimensionID>DIM CONTABLE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e9038e93-9e7d-4d89-9b34-18f2de26b028">
+          <AttributeID>DIM CONTABLE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1ff6ddc4-9e9d-4eae-96fe-f0049753e2a0">
+          <AttributeID>Are Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2ce4bc91-efd0-4966-8bd7-3388c59872e9">
+          <AttributeID>Are Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20f5c61c-d5a4-423a-a401-a2eb61f963db">
+          <AttributeID>Cen Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5a0f8486-ae23-42df-b6b6-30c2083c09a2">
+          <AttributeID>Cen Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d07ff917-0c42-4218-a66f-9b936003c5ad">
+          <AttributeID>Grc Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c736ac6d-3044-4bc7-81c8-5ed1e778cba2">
+          <AttributeID>Grc Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17fec8d7-877a-4e99-babb-9604f0e4a603">
+          <AttributeID>Ite Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="25ebc11f-426a-4435-915f-a1d328d75934">
+          <AttributeID>Ite Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="25bd7763-53ef-4398-900d-a80e768d55c7">
+          <AttributeID>Gri Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d68b607c-f50d-4a94-80e9-9a4b8e27f6f7">
+          <AttributeID>Gri Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="856318dc-7f96-40ce-917e-2350e48066e0">
+          <AttributeID>Pla Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7badddbf-8fd6-4c8d-bdd0-0106969ec768">
+          <AttributeID>Pla Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc71d324-376e-4a93-8d48-d448e59caf6c">
+          <AttributeID>Tit Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72f2d26c-192e-41aa-84d0-f81aa0edf400">
+          <AttributeID>Tit Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="afe0b915-b672-4370-985b-bc154f43fe2f">
+          <AttributeID>Sub Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17d05f4f-ae72-4602-aeae-97fa4db93d72">
+          <AttributeID>Sub Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5812705b-6a96-46d9-bc64-bdf84e573577">
+          <AttributeID>Gru Cod</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83247422-43d0-4cbe-adcc-d1501f277560">
+          <AttributeID>Gru Nom</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="69070098-e476-4113-84dc-2a7625b3efec">
+          <AttributeID>Tip Cue</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="4b70edb9-85d9-4eda-931d-f4c7cb48ace1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="acafde24-9261-49f1-b693-f4e4c9b9425a">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="40af8fb7-d38a-4158-9a06-6fcd4f0b3091">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="6572ef3c-21d3-414c-b10b-6e299c936d54">
+          <HierarchyID>Hierarchy 3</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="28cc636e-8623-4a5e-87f8-eb9924ce928f">
+      <ID>DIM MARGENES</ID>
+      <Name>RANGOMARGEN</Name>
+      <DimensionID>DIM MARGENES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8527d770-3d60-4e95-ae1f-62ac6aae308b">
+          <AttributeID>Margenes</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="a3443f8a-f9f0-464c-8411-b64bc8738545">
+      <ID>FACT VENTAS</ID>
+      <Name>VENTAS</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b4a0e79d-420f-4f54-893e-90a51332924b">
+          <ID>Uni Ven</ID>
+          <Name>Unidades Vendidas</Name>
+          <Source dwd:design-time-name="bf511a90-10de-4394-beb0-bcbd657fab22">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c6f490d1-ccd1-42a8-969a-6da5184432c4">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>UniVen</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.00</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="e1fbac7b-f11d-4fe8-b449-a5142217ae11">
+          <ID>Total Precio Lista</ID>
+          <Name>Total Precio Lista</Name>
+          <Source dwd:design-time-name="11eb2456-acbe-42b6-b1c3-608c40dbb831">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="269055a2-c510-4255-9b99-0489a0b7aa10">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>Total_Precio_Lista</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="31e588d2-97db-42c8-af9a-95d59875e0a4">
+          <ID>Total Descuentos</ID>
+          <Name>Total Descuentos</Name>
+          <Source dwd:design-time-name="839b7101-b73c-4ffc-9a1a-b86c41bc5707">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6f9deadc-e87f-4a10-b46d-26d2a20138fa">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>Total_Descuentos</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="d175fd96-3ade-413d-822e-26678beffcd2">
+          <ID>Total Recargos</ID>
+          <Name>Total Recargos</Name>
+          <Source dwd:design-time-name="afb5ea40-0711-4cc9-96fc-ec6d51d84ad9">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cb9f3799-3eeb-4d4b-9854-1a7a87db9471">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>Total_Recargos</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="16ef585a-b7d7-4dd1-b5f5-704548e09f24">
+          <ID>Total Ventas Netas</ID>
+          <Name>Total Ventas Netas</Name>
+          <Source dwd:design-time-name="eed7533e-dbca-425b-b6d7-5368884ae969">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c3a66dbc-af09-49e0-ab89-ec5f80ac5cf6">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>Total_Ventas_Netas</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="f11cd3ff-c782-4a9f-89f5-e31f2479b5a6">
+          <ID>Total Costos</ID>
+          <Name>Total Costos</Name>
+          <Source dwd:design-time-name="b8c1e30c-bb31-4a0e-ae9f-1876dafe5dc9">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1def0b2f-7c3d-4c62-a62b-f82b88813e8f">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>Total_Costos</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="33e1cd14-d7d3-495e-b0f2-d5581b777da7">
+          <ID>Total Margen</ID>
+          <Name>Total Margen</Name>
+          <Source dwd:design-time-name="96a913ec-3ed2-4a53-9085-617d00b9e324">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ee338962-76bf-4cea-b2ea-81e0462d95e2">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>Total_Margen</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="0b3d7e56-b0f5-410d-872f-fd72fa43d17a">
+          <ID>Margen Porcentual</ID>
+          <Name>Margen Porcentual</Name>
+          <Source dwd:design-time-name="78d208dc-0ba9-4ad7-99fc-d3623401aaed">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="223b1ee1-ff1f-4b1f-91ca-cbc829364a9f">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>Margen_Porcentual</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+          <FormatString>Percent</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="9fe44c35-4542-4fba-a05d-88c8e7014764">
+          <ID>Fin Cos Uni</ID>
+          <Name>Total Costo Financiero</Name>
+          <Source dwd:design-time-name="2febff93-df7b-437b-9dc8-2b1ff8b6435a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d9b44183-6b0c-401e-840e-6369b784b80a">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>FinCosUni</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="3e446d1a-d21e-48f9-ad79-d174656e04d1">
+          <ID>Fin Mar Uni</ID>
+          <Name>Total Margen Financiero</Name>
+          <Source dwd:design-time-name="5e92ed6b-8569-49c0-8da3-3066f03c9629">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f2006f8f-4a90-48c9-93cc-d91b919bb907">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>FinMarUni</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="c1185b14-f234-4a14-9e39-14ad08838d4d">
+          <ID>Mar Uni</ID>
+          <Name>Mar Uni</Name>
+          <Source dwd:design-time-name="389e049b-8639-45c5-b59f-ac257a233afa">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8cb5ac68-5224-4d43-9c2e-0d5fba49207b">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>MarUni</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+        <Measure dwd:design-time-name="20227398-8d36-4549-aff0-0f21350040c4">
+          <ID>Pre Ven</ID>
+          <Name>Pre Ven</Name>
+          <Source dwd:design-time-name="2a7bbd30-37c1-4083-b1ae-5857ef490b85">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5d62e446-5b61-4566-89fc-1ce2ec408007">
+              <TableID>FACT_VENTAS</TableID>
+              <ColumnID>PreVen</ColumnID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="09bc9b57-d4e8-4a5b-be8c-be81f7a2a22a">
+          <CubeDimensionID>DIM CLIENTES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="04530349-debb-4100-a765-29ce5661239b">
+              <AttributeID>DIM CLIENTES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="632b5864-74b5-48b9-b27d-d94c509e7a06">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="46834a3c-1ade-4cb6-85bd-0fc38c7eeeb2">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>EmpCli</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="38e868eb-d23d-4aa5-b73c-f71d76ab2b6b">
+          <CubeDimensionID>DIM VENDEDOR</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f960362-66a9-4065-8dd9-7e8c42835642">
+              <AttributeID>DIM VENDEDOR</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1ebb7966-37f3-4c61-b32d-6ed737fac8d8">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b0ae5d7e-6167-431a-8c0b-46aa376679c8">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>EmpVen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3d741e36-490c-4d18-ba7c-d4b20122059c">
+          <CubeDimensionID>DIM PRODUCTOS DE VENTAS</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1095fc6e-5198-4888-be0f-05f292468f2e">
+              <AttributeID>DIM PRODUCTOS DE VENTAS</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e4c534e4-0416-4e71-ad62-f75ef6f34f64">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a9d60f3c-f43f-42a4-b9b5-91470dadd2ca">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>EmpBar</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a3aafe0c-0b72-4fd9-878d-769cca5e00ef">
+          <CubeDimensionID>DIM MESES COMERCIAL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aeddb153-e546-4dd9-843e-b22e097f1b41">
+              <AttributeID>DIM MESES COMERCIAL</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="acc00e0f-6695-4372-b77c-08078537cfa9">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="266a8d7d-8695-4724-993a-dd2f0cb501aa">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>Emejap</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e1f0bbf5-0329-4603-8e60-be68b6f4cee9">
+          <CubeDimensionID>DIM CONDICION VENTA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6615b8f8-f3b3-4c23-88a2-def554f263fe">
+              <AttributeID>DIM CONDICION VENTA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="810a2a8b-ca9b-4429-aebf-1fbde2a584a6">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6764a098-ada0-468d-a3c0-784b33783f4b">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>ConVen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="73c72237-1df3-4803-9268-df4cde157492">
+          <CubeDimensionID>DIM ESTADO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b4450e1d-ea12-4c7d-9963-baa3a0941955">
+              <AttributeID>DIM ESTADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7847c4c1-28a0-450d-b2e7-0dc17b333d0d">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f480dda2-9749-4b7c-a7dc-2ab45448df02">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>AteEst</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1aea4237-126d-419f-971e-a26e03676e0d">
+          <CubeDimensionID>DIM CONTABLE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4ec8214b-baa2-45ee-a904-14d3694e838f">
+              <AttributeID>DIM CONTABLE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3f77e936-1c12-41c9-a465-c8ecd0802070">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1fc0f4b8-0c39-4489-bcdd-f276df0cfa20">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>Are_Cen_Ite_Pla</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ffdda1f6-2905-4d02-ad53-1e3b84a53a34">
+          <CubeDimensionID>DIM_TIEMPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="45e01ea1-3f14-486d-8264-10525862691f">
+              <AttributeID>DAY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="195cce44-c888-4ed5-8820-cdb33a59ad8e">
+                  <DataType>Date</DataType>
+                  <DataSize>-1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="43a83ad0-da5e-4bff-a05b-28af97d00ab6">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>FecMov</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a4a399d6-aed9-4287-ab67-b1fa76d2b80d">
+          <CubeDimensionID>DIM EMPRESA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3ef63264-16b5-4563-9fb2-9425bdb6a5a9">
+              <AttributeID>DIM EMPRESA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c3f9ec5b-5b73-4975-8e8a-8b991ccd8ce5">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e819d6cb-1087-4a77-84fd-cb52680db16b">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>EmpSuc</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="de3d2a9f-3f06-4b79-b92f-bf14d9332d5f">
+          <CubeDimensionID>DIM DOCUMENTO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="45e9dc1c-5ddb-43e3-b540-67fe4d771ffb">
+              <AttributeID>DIM DOCUMENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="369eac94-4390-4344-a8f2-0fc8160b2b0b">
+                  <DataType>WChar</DataType>
+                  <DataSize>101</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="db5567e2-4c06-472e-a3cd-0700a1555d13">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>Documento</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b72b5ca5-1ea8-4bf7-be15-3f505f5053e5">
+          <CubeDimensionID>DIM MARGENES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4969f793-e95c-48fc-9cf5-30fec0fc53ed">
+              <AttributeID>Margenes</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3fd1cbdb-3591-4360-b168-6ac6a1f3887f">
+                  <DataType>WChar</DataType>
+                  <DataSize>19</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ea02fd22-ae92-4fe1-bd81-79cbef142c04">
+                    <TableID>FACT_VENTAS</TableID>
+                    <ColumnID>Margenes</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="7dc3cbc8-a48d-431e-89ae-ca05d3e4df24">
+      <ID>FACT PREVEN</ID>
+      <Name>PRESUPUESTO</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="71fca36e-2b05-4afc-9099-f7adeaca740c">
+          <ID>Uni Pre</ID>
+          <Name>Unidades Presupuestadas</Name>
+          <Source dwd:design-time-name="4126c0f6-bb17-431a-b977-605f1dc7a0ff">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fe6f6631-b7a1-4b3d-90f0-e73f8869b7e9">
+              <TableID>FACT_PREVEN</TableID>
+              <ColumnID>UniPre</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="629a7ff2-54de-44b7-9491-5086c1baf70f">
+          <ID>Pre Pre</ID>
+          <Name>Precio Neto Presupuestado</Name>
+          <Source dwd:design-time-name="327dda9d-13f3-42ff-a98b-a199c3e63eb3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="815b6f7f-c22d-4d91-963b-f448fef3a7cc">
+              <TableID>FACT_PREVEN</TableID>
+              <ColumnID>PrePre</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="aba493d9-7d9e-48bd-a495-c4d3e96cf476">
+          <ID>Cos Pre</ID>
+          <Name>Costo Presupuestados</Name>
+          <Source dwd:design-time-name="4fbfea45-ebb5-4e39-ab71-d2fdcdf10ea1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ac29251d-3be1-4f41-b7d1-5aa59686f5bd">
+              <TableID>FACT_PREVEN</TableID>
+              <ColumnID>CosPre</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="1f59b124-9bf1-4ab5-b276-f38f95932cc7">
+          <ID>Mar Pre</ID>
+          <Name>Margen Presupuestado</Name>
+          <Source dwd:design-time-name="c8c47ae2-873e-4ffa-8748-8a056771564d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2f15c2aa-94de-46b9-9852-7d546bd849a4">
+              <TableID>FACT_PREVEN</TableID>
+              <ColumnID>MarPre</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,#.0</FormatString>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="57d97670-287c-4c63-9551-4c1389d08e45">
+          <CubeDimensionID>DIM EMPRESA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="42794a4c-cef7-479c-a45d-97a56722427b">
+              <AttributeID>DIM EMPRESA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9f5ac27c-7263-4144-b4f7-e91bcad2b368">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="92079d00-963b-4150-b888-1d051526590f">
+                    <TableID>FACT_PREVEN</TableID>
+                    <ColumnID>EmpSuc</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ecafd8cf-4858-4a46-8fcc-82a5a5330581">
+          <CubeDimensionID>DIM CLIENTES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6c3b5b63-1e66-4cfc-9185-5c55e66e02f3">
+              <AttributeID>DIM CLIENTES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c8a0fb54-246d-41e0-9547-5032952eb3a8">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5574e338-87ac-4b7e-9a20-394324b46f25">
+                    <TableID>FACT_PREVEN</TableID>
+                    <ColumnID>EmpCli</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="25a63669-6aff-46d8-b124-56ce2bed0900">
+          <CubeDimensionID>DIM CONTABLE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3336ce78-3897-45ad-aaae-537dbca8f9ff">
+              <AttributeID>DIM CONTABLE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb9faf46-1be0-4411-98ff-f0557ea3d22b">
+                  <DataType>WChar</DataType>
+                  <DataSize>200</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2e7bc9ac-24dc-4dce-86e2-2929d576b97d">
+                    <TableID>FACT_PREVEN</TableID>
+                    <ColumnID>Are_Cen_Ite_Pla</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="46bff24a-b759-447b-8693-ebac3d79a7ab">
+          <CubeDimensionID>DIM VENDEDOR</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c9b83638-85f9-4773-9374-c9db84cbf602">
+              <AttributeID>DIM VENDEDOR</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4850abea-297a-4831-a60f-617d4b415914">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c47be64-f1de-459a-8d18-41d2f798ab43">
+                    <TableID>FACT_PREVEN</TableID>
+                    <ColumnID>EmpVen</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a2f1e4d8-6584-4238-bc8f-d047df3386f6">
+          <CubeDimensionID>DIM MESES COMERCIAL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f6caed7-82c6-4b6c-aae1-411b940541a8">
+              <AttributeID>DIM MESES COMERCIAL</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7b1f1e9e-107e-4031-a3d9-45002894a2d5">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2759e853-8cd6-4b7f-8e8c-a4a229eec345">
+                    <TableID>FACT_PREVEN</TableID>
+                    <ColumnID>Emejap</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="33c2a8e0-0845-4d75-806a-682592cd4f38">
+          <CubeDimensionID>DIM_TIEMPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2ba379a3-7ef9-4845-bfa4-b025f1a27ca8">
+              <AttributeID>DAY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0e607d0e-b365-460d-a2b4-ddf9571703d1">
+                  <DataType>Date</DataType>
+                  <DataSize>-1</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9ab45f51-d13e-4522-8365-26aee87351f3">
+                    <TableID>FACT_PREVEN</TableID>
+                    <ColumnID>FECMOV</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fe98f101-2971-4f46-acad-3622f5610eb9">
+          <CubeDimensionID>DIM PRODUCTOS DE VENTAS</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="da4b5b61-ae1f-49cb-99f9-6995c9b2ba7a">
+              <AttributeID>DIM PRODUCTOS DE VENTAS</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e4c90879-cf8a-4bae-878a-9164f7f3722b">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="37de88d2-6044-4215-a485-c59ddf04032b">
+                    <TableID>FACT_PREVEN</TableID>
+                    <ColumnID>EmpBar</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="5cad7107-cd0d-4e69-b8af-3eb6b4434243">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="758844b9-0c93-4ec3-a6b2-7288d7df3bb0">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If deleted or modified, the data within the cube will be affected.
+This command should only be edited if you intend on manually specifying how the cube will be aggregated.
+*/
+CALCULATE;         
+
+CREATE MEMBER CURRENTCUBE.[MEASURES].[Margen_Porcentual]
+ AS (IIF ([Measures].[Pre Ven]&lt;&gt; 0, [Measures].[Mar Uni]/[Measures].[Pre Ven], 0)), 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1;                     
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Año Actual]
+ AS "NA", 
+VISIBLE = 1;                 
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Año Anterior]
+ AS "NA", 
+VISIBLE = 1;                
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Crecimiento Anual]
+ AS "NA", 
+VISIBLE = 1;                
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Crecimiento Anual %]
+ AS "NA", 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1;                 
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Trimestre Actual]
+ AS "NA", 
+VISIBLE = 1;                 
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior]
+ AS "NA", 
+VISIBLE = 1;                
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Crecimiento Trimestral]
+ AS "NA", 
+VISIBLE = 1;               
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Crecimiento Trimestral %]
+ AS "NA", 
+VISIBLE = 1;                 
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Mes Actual]
+ AS "NA", 
+VISIBLE = 1;                 
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Mes Anterior]
+ AS "NA", 
+VISIBLE = 1;                
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Crecimiento Mensual]
+ AS "NA", 
+VISIBLE = 1;               
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Crecimiento Mensual %]
+ AS "NA", 
+VISIBLE = 1;    
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Ultimos 12 Meses]
+ AS "NA", 
+VISIBLE = 1;  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Promedio de los Ultimos 12 Meses]
+ AS "NA", 
+VISIBLE = 1;   
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Ultimos 6 Meses]
+ AS "NA", 
+VISIBLE = 1;  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Promedio de los Ultimos 6 Meses]
+ AS "NA", 
+VISIBLE = 1  ;  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Acumulado Ultimos 3 Meses]
+ AS "NA", 
+VISIBLE = 1;  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Promedio de los Ultimos 3 Meses]
+ AS "NA", 
+VISIBLE = 1  ;                           
+
+/*
+  Begin Time Intelligence script for the [FECHA].[Calendario] hierarchy.
+*/
+
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Año Actual]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Variación Anual]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Variación Anual %]
+ AS "NA", 
+FORMAT_STRING = "Percent", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Trimestre Actual]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Variación Trimestral]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Variación Trimestral %]
+ AS "NA", 
+FORMAT_STRING = "Percent", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Mes Actual]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Variación Mensual]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Variación Mensual %]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Ultimos 12 Meses]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Promedio Ultimos 12 Meses]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Promedio Ultimos 6 Meses]
+ AS "NA", 
+VISIBLE = 0;                          
+  
+CREATE MEMBER CURRENTCUBE.[FECHA].[Tiempos Relativos].[Promedio Ultimos 3 Meses]
+ AS "NA", 
+VISIBLE = 0;                          
+ 
+Scope(
+      {
+       [Measures].[Margen_Porcentual]
+       
+       }
+ );       
+
+
+// Acumulado Año Actual
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Año Actual]
+ 
+  ) =
+
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Año] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 0, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                  
+
+// Acumulado Año Anterior
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Año Anterior]
+ 
+  ) =
+
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Año] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 12, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                  
+
+// Crecimiento Anual
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Anual]
+ 
+  ) =
+[FECHA].[Tiempos Relativos].[Acumulado Año Actual] - [FECHA].[Tiempos Relativos].[Acumulado Año Anterior];                 
+
+ // Crecimiento Anual %
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Anual %]
+ 
+  ) =
+([FECHA].[Tiempos Relativos].[Acumulado Año Actual] - [FECHA].[Tiempos Relativos].[Acumulado Año Anterior]) / [FECHA].[Tiempos Relativos].[Acumulado Año Anterior];                
+
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Crecimiento Anual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                
+
+
+ // Acumulado Trimestre Actual
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Trimestre Actual]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Trimestre] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 0, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                 
+
+// Acumulado Trimestre Anterior
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Trimestre] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 3, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                
+
+ // Crecimiento Trimestral
+   ( [FECHA].[Tiempos Relativos].[Crecimiento Trimestral]
+ 
+  ) =
+[FECHA].[Tiempos Relativos].[Acumulado Trimestre Actual] - [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior];                  
+
+// Crecimiento Trimestral %
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Trimestral %]
+ 
+  ) =
+([FECHA].[Tiempos Relativos].[Acumulado Trimestre Actual] - [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior]) / [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior];                
+
+
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Crecimiento Trimestral %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                
+
+
+
+ // Acumulado Mes Actual
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Mes Actual]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[MES] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 0, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                 
+
+// Acumulado Mes Anterior
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Mes] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 1, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );               
+
+  // Crecimiento Mensual
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Mensual]
+ 
+  ) =
+[FECHA].[Tiempos Relativos].[Acumulado Mes Actual] - [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior];              
+
+ // Crecimiento Mensual %
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Mensual %]
+ 
+  ) =
+([FECHA].[Tiempos Relativos].[Acumulado Mes Actual] - [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior]) / [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior];                     
+  
+
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Crecimiento Mensual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                
+
+// Acumulado Ultimos 12 Meses
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Ultimos 12 Meses]
+ 
+  ) =
+ Aggregate(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 12)
+  );   
+
+// Promedio de los Ultimos 12 Meses
+(
+    [FECHA].[Tiempos Relativos].[Promedio de los Ultimos 12 Meses]
+ 
+  ) =
+ Avg(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 12)
+  );   
+               
+// Acumulado Ultimos 6 Meses
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Ultimos 6 Meses]
+ 
+  ) =
+ Aggregate(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 6)
+  );               
+// Promedio de los Ultimos 6 Meses
+(
+    [FECHA].[Tiempos Relativos].[Promedio de los Ultimos 6 Meses]
+ 
+  ) =
+ Avg(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 6)
+  );   
+
+// Acumulado Ultimos 3 Meses
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Ultimos 3 Meses]
+ 
+  ) =
+ Aggregate(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 3)
+  );               
+
+// Promedio de los Ultimos 3 Meses
+(
+    [FECHA].[Tiempos Relativos].[Promedio de los Ultimos 3 Meses]
+ 
+  ) =
+ Avg(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 3)
+  );                  
+       
+  
+// Year to Date
+  (
+    [FECHA].[Tiempos Relativos].[Año Actual],
+    [FECHA].[YEAR].[YEAR].Members,
+	[FECHA].[DAY].Members 
+  ) =
+
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             PeriodsToDate(
+                            [FECHA].[Calendario].[Año],
+                            [FECHA].[Calendario].CurrentMember
+             )
+  );                          
+
+  
+// Quarter to Date
+  ( 
+	[FECHA].[Tiempos Relativos].[Trimestre Actual],
+    [FECHA].[TRIM].[TRIM].Members,
+	[FECHA].[DAY].Members 
+  ) =
+
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             PeriodsToDate(
+                            [FECHA].[Calendario].[Trimestre],
+                            [FECHA].[Calendario].CurrentMember
+             )
+  );                          
+
+  
+// Month to Date
+  ( 
+	[FECHA].[Tiempos Relativos].[Mes Actual],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             PeriodsToDate(
+                            [FECHA].[Calendario].[Mes],
+                            [FECHA].[Calendario].CurrentMember
+             )
+  );                          
+
+  
+// Twelve Months to Date
+  ( 
+	[FECHA].[Tiempos Relativos].[Ultimos 12 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             {
+               ParallelPeriod(
+                               [FECHA].[Calendario].[Mes],
+                               11,
+                               [FECHA].[Calendario].CurrentMember
+               ) : [FECHA].[Calendario].CurrentMember
+             }
+  );                          
+
+  
+// Twelve Month Moving Average  
+  ( 
+	[FECHA].[Tiempos Relativos].[Promedio Ultimos 12 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Avg(
+       {
+         ParallelPeriod(
+                         [FECHA].[Calendario].[Mes],
+                         11,
+                         [FECHA].[Calendario].CurrentMember
+         ) : [FECHA].[Calendario].CurrentMember
+       },
+      [FECHA].[Tiempos Relativos].DefaultMember
+  );                          
+
+  
+// Six Month Moving Average  
+  ( 
+	[FECHA].[Tiempos Relativos].[Promedio Ultimos 6 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Avg(
+       {
+         ParallelPeriod(
+                         [FECHA].[Calendario].[Mes],
+                         5,
+                         [FECHA].[Calendario].CurrentMember
+         ) : [FECHA].[Calendario].CurrentMember
+       },
+      [FECHA].[Tiempos Relativos].DefaultMember
+  );                          
+
+  
+// Three Month Moving Average  
+  ( 
+	[FECHA].[Tiempos Relativos].[Promedio Ultimos 3 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Avg(
+       {
+         ParallelPeriod(
+                         [FECHA].[Calendario].[Mes],
+                         2,
+                         [FECHA].[Calendario].CurrentMember
+         ) : [FECHA].[Calendario].CurrentMember
+       },
+      [FECHA].[Tiempos Relativos].DefaultMember
+  );                          
+
+  
+// Year Over Year Growth %  
+  ( 
+	[FECHA].[Tiempos Relativos].[variación Anual %],
+    [FECHA].[YEAR].[YEAR].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( 
+    ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+    ( [FECHA].[Tiempos Relativos].DefaultMember,
+      ParallelPeriod(
+                      [FECHA].[Calendario].[Año],
+                      1,
+                      [FECHA].[Calendario].CurrentMember
+      )
+    )
+  ) 
+  /
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Año],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Anual %],
+    [FECHA].[YEAR].[YEAR].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                           
+  
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Variación Anual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                          
+
+  
+// Year Over Year Growth  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Anual],
+    [FECHA].[YEAR].[YEAR].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Año],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Anual],
+    [FECHA].[YEAR].[YEAR].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                          
+
+  
+// Quarter Over Quarter Growth %  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Trimestral %],
+    [FECHA].[TRIM].[TRIM].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  (
+    ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+    ( [FECHA].[Tiempos Relativos].DefaultMember,
+      ParallelPeriod(
+                      [FECHA].[Calendario].[Trimestre],
+                      1,
+                      [FECHA].[Calendario].CurrentMember
+      )
+    )
+  )
+  /
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Trimestre],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Trimestral %],
+    [FECHA].[TRIM].[TRIM].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                           
+  
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Variación Trimestral %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                          
+
+  
+// Quarter Over Quarter Growth  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Trimestral],
+    [FECHA].[TRIM].[TRIM].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Trimestre],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Trimestral],
+    [FECHA].[TRIM].[TRIM].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                          
+
+  
+// Month Over Month Growth %  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Mensual %],
+    [FECHA].[MONTH].[MONTH].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  (
+    ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+    ( [FECHA].[Tiempos Relativos].DefaultMember,
+      ParallelPeriod(
+                      [FECHA].[Calendario].[Mes],
+                      1,
+                      [FECHA].[Calendario].CurrentMember
+      )
+    )
+  )
+  /
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Mes],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Mensual %],
+    [FECHA].[MONTH].[MONTH].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                           
+  
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Variación Mensual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                          
+
+  
+// Month Over Month Growth  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Mensual],
+    [FECHA].[MONTH].[MONTH].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Mes],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Mensual],
+    [FECHA].[MONTH].[MONTH].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                          
+
+  
+End Scope;     
+
+
+
+Scope(
+      {
+        [Measures].[Mar Uni],
+         [Measures].[Pre Ven],
+         [Measures].[Unidades Vendidas],
+         [Measures].[Total Precio Lista],
+         [Measures].[Total Descuentos],
+         [Measures].[Total Recargos],
+         [Measures].[Total Ventas Netas],
+         [Measures].[Total Costos],
+         [Measures].[Total Margen],
+         [Measures].[Margen Porcentual],
+         [Measures].[Unidades Presupuestadas],
+         [Measures].[Precio Neto Presupuestado],
+         [Measures].[Costo Presupuestados],
+         [Measures].[Margen Presupuestado]  
+       }
+ );       
+
+
+// Acumulado Año Actual
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Año Actual]
+ 
+  ) =
+
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Año] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 0, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                  
+
+// Acumulado Año Anterior
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Año Anterior]
+ 
+  ) =
+
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Año] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 12, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                  
+
+// Crecimiento Anual
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Anual]
+ 
+  ) =
+[FECHA].[Tiempos Relativos].[Acumulado Año Actual] - [FECHA].[Tiempos Relativos].[Acumulado Año Anterior];                 
+
+ // Crecimiento Anual %
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Anual %]
+ 
+  ) =
+([FECHA].[Tiempos Relativos].[Acumulado Año Actual] - [FECHA].[Tiempos Relativos].[Acumulado Año Anterior]) / [FECHA].[Tiempos Relativos].[Acumulado Año Anterior];                
+
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Crecimiento Anual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                
+
+
+ // Acumulado Trimestre Actual
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Trimestre Actual]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Trimestre] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 0, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                 
+
+// Acumulado Trimestre Anterior
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Trimestre] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 3, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                
+
+ // Crecimiento Trimestral
+   ( [FECHA].[Tiempos Relativos].[Crecimiento Trimestral]
+ 
+  ) =
+[FECHA].[Tiempos Relativos].[Acumulado Trimestre Actual] - [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior];                  
+
+// Crecimiento Trimestral %
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Trimestral %]
+ 
+  ) =
+([FECHA].[Tiempos Relativos].[Acumulado Trimestre Actual] - [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior]) / [FECHA].[Tiempos Relativos].[Acumulado Trimestre Anterior];                
+
+
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Crecimiento Trimestral %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                
+
+
+
+ // Acumulado Mes Actual
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Mes Actual]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[MES] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 0, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );                 
+
+// Acumulado Mes Anterior
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior]
+ 
+  ) =
+ Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+            PERIODSTODATE([FECHA].[Calendario].[Mes] ,PARALLELPERIOD([FECHA].[Calendario].[Mes], 1, CLOSINGPERIOD( [FECHA].[Calendario].[Mes] ) ))
+  );               
+
+  // Crecimiento Mensual
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Mensual]
+ 
+  ) =
+[FECHA].[Tiempos Relativos].[Acumulado Mes Actual] - [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior];              
+
+ // Crecimiento Mensual %
+(
+    [FECHA].[Tiempos Relativos].[Crecimiento Mensual %]
+ 
+  ) =
+([FECHA].[Tiempos Relativos].[Acumulado Mes Actual] - [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior]) / [FECHA].[Tiempos Relativos].[Acumulado Mes Anterior];                     
+  
+
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Crecimiento Mensual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                
+
+// Acumulado Ultimos 12 Meses
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Ultimos 12 Meses]
+ 
+  ) =
+ Aggregate(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 12)
+  );               
+
+// Promedio de los Ultimos 12 Meses
+(
+    [FECHA].[Tiempos Relativos].[Promedio de los Ultimos 12 Meses]
+ 
+  ) =
+ Avg(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 12)
+  );                  
+
+// Acumulado Ultimos 6 Meses
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Ultimos 6 Meses]
+ 
+  ) =
+ Aggregate(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 6)
+  );               
+
+// Promedio de los Ultimos 6 Meses
+(
+    [FECHA].[Tiempos Relativos].[Promedio de los Ultimos 6 Meses]
+ 
+  ) =
+ Avg(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 6)
+  );                  
+
+// Acumulado Ultimos 3 Meses
+(
+    [FECHA].[Tiempos Relativos].[Acumulado Ultimos 3 Meses]
+ 
+  ) =
+ Aggregate(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 3)
+  );               
+
+// Promedio de los Ultimos 3 Meses
+(
+    [FECHA].[Tiempos Relativos].[Promedio de los Ultimos 3 Meses]
+ 
+  ) =
+ Avg(
+            { [FECHA].[Tiempos Relativos].DefaultMember } *
+            TAIL([FECHA].[Calendario].[Mes], 3)
+  );                  
+      
+// Year to Date
+  (
+    [FECHA].[Tiempos Relativos].[Año Actual],
+    [FECHA].[YEAR].[YEAR].Members,
+	[FECHA].[DAY].Members 
+  ) =
+
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             PeriodsToDate(
+                            [FECHA].[Calendario].[Año],
+                            [FECHA].[Calendario].CurrentMember
+             )
+  );                          
+
+  
+// Quarter to Date
+  ( 
+	[FECHA].[Tiempos Relativos].[Trimestre Actual],
+    [FECHA].[TRIM].[TRIM].Members,
+	[FECHA].[DAY].Members 
+  ) =
+
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             PeriodsToDate(
+                            [FECHA].[Calendario].[Trimestre],
+                            [FECHA].[Calendario].CurrentMember
+             )
+  );                          
+
+  
+// Month to Date
+  ( 
+	[FECHA].[Tiempos Relativos].[Mes Actual],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             PeriodsToDate(
+                            [FECHA].[Calendario].[Mes],
+                            [FECHA].[Calendario].CurrentMember
+             )
+  );                          
+
+  
+// Twelve Months to Date
+  ( 
+	[FECHA].[Tiempos Relativos].[Ultimos 12 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Aggregate(
+             { [FECHA].[Tiempos Relativos].DefaultMember } *
+             {
+               ParallelPeriod(
+                               [FECHA].[Calendario].[Mes],
+                               11,
+                               [FECHA].[Calendario].CurrentMember
+               ) : [FECHA].[Calendario].CurrentMember
+             }
+  );                          
+
+  
+// Twelve Month Moving Average  
+  ( 
+	[FECHA].[Tiempos Relativos].[Promedio Ultimos 12 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Avg(
+       {
+         ParallelPeriod(
+                         [FECHA].[Calendario].[Mes],
+                         11,
+                         [FECHA].[Calendario].CurrentMember
+         ) : [FECHA].[Calendario].CurrentMember
+       },
+      [FECHA].[Tiempos Relativos].DefaultMember
+  );                          
+
+  
+// Six Month Moving Average  
+  ( 
+	[FECHA].[Tiempos Relativos].[Promedio Ultimos 6 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Avg(
+       {
+         ParallelPeriod(
+                         [FECHA].[Calendario].[Mes],
+                         5,
+                         [FECHA].[Calendario].CurrentMember
+         ) : [FECHA].[Calendario].CurrentMember
+       },
+      [FECHA].[Tiempos Relativos].DefaultMember
+  );                          
+
+  
+// Three Month Moving Average  
+  ( 
+	[FECHA].[Tiempos Relativos].[Promedio Ultimos 3 Meses],
+    [FECHA].[MONTH].[MONTH].Members,
+	[FECHA].[DAY].Members 
+  ) =
+    
+  Avg(
+       {
+         ParallelPeriod(
+                         [FECHA].[Calendario].[Mes],
+                         2,
+                         [FECHA].[Calendario].CurrentMember
+         ) : [FECHA].[Calendario].CurrentMember
+       },
+      [FECHA].[Tiempos Relativos].DefaultMember
+  );                          
+
+  
+// Year Over Year Growth %  
+  ( 
+	[FECHA].[Tiempos Relativos].[variación Anual %],
+    [FECHA].[YEAR].[YEAR].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( 
+    ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+    ( [FECHA].[Tiempos Relativos].DefaultMember,
+      ParallelPeriod(
+                      [FECHA].[Calendario].[Año],
+                      1,
+                      [FECHA].[Calendario].CurrentMember
+      )
+    )
+  ) 
+  /
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Año],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Anual %],
+    [FECHA].[YEAR].[YEAR].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                           
+  
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Variación Anual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                          
+
+  
+// Year Over Year Growth  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Anual],
+    [FECHA].[YEAR].[YEAR].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Año],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Anual],
+    [FECHA].[YEAR].[YEAR].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                          
+
+  
+// Quarter Over Quarter Growth %  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Trimestral %],
+    [FECHA].[TRIM].[TRIM].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  (
+    ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+    ( [FECHA].[Tiempos Relativos].DefaultMember,
+      ParallelPeriod(
+                      [FECHA].[Calendario].[Trimestre],
+                      1,
+                      [FECHA].[Calendario].CurrentMember
+      )
+    )
+  )
+  /
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Trimestre],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Trimestral %],
+    [FECHA].[TRIM].[TRIM].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                           
+  
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Variación Trimestral %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                          
+
+  
+// Quarter Over Quarter Growth  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Trimestral],
+    [FECHA].[TRIM].[TRIM].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Trimestre],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Trimestral],
+    [FECHA].[TRIM].[TRIM].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                          
+
+  
+// Month Over Month Growth %  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Mensual %],
+    [FECHA].[MONTH].[MONTH].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  (
+    ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+    ( [FECHA].[Tiempos Relativos].DefaultMember,
+      ParallelPeriod(
+                      [FECHA].[Calendario].[Mes],
+                      1,
+                      [FECHA].[Calendario].CurrentMember
+      )
+    )
+  )
+  /
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Mes],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Mensual %],
+    [FECHA].[MONTH].[MONTH].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                           
+  
+  Format_String( 
+                 ( 
+				   [FECHA].[Tiempos Relativos].[Variación Mensual %],
+				   [FECHA].[DAY].Members
+				 )
+  ) = "Percent";                          
+
+  
+// Month Over Month Growth  
+  ( 
+	[FECHA].[Tiempos Relativos].[Variación Mensual],
+    [FECHA].[MONTH].[MONTH].Members ( 1 ) : Null,
+	[FECHA].[DAY].Members 
+  ) =      
+
+  ( [FECHA].[Tiempos Relativos].DefaultMember ) -
+  ( [FECHA].[Tiempos Relativos].DefaultMember,
+    ParallelPeriod(
+                    [FECHA].[Calendario].[Mes],
+                    1,
+                    [FECHA].[Calendario].CurrentMember
+    )
+  );                          
+  
+  ( 
+    [FECHA].[Tiempos Relativos].[Variación Mensual],
+    [FECHA].[MONTH].[MONTH].Members ( 0 ),
+	[FECHA].[DAY].Members 
+  ) = Null;                          
+
+  
+End Scope; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <ErrorConfiguration dwd:design-time-name="88300552-bd7a-47dc-b0c7-b88defb96f90">
+    <KeyErrorLimit>100000</KeyErrorLimit>
+  </ErrorConfiguration>
+  <Actions>
+    <Action xsi:type="ReportAction" dwd:design-time-name="44a0caea-bb57-471f-aeb3-40f0afba3130">
+      <ID>Acción de informe</ID>
+      <Name>Detalle_de_Ventas</Name>
+      <TargetType>Cube</TargetType>
+      <Target>[CURRENTCUBE]</Target>
+      <Type>Report</Type>
+      <ReportServer>infobisql01</ReportServer>
+      <Path>Reports/Pages/Report.aspx?ItemPath=%2fDM_INFORMAT_RS%2fReporte_Detalle_de_Ventas</Path>
+      <ReportFormatParameters>
+        <ReportFormatParameter>
+          <Name>rs:Command</Name>
+          <Value>Render</Value>
+        </ReportFormatParameter>
+        <ReportFormatParameter>
+          <Name>rs:Renderer</Name>
+          <Value>HTML5</Value>
+        </ReportFormatParameter>
+      </ReportFormatParameters>
+    </Action>
+    <Action xsi:type="ReportAction" dwd:design-time-name="f874aaf1-6959-4102-baed-95fe8b03c7d7">
+      <ID>Acción de informe 1</ID>
+      <Name>Detalle_de_Ventas_Con_Parametros</Name>
+      <CaptionIsMdx>true</CaptionIsMdx>
+      <TargetType>AttributeMembers</TargetType>
+      <Target>[CLIENTES].[DIM CLIENTES]</Target>
+      <Type>Report</Type>
+      <Application>Excel</Application>
+      <ReportServer>infobisql01</ReportServer>
+      <Path>Reports/Pages/Report.aspx?ItemPath=%2fDM_INFORMAT_RS%2fReporte_Detalle_de_Ventas</Path>
+      <ReportParameters>
+        <ReportParameter>
+          <Name>Cliente</Name>
+          <Value>urlEscapeFragment([CLIENTES].[DIM CLIENTES].CURRENTMEMBER.Member_caption)</Value>
+        </ReportParameter>
+      </ReportParameters>
+      <ReportFormatParameters>
+        <ReportFormatParameter>
+          <Name>rs:Command</Name>
+          <Value>Render</Value>
+        </ReportFormatParameter>
+        <ReportFormatParameter>
+          <Name>rs:Renderer</Name>
+          <Value>HTML5</Value>
+        </ReportFormatParameter>
+      </ReportFormatParameters>
+    </Action>
+  </Actions>
+</Cube>

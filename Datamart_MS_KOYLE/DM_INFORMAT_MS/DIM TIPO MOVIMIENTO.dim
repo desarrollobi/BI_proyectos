@@ -1,0 +1,235 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cbf67212-eb78-4b3b-b18b-d35feb7a798b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM TIPO MOVIMIENTO</ID>
+  <Name>TIPO MOVIMIENTO</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-3638" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_TIPO_MOVIMIENTO" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_TIPO_MOVIMIENTO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3638</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4e641d07-624c-4c23-99d5-d412fcb18fd9">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="dececfa9-a5f4-4407-b3e0-b01a1e1f16d8">
+      <ID>DIM TIPO MOVIMIENTO</ID>
+      <Name>DIM TIPO MOVIMIENTO</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>189</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a816dd38-7625-481f-86ae-4742a4ec12b6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="369a9def-d9ed-444a-9789-fa65ad2255ec">
+            <TableID>DIM_TIPO_MOVIMIENTO</TableID>
+            <ColumnID>EmpTCM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f71f9a7e-6757-4848-a716-84c669dfac13">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="94ab15e2-17c8-42c5-8b11-b5ae324bbc4d">
+          <AttributeID>Tip Cod</AttributeID>
+          <Name>Tip Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d3d4ce59-c319-4e6f-9d76-32e4133189b2">
+          <AttributeID>Tip Nom</AttributeID>
+          <Name>Tip Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ef9eece7-674b-4c20-9380-b8162a412938">
+          <AttributeID>Mov Cod</AttributeID>
+          <Name>Mov Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5bced428-2dae-48ba-be07-401d73f991f8">
+          <AttributeID>Mov Nom</AttributeID>
+          <Name>Mov Nom</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a06155d7-81ba-4d74-b87b-587aac71dc3f">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="13e69cd4-347f-4d06-b0ac-44ac2db08bef">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2719be33-3f87-4b7a-8379-67b610ba6918">
+            <TableID>DIM_TIPO_MOVIMIENTO</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a0095545-454e-4ac2-99bb-f2557d718344">
+      <ID>Tip Cod</ID>
+      <Name>Tip Cod</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3d987641-7e9f-4b33-8fdf-9b47ced539ed">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95a9bb75-b1c2-4c15-bd34-df21f3339306">
+            <TableID>DIM_TIPO_MOVIMIENTO</TableID>
+            <ColumnID>TipCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="e253fb93-8635-40d4-a61e-ffdb362f4329">
+      <ID>Tip Nom</ID>
+      <Name>Tip Nom</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad35a194-87c0-4328-ab14-ef423aec8b25">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d006bcf0-ff1a-4cbb-8542-b7a50ee2a25b">
+            <TableID>DIM_TIPO_MOVIMIENTO</TableID>
+            <ColumnID>TipNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="26a7d686-29e7-4991-9b93-988aae9e48bd">
+      <ID>Mov Cod</ID>
+      <Name>Mov Cod</Name>
+      <EstimatedCount>46</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eda58695-59fb-41ef-a8b1-949f48b0a81a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c8a87a8-0dd8-4117-a41a-33840bcaba3a">
+            <TableID>DIM_TIPO_MOVIMIENTO</TableID>
+            <ColumnID>MovCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2d4f3a9-e754-4f04-80f7-29f9fc0b646a">
+      <ID>Mov Nom</ID>
+      <Name>Mov Nom</Name>
+      <EstimatedCount>128</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e595f818-ee1a-4d30-b758-7802e58fb96c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b975864-b99c-4482-85ae-09eabcc5d4fe">
+            <TableID>DIM_TIPO_MOVIMIENTO</TableID>
+            <ColumnID>MovNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL TIPO DE MOVIMIENTO</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c707a2bd-893a-45b9-963c-fc337e86791d">
+      <ID>Hierarchy</ID>
+      <Name>POR TIPO DE MOVIMIENTO</Name>
+      <AllMemberName>TOTAL TIPO DE MOVIMIENTO</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="3274b7ba-5653-4f98-91c6-fa64f331c9d3">
+          <ID>Tip Nom</ID>
+          <Name>Tipo Movimiento</Name>
+          <SourceAttributeID>Tip Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="417959c9-8058-4fd3-b55a-32a63f990387">
+          <ID>Mov Nom</ID>
+          <Name>Movimiento</Name>
+          <SourceAttributeID>Mov Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a2963581-6565-40cc-b67f-628f8905aed2">
+          <ID>DIM TIPO MOVIMIENTO</ID>
+          <Name>DIM TIPO MOVIMIENTO</Name>
+          <SourceAttributeID>DIM TIPO MOVIMIENTO</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

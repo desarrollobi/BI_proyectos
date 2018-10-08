@@ -1,0 +1,383 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>DATAMART_MS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>7cfdp7G1y2TA1BjY2RzTrg==08-11-2012 15:29:3908-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>XzSHWb46RrsxIldauDPecA==08-11-2012 16:46:2808-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IK+57YpGtBkpZW/Sv9Ed7g==06-08-2009 17:46:2108-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM EMPRESA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dgEpp4a++XtzLtBinoBu0A==06-08-2009 17:46:2308-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CLIENTES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rWPplLBcdhKwuyDSt/F8jA==06-08-2009 17:46:2308-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM VENDEDOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XLC+W3pXxXf4w1KPvRwT+w==06-08-2009 17:46:2308-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM PRODUCTOS DE VENTAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gm20EiM4AejDfJlPa7139w==06-08-2009 17:46:2308-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM MESES COMERCIAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tECQXCn2mynUrJuLeUdvAw==06-08-2009 17:46:2308-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CONDICION VENTA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p/yR933IddrnhRFKaoBWzw==05-10-2009 14:43:2708-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM DOCUMENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2dfg3s0w5wDxp9mcoWTM6g==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM ESTADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7Oqk59sivG0HDmbaR7/hMQ==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CONTABLE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>URiOrnajE4OROadylsZt+A==08-10-2009 16:23:4608-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>D TIEMPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ldPuBcwrKYTBu9FLhYLtpA==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM AREA NEGOCIOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SMxVnF8y7PyzO6WfhADHsw==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CUENTAS CONTABLES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UB9sC+BEYWfBTVsiV1b3xw==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIN CENTRO COSTOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2oemygIlULJKbIsLfsv3bA==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CONCEPTOS DE GASTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q+QOteRqtenww8+8B0hwlw==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM FLUJO EFECTIVO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BmOfqRCUwSiro6gStoPMlw==06-08-2009 17:46:2408-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM MONEDAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>waaxIa4cPipj5GmpEu4x2Q==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM MESES FINANZAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HIY+SMMrsfH/UmQMfMUXSw==06-08-2009 17:46:2408-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM VERSION PRESUPUESTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iIM5pq7YdLG7x8zMSuvCQQ==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CARGOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ky233NFyccUMq8xonowUlw==06-08-2009 17:46:2408-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CONCEPTOS RRHH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HzTZw/afnyPZ5RhM1GqfWg==06-08-2009 17:46:2408-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM PERSONAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fLleZuU4eYoOvShzdfGbOA==06-08-2009 17:46:2508-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM PERSONAL INE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>R8JbaxLDZ1WNx3b99WhPWQ==06-08-2009 17:46:2508-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM ORIGEN RENTA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xQqZT1AwacQNh+4mMEKvbQ==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM INSTITUCIONES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Dni31RcWea4/R3uHtBU5Qg==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM LUGAR PAGO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gHYnQ/g9du6N5Pn5OadcJQ==02-09-2008 13:35:2908-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM ROTACION PERSONAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HwKQBDwyvDOBPLmZzfuOoA==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>D TIEMPO 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0h4fYlmPtVdEjs+TRKAm4Q==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM BODEGAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9E52LshzyOHgpgtvmovpOA==06-08-2009 17:46:2508-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM PRODUCTOS DE INVENTARIO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4bGjxEXqxYvO1NF7NnPeCA==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM EMPRESA SALGEN</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ePjWAXtEWpOZrz/JEsUWBg==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CUENTA CONTABLE SALGEN</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aFrJqatRQfDqk1jXjfGZXg==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CONTABLE MOVBOD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DXhGPBq0pZNJXFGtJULBQA==06-08-2009 17:46:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CONSIGNATARIOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CrE3oEIbqUWmM3N93lM4xg==06-08-2009 17:46:2508-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM PERSONAL MOVBOD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>N+QACxWNvOonAagaDjZ3/w==06-08-2009 17:46:2508-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM PROVEEDORES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XtacaGNB3jT0kfmkiPVypA==06-08-2009 17:46:2508-11-2012 12:16:43</TimeStamp>
+        <ID>
+          <String>DIM TIPO MOVIMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QLWIFj9e7uUE2LwV6C2keA==06-08-2009 17:46:2608-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM DOCUMENTOS ORD SOL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0LPcIASxNDi04q9XzKj3xA==06-08-2009 17:46:2608-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM ESTADO DOCUMENTO ORD SOL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p9mDWLD7PSIxs1hukDQkZg==06-08-2009 17:46:2608-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM CONTABLE ORD SOL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uR+KtdEoxTuSru717LNxYQ==06-08-2009 17:46:2608-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DIM INDICE HORAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>as+wLJldDq5ueyj+5yC2eQ==08-11-2012 16:56:1808-11-2012 16:56:18</TimeStamp>
+        <ID>
+          <String>DIM MARGENES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>fEqHiaA54Ebcb6m+Dg87LQ==08-11-2012 17:07:4708-11-2012 12:16:42QmZ3/CDHs7AODxM+7nyfAg==05-10-2009 14:35:4108-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>mwQXnW1VRaDqup0Rxuqpsg==08-10-2009 16:40:1108-11-2012 12:16:42NxFlyMUam5jZ8Ma3N9AvYw==02-07-2009 18:13:1308-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>RJvsvgC061Bkkf7Bmy3kgg==08-10-2009 16:41:0808-11-2012 12:16:42y3N/zKgAWbThMGW+LTc5Jw==01-07-2008 15:42:0908-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>yvTcf+Onq2VGtKwUVvewEw==08-10-2009 16:42:0508-11-2012 12:16:42DgZZKBHK+iLqTBcS3t7gSg==02-07-2009 17:50:1708-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>TkCs77T2zslX4nxaAPWnqg==08-10-2009 16:42:3508-11-2012 12:16:42rmUa05dBZqGat13QeXbd4A==02-07-2009 17:56:2508-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART 4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>WyqGMsPgRwz6EUgwXmXKpQ==08-10-2009 16:43:1708-11-2012 12:16:42Ft54WOavJsNG50QNhGXJrw==02-07-2009 17:59:3808-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART 5</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>q6t3EWTDh/PNnbckEyr/tg==08-10-2009 16:43:5008-11-2012 12:16:422NxYtD7pqeitUlzY8RYS+A==27-08-2008 13:43:5908-11-2012 12:16:42</TimeStamp>
+        <ID>
+          <String>DATAMART 6</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>I89vN77Xi4X0hMCXZAFipg==27-06-2008 13:30:1608-11-2012 12:16:42</TimeStamp>
+      <ID>
+        <String>DATAMART_MS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2012-11-08T19:07:56Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,580 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="71c07d35-9765-41c5-a200-950889849b0c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <!--Version 9.00.00-->  
+  <!--Fecha 30/08/2009-->  
+  <ID>DIM PERSONAL MOVBOD</ID>
+  <Name>PERSONAL MOVBOD</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2171" scrolltop="-2924" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7461" y="10186" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DIM_PERSONAL_MOVBOD" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DIM_PERSONAL_MOVBOD" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2171</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2924</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="44d5caef-6b93-42ee-920a-4cdb3b434bea">
+    <DataSourceViewID>DATAMART</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0e8b7ef6-7b5f-4f63-8253-8796faf27773">
+      <ID>DIM PERSONAL MOVBOD</ID>
+      <Name>DIM PERSONAL MOVBOD</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>231</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f5cd0d81-ee98-459d-90f2-760c1856e535">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bc8ee39-dd80-4224-be77-5451a8e18d29">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>EmpPer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d8674709-f251-4739-9b7b-2b65759a2e0e">
+          <AttributeID>Emp Cod</AttributeID>
+          <Name>Emp Cod</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="86890281-4803-4141-aa72-3c432805604a">
+          <AttributeID>Per ID</AttributeID>
+          <Name>Per ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d896b281-cd82-4ff6-88ec-8a10359b7149">
+          <AttributeID>Per Rut</AttributeID>
+          <Name>Per Rut</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="03b315ea-83af-46db-ae87-ba52c1b22725">
+          <AttributeID>Per Nom</AttributeID>
+          <Name>Per Nom</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0717c2d6-e1aa-458f-8317-4ee8a8c09d44">
+          <AttributeID>Per Dir</AttributeID>
+          <Name>Per Dir</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e33be7f7-0d77-425c-b5ba-1f28e63e6bc3">
+          <AttributeID>Per Com</AttributeID>
+          <Name>Per Com</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="33c05b11-cf2e-4bb9-9005-5f61699899a5">
+          <AttributeID>Per Ciu</AttributeID>
+          <Name>Per Ciu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="db430f13-c46e-461d-8c36-97a6f6912f8a">
+          <AttributeID>Per Prv</AttributeID>
+          <Name>Per Prv</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b8558d9-c754-4d2f-ad8c-4976fcf14a8d">
+          <AttributeID>Per Reg</AttributeID>
+          <Name>Per Reg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8e1fc5d8-1d10-4639-bada-ea9b3779c614">
+          <AttributeID>Per Fon</AttributeID>
+          <Name>Per Fon</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f39d60d4-4d03-4ead-9d71-5711cd6e8ad9">
+          <AttributeID>Per Fax</AttributeID>
+          <Name>Per Fax</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1215bd7d-2247-487c-99ed-72bb243569e6">
+          <AttributeID>Per Eml</AttributeID>
+          <Name>Per Eml</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6c96c56e-010b-4b27-9f0a-bc049d297f97">
+          <AttributeID>Per Pos</AttributeID>
+          <Name>Per Pos</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5755b0ef-1a2c-45a4-bfd1-a54d4dca8f67">
+          <AttributeID>Per Fic</AttributeID>
+          <Name>Per Fic</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dce57e51-1b30-41f4-aef0-29607114391b">
+          <AttributeID>Per Fot</AttributeID>
+          <Name>Per Fot</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b814ff9-a17c-42aa-a63a-9be1ebab9a7e">
+          <AttributeID>Per Sex</AttributeID>
+          <Name>Per Sex</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d2aa86b-d491-4ef6-94aa-3b1bc0fccbf9">
+          <AttributeID>Per Eci</AttributeID>
+          <Name>Per Eci</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3be323c7-3364-4fc4-b446-f94f6eea56eb">
+          <AttributeID>Per Fna</AttributeID>
+          <Name>Per Fna</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d8b9b867-46d6-457b-a07c-e527a944e747">
+          <AttributeID>Per Fin</AttributeID>
+          <Name>Per Fin</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f89863eb-1e61-4bdf-be36-9261b97c321c">
+          <AttributeID>Per Fte</AttributeID>
+          <Name>Per Fte</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e356ce6-bdc3-48c4-9fa0-c996a4101431">
+          <AttributeID>Per Est</AttributeID>
+          <Name>Per Est</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c4ace30f-535f-4da4-b0ea-c7590019d6be">
+      <ID>Emp Cod</ID>
+      <Name>Emp Cod</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c72e900-1ef7-42ff-a8a1-4f3d818ac0fc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3798e51-258c-4997-92ac-94ec31223b3f">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>EmpCod</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="ae0cc649-9401-43df-8286-363fa1a1ed3b">
+      <ID>Per ID</ID>
+      <Name>Per ID</Name>
+      <EstimatedCount>211</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="117475a8-9095-459f-89e3-91e3d405f19e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba00fe36-02b2-46bb-b149-6a9535b4aef6">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="6718129d-a1ab-4684-a244-5d39923c2fe3">
+      <ID>Per Rut</ID>
+      <Name>Per Rut</Name>
+      <EstimatedCount>201</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="704148c4-a13f-4896-985e-c828452d3377">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64a35e4b-32d9-468f-b337-1a83311dede0">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerRut</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a6a9b296-374a-4138-b332-0e9a68fed6c0">
+      <ID>Per Nom</ID>
+      <Name>Per Nom</Name>
+      <EstimatedCount>214</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="772344b7-77f5-4eb7-8beb-ab56a7a3c0f9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5efbc8bb-c5f2-46c7-9c10-e8ec0b68605e">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerNom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="47efaad3-7504-4b80-8209-945a25afa5ac">
+      <ID>Per Dir</ID>
+      <Name>Per Dir</Name>
+      <EstimatedCount>157</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eae48f73-4729-41fb-b9e5-613384f88306">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab447a06-4163-41ae-a845-9524164e7ddd">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerDir</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b6d1032-3c2b-4835-a52f-741f0e69a815">
+      <ID>Per Com</ID>
+      <Name>Per Com</Name>
+      <EstimatedCount>40</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33916982-8578-45d6-9647-6be8f025fbaf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="861e7fe4-2363-4f2d-9fc3-a2e2abe23d2a">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerCom</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fa10e92-df0a-4c35-a71f-992193897263">
+      <ID>Per Ciu</ID>
+      <Name>Per Ciu</Name>
+      <EstimatedCount>15</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09e660ec-215a-4073-87b5-82c291fd0190">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04ba4662-0e32-496f-9713-f0da5ff61de4">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerCiu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="28c9618f-a2b8-4ba1-a296-60ac1b75ceed">
+      <ID>Per Prv</ID>
+      <Name>Per Prv</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="286f8f4b-52d8-496b-930f-c610d4800a40">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce9b177f-4a93-4a9c-aa4c-a673da14a4ab">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerPrv</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ec95141-6baa-465d-a2ff-9db4b3e44c9b">
+      <ID>Per Reg</ID>
+      <Name>Per Reg</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1f38309-d3e9-4c85-bdae-ff873246401d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="726e8027-a34b-4ba9-92c5-fbd46ea513c0">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerReg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9ae5fb5-3be0-4cd0-abef-34bf68a82777">
+      <ID>Per Fon</ID>
+      <Name>Per Fon</Name>
+      <EstimatedCount>70</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2759c740-750f-48b2-a73a-649782349cfa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d12c1daa-a23d-4842-8ac1-763ae1b1f669">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerFon</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="1c98d7fa-b6b7-4e63-a544-31af5a5829a2">
+      <ID>Per Fax</ID>
+      <Name>Per Fax</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01fc1964-f54f-4dd8-a0d6-585e3e27364d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df7fecd7-238a-46d1-8c53-4e6d3827c08f">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerFax</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="b69e0e3f-39d0-4e1a-b25a-23ac54e5ac4c">
+      <ID>Per Eml</ID>
+      <Name>Per Eml</Name>
+      <EstimatedCount>21</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2090e08d-764a-4f2a-a8c3-5675b5a31da1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07927664-4d77-442c-adc9-854f56900ab6">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerEml</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="1a913cef-904c-423b-8a36-dc4c6a7658c6">
+      <ID>Per Pos</ID>
+      <Name>Per Pos</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1e621d4-c52f-473e-b8e7-a6d847a4bc60">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2700285c-a1e9-43ba-b451-797132824af9">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerPos</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd31f105-720d-43c2-9f21-fb971a651a2a">
+      <ID>Per Fic</ID>
+      <Name>Per Fic</Name>
+      <EstimatedCount>208</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="638569ef-b459-453e-810c-085c2086b973">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f859595-68a2-4ff7-9d24-3ea1744d9c72">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerFic</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9df32b2e-b6f9-4b3a-a7e0-086bb983d947">
+      <ID>Per Fot</ID>
+      <Name>Per Fot</Name>
+      <EstimatedCount>192</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05d476b6-c7a8-4db5-af62-fd420f655e0f">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59b3ad87-4461-462d-b35f-1f63b13aec37">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerFot</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="10ce59ba-17ee-4d70-beae-ab9b8f1da498">
+      <ID>Per Sex</ID>
+      <Name>Per Sex</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="03577f9c-2559-482d-81da-08689e099508">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49ad40cb-1030-42ee-9bbb-dc2a3fda9322">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerSex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="3bf010d0-0ced-4eb1-93ff-0c329cacb85a">
+      <ID>Per Eci</ID>
+      <Name>Per Eci</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e1de78c-6c2b-4650-bdd9-0e40c4793826">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ccafe8d1-06b5-4685-8660-cd829e177d35">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerEci</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="15139cc2-0616-4b60-8ab8-12e2f32c12d9">
+      <ID>Per Fna</ID>
+      <Name>Per Fna</Name>
+      <EstimatedCount>200</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7b1cab6-3b7d-4e16-be1a-7670b44d2cdb">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec70f348-a7f8-4a47-a137-9c7a8e29eea7">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerFna</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="193db593-4a7b-4efa-9b5a-80a5b0e73828">
+      <ID>Per Fin</ID>
+      <Name>Per Fin</Name>
+      <EstimatedCount>166</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c15c48a-66b7-4afb-92aa-7413eb31e362">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5587577a-11c1-4855-8b1e-b82d76660b8c">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerFin</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>List</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="7d2c1b8f-eca2-4d45-a386-639cabaa560f">
+      <ID>Per Fte</ID>
+      <Name>Per Fte</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="107163c6-aa1d-49c9-b2ba-a24fb49a6971">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bbfe295-41b1-48af-b4af-c4ccfa04fcc7">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerFte</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d476145-6d1e-4dcd-bf95-4013d132e4f5">
+      <ID>Per Est</ID>
+      <Name>Per Est</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b20153b-1f88-4e7b-822c-ae30e552ea7e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="272a812f-5a13-4691-9ad2-7870767b0e95">
+            <TableID>DIM_PERSONAL_MOVBOD</TableID>
+            <ColumnID>PerEst</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>TOTAL PERSONAL</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="68d7ad75-fb96-4552-9fb9-a09742dfec9b">
+      <ID>Hierarchy</ID>
+      <Name>PERSONAL</Name>
+      <DisplayFolder>PERSONAL</DisplayFolder>
+      <AllMemberName>TOTAL PERSONAL</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="ab5eba3d-5c14-4161-b833-146bd576eccc">
+          <ID>Per Nom</ID>
+          <Name>Personal</Name>
+          <SourceAttributeID>Per Nom</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cc50d2d5-a496-472e-a5b5-e7901d638662">
+          <ID>DIM PERSONAL MOVBOD</ID>
+          <Name>DIM PERSONAL MOVBOD</Name>
+          <SourceAttributeID>DIM PERSONAL MOVBOD</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>
